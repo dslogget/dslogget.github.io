@@ -1,0 +1,25 @@
+var struct_matrix =
+[
+    [ "Matrix", "struct_matrix.html#a4f9582b3647b6d80693529e36837d21b", null ],
+    [ "Matrix", "struct_matrix.html#a7628be83efd3834ca5d09d1d5bb72def", null ],
+    [ "add", "struct_matrix.html#a041c9627f2cd304b750f3add67202b37", null ],
+    [ "add", "struct_matrix.html#af81a0e425864e0c97c708823f3062331", null ],
+    [ "fill", "struct_matrix.html#af3bde34a3a88bdbe5fc0b45d3dd9cfc2", null ],
+    [ "leftDivide", "struct_matrix.html#affa396b55a7d4f97f083e0388e525374", null ],
+    [ "leftDivide", "struct_matrix.html#a250a21a0f104d0be0566b3b73d8f12cb", null ],
+    [ "luPair", "struct_matrix.html#a6db3ba8a6abfeed9b96491dcb5c08b78", null ],
+    [ "luPair", "struct_matrix.html#a381533fab14e2a759a659cfb4ff98bce", null ],
+    [ "multiply", "struct_matrix.html#abf08a7fe98b9a90a1af10ae447ebb90b", null ],
+    [ "multiply", "struct_matrix.html#a5a2c902daf80e8a369d181f135f865e4", null ],
+    [ "operator()", "struct_matrix.html#ae6c1e7949a9eb1e93b38bb9e0eca07d5", null ],
+    [ "operator()", "struct_matrix.html#a1d780cfd4ecd5f08fefb72d5e071ce96", null ],
+    [ "rowAddition", "struct_matrix.html#a9575e56f2faf94f4b198aa6a229435bb", null ],
+    [ "subtract", "struct_matrix.html#a436a9006a79ca7aa54c09594f52b635c", null ],
+    [ "subtract", "struct_matrix.html#a337b0b1813cfa72178cacb5fbf7998cc", null ],
+    [ "swapRows", "struct_matrix.html#a1db90b9c38cd8b56c0a487dadd632ae8", null ],
+    [ "toString", "struct_matrix.html#a63a5a4dc5f2f9f9b04b5eaf953d80415", null ],
+    [ "transpose", "struct_matrix.html#aa86cb7b257ff8aacf44ea42e94b5099f", null ],
+    [ "data", "struct_matrix.html#a04369e69f2a263a1e3c61e4375d2ac2e", null ],
+    [ "M", "struct_matrix.html#a5d54d88e231fcc5bb91c88661f7f9d16", null ],
+    [ "N", "struct_matrix.html#a3095589c03b42ed095222ea51991cc30", null ]
+];

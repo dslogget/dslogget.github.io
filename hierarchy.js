@@ -1,0 +1,57 @@
+var hierarchy =
+[
+    [ "matplotlibcpp::detail::_interpreter", "structmatplotlibcpp_1_1detail_1_1__interpreter.html", null ],
+    [ "ForceCausal::CausalData< T >", "struct_force_causal_1_1_causal_data.html", null ],
+    [ "matplotlibcpp::detail::is_callable_impl< true, T >::Check< U, U >", "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01_t_01_4_1_1_check.html", null ],
+    [ "CircuitElements< T >", "struct_circuit_elements.html", null ],
+    [ "CircuitElements< VT >", "struct_circuit_elements.html", null ],
+    [ "Component< T >", "struct_component.html", [
+      [ "BJTN< T >", "struct_b_j_t_n.html", null ],
+      [ "Capacitor< T >", "struct_capacitor.html", null ],
+      [ "CurrentSource< T >", "struct_current_source.html", null ],
+      [ "Diode< T >", "struct_diode.html", null ],
+      [ "Inductor< T >", "struct_inductor.html", null ],
+      [ "Resistor< T >", "struct_resistor.html", null ],
+      [ "SParameterBlock< T >", "struct_s_parameter_block.html", null ],
+      [ "SinusoidalVoltageSource< T >", "struct_sinusoidal_voltage_source.html", null ],
+      [ "VoltageSource< T >", "struct_voltage_source.html", null ]
+    ] ],
+    [ "matplotlibcpp::detail::is_callable_impl< true, T >::Fallback", "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01_t_01_4_1_1_fallback.html", [
+      [ "matplotlibcpp::detail::is_callable_impl< true, T >::Derived", "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01_t_01_4_1_1_derived.html", null ]
+    ] ],
+    [ "matplotlibcpp::detail::is_callable< T >", "structmatplotlibcpp_1_1detail_1_1is__callable.html", null ],
+    [ "matplotlibcpp::detail::is_callable_impl< obj, T >", "structmatplotlibcpp_1_1detail_1_1is__callable__impl.html", null ],
+    [ "matplotlibcpp::detail::is_callable_impl< false, T >", "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01false_00_01_t_01_4.html", null ],
+    [ "matplotlibcpp::detail::is_callable_impl< true, T >", "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01_t_01_4.html", null ],
+    [ "LUPair< T >", "struct_l_u_pair.html", null ],
+    [ "LUPair< VT >", "struct_l_u_pair.html", null ],
+    [ "Matrix< T >", "struct_matrix.html", null ],
+    [ "Matrix< VT >", "struct_matrix.html", null ],
+    [ "matplotlibcpp::Plot", "classmatplotlibcpp_1_1_plot.html", null ],
+    [ "matplotlibcpp::detail::plot_impl< IsYDataCallable >", "structmatplotlibcpp_1_1detail_1_1plot__impl.html", null ],
+    [ "matplotlibcpp::detail::plot_impl< std::false_type >", "structmatplotlibcpp_1_1detail_1_1plot__impl_3_01std_1_1false__type_01_4.html", null ],
+    [ "matplotlibcpp::detail::plot_impl< std::true_type >", "structmatplotlibcpp_1_1detail_1_1plot__impl_3_01std_1_1true__type_01_4.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< T >", "structmatplotlibcpp_1_1detail_1_1select__npy__type.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< bool >", "structmatplotlibcpp_1_1detail_1_1select__npy__type_3_01bool_01_4.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< double >", "structmatplotlibcpp_1_1detail_1_1select__npy__type_3_01double_01_4.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< float >", "structmatplotlibcpp_1_1detail_1_1select__npy__type_3_01float_01_4.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< int16_t >", "structmatplotlibcpp_1_1detail_1_1select__npy__type_3_01int16__t_01_4.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< int32_t >", "structmatplotlibcpp_1_1detail_1_1select__npy__type_3_01int32__t_01_4.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< int64_t >", "structmatplotlibcpp_1_1detail_1_1select__npy__type_3_01int64__t_01_4.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< int8_t >", "structmatplotlibcpp_1_1detail_1_1select__npy__type_3_01int8__t_01_4.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< uint16_t >", "structmatplotlibcpp_1_1detail_1_1select__npy__type_3_01uint16__t_01_4.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< uint32_t >", "structmatplotlibcpp_1_1detail_1_1select__npy__type_3_01uint32__t_01_4.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< uint64_t >", "structmatplotlibcpp_1_1detail_1_1select__npy__type_3_01uint64__t_01_4.html", null ],
+    [ "matplotlibcpp::detail::select_npy_type< uint8_t >", "structmatplotlibcpp_1_1detail_1_1select__npy__type_3_01uint8__t_01_4.html", null ],
+    [ "SimulationEnvironment< VT >", "class_simulation_environment.html", null ],
+    [ "SParameterPort< T >", "struct_s_parameter_port.html", null ],
+    [ "SParameterSequence< T >", "struct_s_parameter_sequence.html", null ],
+    [ "Stamp< T >", "struct_stamp.html", null ],
+    [ "StaticLUPair< T, M >", "struct_static_l_u_pair.html", null ],
+    [ "StaticMatrix< T, M, N, ST >", "struct_static_matrix.html", null ],
+    [ "StaticMatrix< T, M, M >", "struct_static_matrix.html", null ],
+    [ "StaticRow< T, N, ST >", "struct_static_row.html", null ],
+    [ "T", null, [
+      [ "matplotlibcpp::detail::is_callable_impl< true, T >::Derived", "structmatplotlibcpp_1_1detail_1_1is__callable__impl_3_01true_00_01_t_01_4_1_1_derived.html", null ]
+    ] ]
+];
