@@ -106,6 +106,7 @@ Include dependency graph for ElementsRegexBuilder.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a5b0c7d017d968b5c262dd39bb086ac64"><td class="memItemLeft" align="right" valign="top">std::regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_elements_regex_builder_8cpp.html#a5b0c7d017d968b5c262dd39bb086ac64">generateRegex</a> (std::string indentifier, std::string simplifiedMatching, bool startAnchor, bool endAnchor)</td></tr>
+<tr class="memdesc:a5b0c7d017d968b5c262dd39bb086ac64"><td class="mdescLeft">&#160;</td><td class="mdescRight">a helper function to aid in the construction of regexes for parsing netlist files  <a href="_elements_regex_builder_8cpp.html#a5b0c7d017d968b5c262dd39bb086ac64">More...</a><br /></td></tr>
 <tr class="separator:a5b0c7d017d968b5c262dd39bb086ac64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -131,13 +132,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>startAnchor</em>, </td>
+          <td class="paramname"><em>startAnchor</em> = <code>true</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>endAnchor</em>&#160;</td>
+          <td class="paramname"><em>endAnchor</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -147,13 +148,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>a helper function to aid in the construction of regexes for parsing netlist files </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indentifier</td><td>The designator for the component. e.g. "R" for resistor </td></tr>
+    <tr><td class="paramname">simplifiedMatching</td><td>The string that contains the data for what we want matched. For example:<br  />
+n = int/size_t<br  />
+w = word (works for floats etc)<br  />
+? = everything after is optional<br  />
+c = char<br  />
+s = space<br  />
+</td></tr>
+    <tr><td class="paramname">startAnchor</td><td>What prepends the regex, defaults to "^". </td></tr>
+    <tr><td class="paramname">endAnchor</td><td>What appends the regex, defaults to "$".</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The complete Regex. </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_elements_regex_builder_8cpp_source.html#l00022">22</a> of file <a class="el" href="_elements_regex_builder_8cpp_source.html">ElementsRegexBuilder.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_elements_regex_builder_8cpp_a5b0c7d017d968b5c262dd39bb086ac64_icgraph.png" border="0" usemap="#a_elements_regex_builder_8cpp_a5b0c7d017d968b5c262dd39bb086ac64_icgraph" alt=""/></div>
 <map name="a_elements_regex_builder_8cpp_a5b0c7d017d968b5c262dd39bb086ac64_icgraph" id="a_elements_regex_builder_8cpp_a5b0c7d017d968b5c262dd39bb086ac64_icgraph">
-<area shape="rect" title=" " alt="" coords="487,208,596,235"/>
+<area shape="rect" title="a helper function to aid in the construction of regexes for parsing netlist files" alt="" coords="487,208,596,235"/>
 <area shape="rect" href="struct_b_j_t_n.html#acd13cdb03aefb834a157fab9f1e6a7f6" title=" " alt="" coords="252,5,403,32"/>
 <area shape="rect" href="struct_capacitor.html#a1c191824148aba285e5a5011d58c89ce" title=" " alt="" coords="240,56,415,83"/>
 <area shape="rect" href="struct_current_source.html#aaafadebb23bf59c8578f07867f981a20" title=" " alt="" coords="226,107,429,133"/>
@@ -163,7 +182,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="struct_sinusoidal_voltage_source.html#a3e77f464946d510537b57dc456c3d41c" title=" " alt="" coords="244,310,411,351"/>
 <area shape="rect" href="struct_s_parameter_block.html#a9195f446cf3c7ea44523c316f7fb45c3" title=" " alt="" coords="216,376,439,403"/>
 <area shape="rect" href="struct_voltage_source.html#a5b47f508fac7776ac13c696e7fbec36f" title=" " alt="" coords="225,427,430,453"/>
-<area shape="rect" href="class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title=" " alt="" coords="5,201,168,242"/>
+<area shape="rect" href="class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title="Setup the simulation environment from a netlist." alt="" coords="5,201,168,242"/>
 </map>
 </div>
 

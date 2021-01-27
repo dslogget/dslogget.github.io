@@ -91,34 +91,41 @@ $(document).ready(function(){initNavTree('struct_component.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
+<p>A template base class to define the fundamental things a component should define.  
+ <a href="struct_component.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_component_8hpp_source.html">Component.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Component&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_component__inherit__graph.png" border="0" usemap="#a_component_3_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_component_3_01_t_01_4_inherit__map" id="a_component_3_01_t_01_4_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,208,124,235"/>
-<area shape="rect" href="struct_b_j_t_n.html" title=" " alt="" coords="229,5,313,32"/>
-<area shape="rect" href="struct_capacitor.html" title=" " alt="" coords="217,56,325,83"/>
-<area shape="rect" href="struct_current_source.html" title=" " alt="" coords="203,107,339,133"/>
-<area shape="rect" href="struct_diode.html" title=" " alt="" coords="228,157,315,184"/>
-<area shape="rect" href="struct_inductor.html" title=" " alt="" coords="222,208,321,235"/>
-<area shape="rect" href="struct_resistor.html" title=" " alt="" coords="221,259,322,285"/>
-<area shape="rect" href="struct_s_parameter_block.html" title=" " alt="" coords="194,309,349,336"/>
-<area shape="rect" href="struct_sinusoidal_voltage_source.html" title=" " alt="" coords="172,360,371,387"/>
-<area shape="rect" href="struct_voltage_source.html" title=" " alt="" coords="202,411,341,437"/>
+<area shape="rect" title="A template base class to define the fundamental things a component should define." alt="" coords="5,208,124,235"/>
+<area shape="rect" href="struct_b_j_t_n.html" title="A simple NPN BJT model." alt="" coords="229,5,313,32"/>
+<area shape="rect" href="struct_capacitor.html" title="An ideal capacitor model." alt="" coords="217,56,325,83"/>
+<area shape="rect" href="struct_current_source.html" title="An ideal current source." alt="" coords="203,107,339,133"/>
+<area shape="rect" href="struct_diode.html" title="An ebbers moll diode model." alt="" coords="228,157,315,184"/>
+<area shape="rect" href="struct_inductor.html" title="An ideal inductor model." alt="" coords="222,208,321,235"/>
+<area shape="rect" href="struct_resistor.html" title="An ideal resistor model." alt="" coords="221,259,322,285"/>
+<area shape="rect" href="struct_s_parameter_block.html" title="A DTIR based model of an s&#45;parameter block." alt="" coords="194,309,349,336"/>
+<area shape="rect" href="struct_sinusoidal_voltage_source.html" title="A sinusoidal voltage source model." alt="" coords="172,360,371,387"/>
+<area shape="rect" href="struct_voltage_source.html" title="An ideal voltageSource." alt="" coords="202,411,341,437"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a84e4548bed7632f47c51919d2d489c77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a84e4548bed7632f47c51919d2d489c77">addStaticStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;destination) const</td></tr>
+<tr class="memdesc:a84e4548bed7632f47c51919d2d489c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds this component's static stamp to the target stamp.  <a href="struct_component.html#a84e4548bed7632f47c51919d2d489c77">More...</a><br /></td></tr>
 <tr class="separator:a84e4548bed7632f47c51919d2d489c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab572c67300b95e6ab69df0c2b856c4fe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#ab572c67300b95e6ab69df0c2b856c4fe">addDynamicStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;destination, const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T timestep) const</td></tr>
+<tr class="memdesc:ab572c67300b95e6ab69df0c2b856c4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds this component's dynamic stamp to the target stamp.  <a href="struct_component.html#ab572c67300b95e6ab69df0c2b856c4fe">More...</a><br /></td></tr>
 <tr class="separator:ab572c67300b95e6ab69df0c2b856c4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44de5074a86d89d84ad7166f0c64a973"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a44de5074a86d89d84ad7166f0c64a973">addNonLinearStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;destination, const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T timestep=0) const</td></tr>
+<tr class="memdesc:a44de5074a86d89d84ad7166f0c64a973"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds this component's non-linear stamp to the target stamp.  <a href="struct_component.html#a44de5074a86d89d84ad7166f0c64a973">More...</a><br /></td></tr>
 <tr class="separator:a44de5074a86d89d84ad7166f0c64a973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab932580c43337bf2208c18b07097774e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#ab932580c43337bf2208c18b07097774e">updateStoredState</a> (const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T timestep)</td></tr>
+<tr class="memdesc:ab932580c43337bf2208c18b07097774e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates any stored state based on the current solution index.  <a href="struct_component.html#ab932580c43337bf2208c18b07097774e">More...</a><br /></td></tr>
 <tr class="separator:ab932580c43337bf2208c18b07097774e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d2fd772fc1a945ab88556e95db62b9b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a2d2fd772fc1a945ab88556e95db62b9b">~Component</a> ()</td></tr>
 <tr class="separator:a2d2fd772fc1a945ab88556e95db62b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,19 +133,28 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac5e46c014be509bef88c6e9e0ba7f457"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#ac5e46c014be509bef88c6e9e0ba7f457">addToElements</a> (const std::string &amp;line, <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt; &amp;elements, size_t &amp;numNodes, size_t &amp;numCurrents)</td></tr>
+<tr class="memdesc:ac5e46c014be509bef88c6e9e0ba7f457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called as a helper to add the component to the elements class.  <a href="struct_component.html#ac5e46c014be509bef88c6e9e0ba7f457">More...</a><br /></td></tr>
 <tr class="separator:ac5e46c014be509bef88c6e9e0ba7f457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aed9ba9f3e2315cf384ef3e6eb45c8010"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">designator</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:aed9ba9f3e2315cf384ef3e6eb45c8010"><td class="mdescLeft">&#160;</td><td class="mdescRight">The designator as in the netlist for e.g.  <a href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">More...</a><br /></td></tr>
 <tr class="separator:aed9ba9f3e2315cf384ef3e6eb45c8010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 struct Component&lt; T &gt;</h3>
 
+<p>A template base class to define the fundamental things a component should define. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The value type </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00069">69</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00097">97</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2d2fd772fc1a945ab88556e95db62b9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d2fd772fc1a945ab88556e95db62b9b">&#9670;&nbsp;</a></span>~Component()</h2>
@@ -165,7 +181,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00101">101</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00157">157</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
 
 </div>
 </div>
@@ -218,9 +234,20 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Adds this component's dynamic stamp to the target stamp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destination</td><td>The stamp to be added to. </td></tr>
+    <tr><td class="paramname">solutionVector</td><td>A vector containing all past solutions to the circuit </td></tr>
+    <tr><td class="paramname">currentSolutionIndex</td><td>The current timeStep index </td></tr>
+    <tr><td class="paramname">timestep</td><td>The length of each time step </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Reimplemented in <a class="el" href="struct_sinusoidal_voltage_source.html#a94ad0f0105ce44f720efecdc92b0674e">SinusoidalVoltageSource&lt; T &gt;</a>, <a class="el" href="struct_inductor.html#a23920b6109dd1d528c6eb31606a61a22">Inductor&lt; T &gt;</a>, <a class="el" href="struct_capacitor.html#ab48fb03032ce774c2003e75e4ea6e6ed">Capacitor&lt; T &gt;</a>, and <a class="el" href="struct_s_parameter_block.html#a17dfad1ceda5be326f9a042c5dcbab2a">SParameterBlock&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00077">77</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00115">115</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
 
 </div>
 </div>
@@ -272,9 +299,20 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>adds this component's non-linear stamp to the target stamp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destination</td><td>The stamp to be added to. </td></tr>
+    <tr><td class="paramname">solutionVector</td><td>A vector containing all past solutions to the circuit </td></tr>
+    <tr><td class="paramname">currentSolutionIndex</td><td>The current timeStep index </td></tr>
+    <tr><td class="paramname">timestep</td><td>The length of each time step </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Reimplemented in <a class="el" href="struct_diode.html#a9d78f60d3a4733aba3bd0b9c4d07d0b2">Diode&lt; T &gt;</a>, and <a class="el" href="struct_b_j_t_n.html#a55e9ba6de8139ebd171f74a4463a568a">BJTN&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00084">84</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00128">128</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
 
 </div>
 </div>
@@ -304,9 +342,17 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Adds this component's static stamp to the target stamp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destination</td><td>The stamp to be added to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Reimplemented in <a class="el" href="struct_voltage_source.html#a894c6fe56362216f2cfc162503099f51">VoltageSource&lt; T &gt;</a>, <a class="el" href="struct_resistor.html#ac5019c46bc6da5b1fa1b3aed9a36c1ef">Resistor&lt; T &gt;</a>, and <a class="el" href="struct_current_source.html#ab65113218e8f394d2725d7964703f003">CurrentSource&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00072">72</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00104">104</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
 
 </div>
 </div>
@@ -358,7 +404,18 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00096">96</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
+<p>Called as a helper to add the component to the elements class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>The line to be parsed. </td></tr>
+    <tr><td class="paramname">elements</td><td>A reference to the elements object the component is being added to. </td></tr>
+    <tr><td class="paramname">numNodes</td><td>A reference to the current max number of nodes. </td></tr>
+    <tr><td class="paramname">numCurrents</td><td>A reference to the current max number of currents. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00152">152</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
 
 </div>
 </div>
@@ -404,9 +461,19 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Updates any stored state based on the current solution index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">solutionVector</td><td>A vector containing all past solutions to the circuit </td></tr>
+    <tr><td class="paramname">currentSolutionIndex</td><td>The current timeStep index </td></tr>
+    <tr><td class="paramname">timestep</td><td>The length of each time step </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Reimplemented in <a class="el" href="struct_s_parameter_block.html#a57fe696928bab22f9a0a1b276eb083b9">SParameterBlock&lt; T &gt;</a>, <a class="el" href="struct_sinusoidal_voltage_source.html#a087ae397b4b27f65e71ed73a720ac65a">SinusoidalVoltageSource&lt; T &gt;</a>, <a class="el" href="struct_inductor.html#a3c0e4730d826ea906a1ed86a46f8d4f6">Inductor&lt; T &gt;</a>, <a class="el" href="struct_diode.html#a74a08b4be0c89d8e6dc9b4bd5958162f">Diode&lt; T &gt;</a>, <a class="el" href="struct_capacitor.html#a18d553bc74432f9962193dd11f8f90d3">Capacitor&lt; T &gt;</a>, and <a class="el" href="struct_b_j_t_n.html#a3698c455e894a532c28aa3beafded9fd">BJTN&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00090">90</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00139">139</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
 
 </div>
 </div>
@@ -425,7 +492,9 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00070">70</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
+<p>The designator as in the netlist for e.g. </p>
+
+<p class="definition">Definition at line <a class="el" href="_component_8hpp_source.html#l00099">99</a> of file <a class="el" href="_component_8hpp_source.html">Component.hpp</a>.</p>
 
 </div>
 </div>

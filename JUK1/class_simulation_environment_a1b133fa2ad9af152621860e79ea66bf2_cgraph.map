@@ -1,9 +1,9 @@
 <map id="SimulationEnvironment::simulate" name="SimulationEnvironment::simulate">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,160,145"/>
-<area shape="rect" id="node2" href="$class_simulation_environment.html#a7cdefdab3f462a0ca724b0883b5e69fe" title=" " alt="" coords="239,5,393,47"/>
-<area shape="rect" id="node3" href="$struct_circuit_elements.html#af9a057346ae12644ab9ad174c042969f" title=" " alt="" coords="230,71,402,112"/>
-<area shape="rect" id="node6" href="$class_simulation_environment.html#aa69a97dfee1564d60a4ceebb27f5e3f8" title=" " alt="" coords="239,136,393,177"/>
-<area shape="rect" id="node7" href="$struct_circuit_elements.html#ab741f41e89cf6ec665430a6b67cca1e9" title=" " alt="" coords="208,202,424,229"/>
-<area shape="rect" id="node4" href="$struct_circuit_elements.html#ab7e3a77c07ccf192c2d090c9f6951872" title=" " alt="" coords="472,71,644,112"/>
-<area shape="rect" id="node5" href="$struct_circuit_elements.html#a03d1004bedf06fe776451ca815fcfd7d" title=" " alt="" coords="692,71,864,112"/>
+<area shape="rect" id="node1" title="Where a lot of the magic starts. This is what runs the simulation." alt="" coords="5,104,160,145"/>
+<area shape="rect" id="node2" href="$class_simulation_environment.html#a7cdefdab3f462a0ca724b0883b5e69fe" title="Simple function to dump the output of the simulator in a matlab table readable format" alt="" coords="239,5,393,47"/>
+<area shape="rect" id="node3" href="$struct_circuit_elements.html#af9a057346ae12644ab9ad174c042969f" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="230,71,402,112"/>
+<area shape="rect" id="node6" href="$class_simulation_environment.html#aa69a97dfee1564d60a4ceebb27f5e3f8" title="Similar to printGraph, but instead can plot multiple series on the same graph." alt="" coords="239,136,393,177"/>
+<area shape="rect" id="node7" href="$struct_circuit_elements.html#ab741f41e89cf6ec665430a6b67cca1e9" title="Updates the components at the end of each time step. Applies to dynamic and non&#45;linear components." alt="" coords="208,202,424,229"/>
+<area shape="rect" id="node4" href="$struct_circuit_elements.html#ab7e3a77c07ccf192c2d090c9f6951872" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="472,71,644,112"/>
+<area shape="rect" id="node5" href="$struct_circuit_elements.html#a03d1004bedf06fe776451ca815fcfd7d" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="692,71,864,112"/>
 </map>

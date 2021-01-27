@@ -150,6 +150,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html">CircuitElements&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a glorified container for the different types of components.  <a href="struct_circuit_elements.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -158,6 +159,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="_circuit_elements_8hpp.html#a4ccae5668f9cfb392f29e562913a7904a1eda619dce71ff04f428910e81b11d4c">DynamicSolution</a> = 1
 , <a class="el" href="_circuit_elements_8hpp.html#a4ccae5668f9cfb392f29e562913a7904afbb2d65be24100034003ee6b5f18359c">NonLinearSolution</a> = 2
  }</td></tr>
+<tr class="memdesc:a4ccae5668f9cfb392f29e562913a7904"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum to track how far we want to go in a solution.  <a href="_circuit_elements_8hpp.html#a4ccae5668f9cfb392f29e562913a7904">More...</a><br /></td></tr>
 <tr class="separator:a4ccae5668f9cfb392f29e562913a7904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81f78fc173dedefe5a049c0aa3eed2c0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_circuit_elements_8hpp.html#a81f78fc173dedefe5a049c0aa3eed2c0">ComponentType</a> { <br />
 &#160;&#160;<a class="el" href="_circuit_elements_8hpp.html#a81f78fc173dedefe5a049c0aa3eed2c0a858963014279696926a05dcfe822b2d9">Resistor</a>
@@ -170,6 +172,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="_circuit_elements_8hpp.html#a81f78fc173dedefe5a049c0aa3eed2c0a0f31a45b6daa6a5478050c36732a2549">Diode</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a81f78fc173dedefe5a049c0aa3eed2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum for component types. Current unused.  <a href="_circuit_elements_8hpp.html#a81f78fc173dedefe5a049c0aa3eed2c0">More...</a><br /></td></tr>
 <tr class="separator:a81f78fc173dedefe5a049c0aa3eed2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -192,6 +195,8 @@ Enumerations</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>An enum for component types. Current unused. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a81f78fc173dedefe5a049c0aa3eed2c0a858963014279696926a05dcfe822b2d9"></a>Resistor&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a81f78fc173dedefe5a049c0aa3eed2c0af2b00b9e4a462ab3f2e1c97495e8bb3f"></a>Capacitor&#160;</td><td class="fielddoc"></td></tr>
@@ -202,7 +207,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a81f78fc173dedefe5a049c0aa3eed2c0a0f31a45b6daa6a5478050c36732a2549"></a>Diode&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_circuit_elements_8hpp_source.html#l00019">19</a> of file <a class="el" href="_circuit_elements_8hpp_source.html">CircuitElements.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_circuit_elements_8hpp_source.html#l00021">21</a> of file <a class="el" href="_circuit_elements_8hpp_source.html">CircuitElements.hpp</a>.</p>
 
 </div>
 </div>
@@ -225,13 +230,15 @@ Enumerations</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>An enum to track how far we want to go in a solution. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4ccae5668f9cfb392f29e562913a7904ac8bf6575bb2ffeaf0a5e115e4d19b5b7"></a>StaticSolution&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4ccae5668f9cfb392f29e562913a7904a1eda619dce71ff04f428910e81b11d4c"></a>DynamicSolution&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4ccae5668f9cfb392f29e562913a7904afbb2d65be24100034003ee6b5f18359c"></a>NonLinearSolution&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_circuit_elements_8hpp_source.html#l00013">13</a> of file <a class="el" href="_circuit_elements_8hpp_source.html">CircuitElements.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_circuit_elements_8hpp_source.html#l00014">14</a> of file <a class="el" href="_circuit_elements_8hpp_source.html">CircuitElements.hpp</a>.</p>
 
 </div>
 </div>

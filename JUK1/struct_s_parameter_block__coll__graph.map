@@ -1,4 +1,4 @@
 <map id="SParameterBlock&lt; T &gt;" name="SParameterBlock&lt; T &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,160,107"/>
-<area shape="rect" id="node2" href="$struct_component.html" title=" " alt="" coords="23,5,142,32"/>
+<area shape="rect" id="node1" title="A DTIR based model of an s&#45;parameter block." alt="" coords="5,80,160,107"/>
+<area shape="rect" id="node2" href="$struct_component.html" title="A template base class to define the fundamental things a component should define." alt="" coords="23,5,142,32"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="StaticLUPair&lt; T, M &gt;" name="StaticLUPair&lt; T, M &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="13,213,159,240"/>
+<area shape="rect" id="node1" title="A compile&#45;time sized L U and pivot grouping." alt="" coords="13,213,159,240"/>
 <area shape="rect" id="node2" href="$struct_static_matrix.html" title=" " alt="" coords="5,109,167,136"/>
-<area shape="rect" id="node3" href="$struct_static_matrix.html" title=" " alt="" coords="19,5,153,47"/>
+<area shape="rect" id="node3" href="$struct_static_matrix.html" title="A compile&#45;time sized matrix." alt="" coords="19,5,153,47"/>
 </map>

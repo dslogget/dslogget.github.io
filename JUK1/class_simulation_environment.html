@@ -89,27 +89,43 @@ $(document).ready(function(){initNavTree('class_simulation_environment.html','')
 </div><!--header-->
 <div class="contents">
 
+<p>The main class to hold all of the relevant simulation data.  
+ <a href="class_simulation_environment.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a88c21344d982fae4ed346091bb73e5aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa">SimulationEnvironment</a> (std::string netlistPath)</td></tr>
+<tr class="memdesc:a88c21344d982fae4ed346091bb73e5aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the simulation environment from a netlist.  <a href="class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa">More...</a><br /></td></tr>
 <tr class="separator:a88c21344d982fae4ed346091bb73e5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b133fa2ad9af152621860e79ea66bf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2">simulate</a> ()</td></tr>
+<tr class="memdesc:a1b133fa2ad9af152621860e79ea66bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where a lot of the magic starts. This is what runs the simulation.  <a href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2">More...</a><br /></td></tr>
 <tr class="separator:a1b133fa2ad9af152621860e79ea66bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b7a9380bde1a783739d4839c3720242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_environment.html#a5b7a9380bde1a783739d4839c3720242">printGraph</a> (size_t node)</td></tr>
+<tr class="memdesc:a5b7a9380bde1a783739d4839c3720242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a single node's (or current's) time series to a graph, saving as both eps and png.  <a href="class_simulation_environment.html#a5b7a9380bde1a783739d4839c3720242">More...</a><br /></td></tr>
 <tr class="separator:a5b7a9380bde1a783739d4839c3720242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa69a97dfee1564d60a4ceebb27f5e3f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_environment.html#aa69a97dfee1564d60a4ceebb27f5e3f8">printMultipleOnGraph</a> (std::vector&lt; size_t &gt; nodeVec, std::string suffix=&quot;&quot;)</td></tr>
+<tr class="memdesc:aa69a97dfee1564d60a4ceebb27f5e3f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to printGraph, but instead can plot multiple series on the same graph.  <a href="class_simulation_environment.html#aa69a97dfee1564d60a4ceebb27f5e3f8">More...</a><br /></td></tr>
 <tr class="separator:aa69a97dfee1564d60a4ceebb27f5e3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cdefdab3f462a0ca724b0883b5e69fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simulation_environment.html#a7cdefdab3f462a0ca724b0883b5e69fe">dataDump</a> ()</td></tr>
+<tr class="memdesc:a7cdefdab3f462a0ca724b0883b5e69fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple function to dump the output of the simulator in a matlab table readable format <br  />
+  <a href="class_simulation_environment.html#a7cdefdab3f462a0ca724b0883b5e69fe">More...</a><br /></td></tr>
 <tr class="separator:a7cdefdab3f462a0ca724b0883b5e69fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename VT&gt;<br />
 class SimulationEnvironment&lt; VT &gt;</h3>
 
+<p>The main class to hold all of the relevant simulation data. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">VT</td><td>The type used for values. e.g. double, float, etc </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00030">30</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00035">35</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a88c21344d982fae4ed346091bb73e5aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88c21344d982fae4ed346091bb73e5aa">&#9670;&nbsp;</a></span>SimulationEnvironment()</h2>
@@ -137,13 +153,21 @@ template&lt;typename VT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00032">32</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
+<p>Setup the simulation environment from a netlist. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">netlistPath</td><td>Path to the netlist that is going to be used in the simulation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00040">40</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_simulation_environment_a88c21344d982fae4ed346091bb73e5aa_cgraph.png" border="0" usemap="#aclass_simulation_environment_a88c21344d982fae4ed346091bb73e5aa_cgraph" alt=""/></div>
 <map name="aclass_simulation_environment_a88c21344d982fae4ed346091bb73e5aa_cgraph" id="aclass_simulation_environment_a88c21344d982fae4ed346091bb73e5aa_cgraph">
-<area shape="rect" title=" " alt="" coords="5,226,168,267"/>
+<area shape="rect" title="Setup the simulation environment from a netlist." alt="" coords="5,226,168,267"/>
 <area shape="rect" href="struct_b_j_t_n.html#acd13cdb03aefb834a157fab9f1e6a7f6" title=" " alt="" coords="255,5,406,32"/>
 <area shape="rect" href="struct_capacitor.html#a1c191824148aba285e5a5011d58c89ce" title=" " alt="" coords="243,56,418,83"/>
 <area shape="rect" href="struct_current_source.html#aaafadebb23bf59c8578f07867f981a20" title=" " alt="" coords="229,107,432,133"/>
@@ -153,9 +177,9 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="struct_sinusoidal_voltage_source.html#a3e77f464946d510537b57dc456c3d41c" title=" " alt="" coords="247,310,414,351"/>
 <area shape="rect" href="struct_s_parameter_block.html#a9195f446cf3c7ea44523c316f7fb45c3" title=" " alt="" coords="219,427,442,453"/>
 <area shape="rect" href="struct_voltage_source.html#a5b47f508fac7776ac13c696e7fbec36f" title=" " alt="" coords="228,376,433,403"/>
-<area shape="rect" href="struct_circuit_elements.html#a70d6103865d02c4ecf894be0595747b2" title=" " alt="" coords="216,477,445,504"/>
-<area shape="rect" href="_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40" title=" " alt="" coords="566,208,675,235"/>
-<area shape="rect" href="struct_s_parameter_block.html#a91a50c8dd7a5f9d58892e5e36b77d752" title=" " alt="" coords="493,427,748,453"/>
+<area shape="rect" href="struct_circuit_elements.html#a70d6103865d02c4ecf894be0595747b2" title="Updates the size of all stamps." alt="" coords="216,477,445,504"/>
+<area shape="rect" href="_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40" title="a helper function to aid in the construction of regexes for parsing netlist files" alt="" coords="566,208,675,235"/>
+<area shape="rect" href="struct_s_parameter_block.html#a91a50c8dd7a5f9d58892e5e36b77d752" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="493,427,748,453"/>
 <area shape="rect" href="_force_causal_8hpp.html#a1e25332eab5d78520fe2142b32724a27" title=" " alt="" coords="796,427,887,453"/>
 <area shape="rect" href="namespace_force_causal.html#adc77641ea6b87c6bfdae84b12dee33e9" title=" " alt="" coords="1287,364,1398,391"/>
 <area shape="rect" href="namespace_force_causal.html#a33497b490cbf0779950b663c8f88ac73" title=" " alt="" coords="935,401,1077,428"/>
@@ -193,14 +217,17 @@ template&lt;typename VT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00213">213</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
+<p>Simple function to dump the output of the simulator in a matlab table readable format <br  />
+ </p>
+
+<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00239">239</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_simulation_environment_a7cdefdab3f462a0ca724b0883b5e69fe_icgraph.png" border="0" usemap="#aclass_simulation_environment_a7cdefdab3f462a0ca724b0883b5e69fe_icgraph" alt=""/></div>
 <map name="aclass_simulation_environment_a7cdefdab3f462a0ca724b0883b5e69fe_icgraph" id="aclass_simulation_environment_a7cdefdab3f462a0ca724b0883b5e69fe_icgraph">
-<area shape="rect" title=" " alt="" coords="307,5,461,47"/>
-<area shape="rect" href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2" title=" " alt="" coords="104,5,259,47"/>
+<area shape="rect" title="Simple function to dump the output of the simulator in a matlab table readable format" alt="" coords="307,5,461,47"/>
+<area shape="rect" href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2" title="Where a lot of the magic starts. This is what runs the simulation." alt="" coords="104,5,259,47"/>
 <area shape="rect" href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,56,39"/>
 </map>
 </div>
@@ -233,7 +260,15 @@ template&lt;typename VT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00164">164</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
+<p>Outputs a single node's (or current's) time series to a graph, saving as both eps and png. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>The index of the node to plot </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00183">183</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
 
 </div>
 </div>
@@ -273,14 +308,23 @@ template&lt;typename VT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00187">187</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
+<p>Similar to printGraph, but instead can plot multiple series on the same graph. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodeVec</td><td>A vector of node indices </td></tr>
+    <tr><td class="paramname">suffix</td><td>What's appended to "Graph" to make the name of the output file. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00211">211</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_simulation_environment_aa69a97dfee1564d60a4ceebb27f5e3f8_icgraph.png" border="0" usemap="#aclass_simulation_environment_aa69a97dfee1564d60a4ceebb27f5e3f8_icgraph" alt=""/></div>
 <map name="aclass_simulation_environment_aa69a97dfee1564d60a4ceebb27f5e3f8_icgraph" id="aclass_simulation_environment_aa69a97dfee1564d60a4ceebb27f5e3f8_icgraph">
-<area shape="rect" title=" " alt="" coords="307,5,461,47"/>
-<area shape="rect" href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2" title=" " alt="" coords="104,5,259,47"/>
+<area shape="rect" title="Similar to printGraph, but instead can plot multiple series on the same graph." alt="" coords="307,5,461,47"/>
+<area shape="rect" href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2" title="Where a lot of the magic starts. This is what runs the simulation." alt="" coords="104,5,259,47"/>
 <area shape="rect" href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,56,39"/>
 </map>
 </div>
@@ -312,19 +356,24 @@ template&lt;typename VT &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00137">137</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
+<p>Where a lot of the magic starts. This is what runs the simulation. </p>
+<p>@detail This function is a simple newton-raphson solver, it still has room for improvement, such as early termination when the loop converges. <br  />
+<br  />
+ After the simulation has run to completion, the raw data is dumped, and any graphs that were due to be generated are created. </p>
+
+<p class="definition">Definition at line <a class="el" href="_simulator_8hpp_source.html#l00152">152</a> of file <a class="el" href="_simulator_8hpp_source.html">Simulator.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_simulation_environment_a1b133fa2ad9af152621860e79ea66bf2_cgraph.png" border="0" usemap="#aclass_simulation_environment_a1b133fa2ad9af152621860e79ea66bf2_cgraph" alt=""/></div>
 <map name="aclass_simulation_environment_a1b133fa2ad9af152621860e79ea66bf2_cgraph" id="aclass_simulation_environment_a1b133fa2ad9af152621860e79ea66bf2_cgraph">
-<area shape="rect" title=" " alt="" coords="5,104,160,145"/>
-<area shape="rect" href="class_simulation_environment.html#a7cdefdab3f462a0ca724b0883b5e69fe" title=" " alt="" coords="239,5,393,47"/>
-<area shape="rect" href="struct_circuit_elements.html#af9a057346ae12644ab9ad174c042969f" title=" " alt="" coords="230,71,402,112"/>
-<area shape="rect" href="class_simulation_environment.html#aa69a97dfee1564d60a4ceebb27f5e3f8" title=" " alt="" coords="239,136,393,177"/>
-<area shape="rect" href="struct_circuit_elements.html#ab741f41e89cf6ec665430a6b67cca1e9" title=" " alt="" coords="208,202,424,229"/>
-<area shape="rect" href="struct_circuit_elements.html#ab7e3a77c07ccf192c2d090c9f6951872" title=" " alt="" coords="472,71,644,112"/>
-<area shape="rect" href="struct_circuit_elements.html#a03d1004bedf06fe776451ca815fcfd7d" title=" " alt="" coords="692,71,864,112"/>
+<area shape="rect" title="Where a lot of the magic starts. This is what runs the simulation." alt="" coords="5,104,160,145"/>
+<area shape="rect" href="class_simulation_environment.html#a7cdefdab3f462a0ca724b0883b5e69fe" title="Simple function to dump the output of the simulator in a matlab table readable format" alt="" coords="239,5,393,47"/>
+<area shape="rect" href="struct_circuit_elements.html#af9a057346ae12644ab9ad174c042969f" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="230,71,402,112"/>
+<area shape="rect" href="class_simulation_environment.html#aa69a97dfee1564d60a4ceebb27f5e3f8" title="Similar to printGraph, but instead can plot multiple series on the same graph." alt="" coords="239,136,393,177"/>
+<area shape="rect" href="struct_circuit_elements.html#ab741f41e89cf6ec665430a6b67cca1e9" title="Updates the components at the end of each time step. Applies to dynamic and non&#45;linear components." alt="" coords="208,202,424,229"/>
+<area shape="rect" href="struct_circuit_elements.html#ab7e3a77c07ccf192c2d090c9f6951872" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="472,71,644,112"/>
+<area shape="rect" href="struct_circuit_elements.html#a03d1004bedf06fe776451ca815fcfd7d" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="692,71,864,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -332,7 +381,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_simulation_environment_a1b133fa2ad9af152621860e79ea66bf2_icgraph.png" border="0" usemap="#aclass_simulation_environment_a1b133fa2ad9af152621860e79ea66bf2_icgraph" alt=""/></div>
 <map name="aclass_simulation_environment_a1b133fa2ad9af152621860e79ea66bf2_icgraph" id="aclass_simulation_environment_a1b133fa2ad9af152621860e79ea66bf2_icgraph">
-<area shape="rect" title=" " alt="" coords="104,5,259,47"/>
+<area shape="rect" title="Where a lot of the magic starts. This is what runs the simulation." alt="" coords="104,5,259,47"/>
 <area shape="rect" href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,56,39"/>
 </map>
 </div>

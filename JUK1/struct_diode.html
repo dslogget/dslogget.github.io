@@ -91,14 +91,17 @@ $(document).ready(function(){initNavTree('struct_diode.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
+<p>An ebbers moll diode model.  
+ <a href="struct_diode.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Diode&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_diode__inherit__graph.png" border="0" usemap="#a_diode_3_01_t_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_diode_3_01_t_01_4_inherit__map" id="a_diode_3_01_t_01_4_inherit__map">
-<area shape="rect" title=" " alt="" coords="21,80,108,107"/>
-<area shape="rect" href="struct_component.html" title=" " alt="" coords="5,5,124,32"/>
+<area shape="rect" title="An ebbers moll diode model." alt="" coords="21,80,108,107"/>
+<area shape="rect" href="struct_component.html" title="A template base class to define the fundamental things a component should define." alt="" coords="5,5,124,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -106,21 +109,25 @@ Collaboration diagram for Diode&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_diode__coll__graph.png" border="0" usemap="#a_diode_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="a_diode_3_01_t_01_4_coll__map" id="a_diode_3_01_t_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="21,80,108,107"/>
-<area shape="rect" href="struct_component.html" title=" " alt="" coords="5,5,124,32"/>
+<area shape="rect" title="An ebbers moll diode model." alt="" coords="21,80,108,107"/>
+<area shape="rect" href="struct_component.html" title="A template base class to define the fundamental things a component should define." alt="" coords="5,5,124,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d78f60d3a4733aba3bd0b9c4d07d0b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_diode.html#a9d78f60d3a4733aba3bd0b9c4d07d0b2">addNonLinearStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;stamp, const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T timestep=0) const</td></tr>
+<tr class="memdesc:a9d78f60d3a4733aba3bd0b9c4d07d0b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds this component's non-linear stamp to the target stamp.  <a href="struct_diode.html#a9d78f60d3a4733aba3bd0b9c4d07d0b2">More...</a><br /></td></tr>
 <tr class="separator:a9d78f60d3a4733aba3bd0b9c4d07d0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a08b4be0c89d8e6dc9b4bd5958162f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_diode.html#a74a08b4be0c89d8e6dc9b4bd5958162f">updateStoredState</a> (const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T timestep)</td></tr>
+<tr class="memdesc:a74a08b4be0c89d8e6dc9b4bd5958162f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates any stored state based on the current solution index.  <a href="struct_diode.html#a74a08b4be0c89d8e6dc9b4bd5958162f">More...</a><br /></td></tr>
 <tr class="separator:a74a08b4be0c89d8e6dc9b4bd5958162f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_component.html">Component&lt; T &gt;</a></td></tr>
 <tr class="memitem:a84e4548bed7632f47c51919d2d489c77 inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a84e4548bed7632f47c51919d2d489c77">addStaticStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;destination) const</td></tr>
+<tr class="memdesc:a84e4548bed7632f47c51919d2d489c77 inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds this component's static stamp to the target stamp.  <a href="struct_component.html#a84e4548bed7632f47c51919d2d489c77">More...</a><br /></td></tr>
 <tr class="separator:a84e4548bed7632f47c51919d2d489c77 inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab572c67300b95e6ab69df0c2b856c4fe inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#ab572c67300b95e6ab69df0c2b856c4fe">addDynamicStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;destination, const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T timestep) const</td></tr>
+<tr class="memdesc:ab572c67300b95e6ab69df0c2b856c4fe inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds this component's dynamic stamp to the target stamp.  <a href="struct_component.html#ab572c67300b95e6ab69df0c2b856c4fe">More...</a><br /></td></tr>
 <tr class="separator:ab572c67300b95e6ab69df0c2b856c4fe inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d2fd772fc1a945ab88556e95db62b9b inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a2d2fd772fc1a945ab88556e95db62b9b">~Component</a> ()</td></tr>
 <tr class="separator:a2d2fd772fc1a945ab88556e95db62b9b inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +138,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aed72c63ff272a2b13b70a4b7be4c9e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_struct_component"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_struct_component')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="struct_component.html">Component&lt; T &gt;</a></td></tr>
 <tr class="memitem:ac5e46c014be509bef88c6e9e0ba7f457 inherit pub_static_methods_struct_component"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#ac5e46c014be509bef88c6e9e0ba7f457">addToElements</a> (const std::string &amp;line, <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt; &amp;elements, size_t &amp;numNodes, size_t &amp;numCurrents)</td></tr>
+<tr class="memdesc:ac5e46c014be509bef88c6e9e0ba7f457 inherit pub_static_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called as a helper to add the component to the elements class.  <a href="struct_component.html#ac5e46c014be509bef88c6e9e0ba7f457">More...</a><br /></td></tr>
 <tr class="separator:ac5e46c014be509bef88c6e9e0ba7f457 inherit pub_static_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -149,14 +157,22 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af333a19a24fd2a286fa74e68dbebff8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_component"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_component')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_component.html">Component&lt; T &gt;</a></td></tr>
 <tr class="memitem:aed9ba9f3e2315cf384ef3e6eb45c8010 inherit pub_attribs_struct_component"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">designator</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:aed9ba9f3e2315cf384ef3e6eb45c8010 inherit pub_attribs_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">The designator as in the netlist for e.g.  <a href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">More...</a><br /></td></tr>
 <tr class="separator:aed9ba9f3e2315cf384ef3e6eb45c8010 inherit pub_attribs_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 struct Diode&lt; T &gt;</h3>
 
+<p>An ebbers moll diode model. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00007">7</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00011">11</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9d78f60d3a4733aba3bd0b9c4d07d0b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d78f60d3a4733aba3bd0b9c4d07d0b2">&#9670;&nbsp;</a></span>addNonLinearStampTo()</h2>
@@ -173,7 +189,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">void <a class="el" href="struct_diode.html">Diode</a>&lt; T &gt;::addNonLinearStampTo </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>stamp</em>, </td>
+          <td class="paramname"><em>destination</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -206,9 +222,20 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>adds this component's non-linear stamp to the target stamp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destination</td><td>The stamp to be added to. </td></tr>
+    <tr><td class="paramname">solutionVector</td><td>A vector containing all past solutions to the circuit </td></tr>
+    <tr><td class="paramname">currentSolutionIndex</td><td>The current timeStep index </td></tr>
+    <tr><td class="paramname">timestep</td><td>The length of each time step </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Reimplemented from <a class="el" href="struct_component.html#a44de5074a86d89d84ad7166f0c64a973">Component&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00020">20</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00024">24</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 
 </div>
 </div>
@@ -260,14 +287,14 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00062">62</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00066">66</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_cgraph.png" border="0" usemap="#astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_cgraph" alt=""/></div>
 <map name="astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_cgraph" id="astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,159,32"/>
-<area shape="rect" href="_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40" title=" " alt="" coords="207,5,316,32"/>
+<area shape="rect" href="_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40" title="a helper function to aid in the construction of regexes for parsing netlist files" alt="" coords="207,5,316,32"/>
 </map>
 </div>
 <div class="dynheader">
@@ -276,7 +303,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="struct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_icgraph.png" border="0" usemap="#astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_icgraph" alt=""/></div>
 <map name="astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_icgraph" id="astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_icgraph">
 <area shape="rect" title=" " alt="" coords="216,13,369,39"/>
-<area shape="rect" href="class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title=" " alt="" coords="5,5,168,47"/>
+<area shape="rect" href="class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title="Setup the simulation environment from a netlist." alt="" coords="5,5,168,47"/>
 </map>
 </div>
 
@@ -324,9 +351,19 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Updates any stored state based on the current solution index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">solutionVector</td><td>A vector containing all past solutions to the circuit </td></tr>
+    <tr><td class="paramname">currentSolutionIndex</td><td>The current timeStep index </td></tr>
+    <tr><td class="paramname">timestep</td><td>The length of each time step </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Reimplemented from <a class="el" href="struct_component.html#ab932580c43337bf2208c18b07097774e">Component&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00057">57</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00061">61</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +382,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00014">14</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00018">18</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 
 </div>
 </div>
@@ -363,7 +400,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00012">12</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00016">16</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 
 </div>
 </div>
@@ -381,7 +418,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00009">9</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00013">13</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 
 </div>
 </div>
@@ -399,7 +436,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00010">10</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00014">14</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 
 </div>
 </div>
@@ -417,7 +454,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00016">16</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00020">20</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 
 </div>
 </div>
@@ -435,7 +472,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00013">13</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00017">17</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 
 </div>
 </div>

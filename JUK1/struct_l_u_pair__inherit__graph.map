@@ -1,4 +1,4 @@
 <map id="LUPair&lt; T &gt;" name="LUPair&lt; T &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="10,5,102,32"/>
+<area shape="rect" id="node1" title="A helper class to store the L U and pivot matrices. Mainly useful in solving systems of equations." alt="" coords="10,5,102,32"/>
 <area shape="rect" id="node2" href="$struct_l_u_pair.html" title=" " alt="" coords="5,95,107,121"/>
 </map>

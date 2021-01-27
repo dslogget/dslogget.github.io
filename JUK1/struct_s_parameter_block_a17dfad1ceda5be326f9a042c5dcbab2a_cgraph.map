@@ -1,5 +1,5 @@
 <map id="SParameterBlock::addDynamicStampTo" name="SParameterBlock::addDynamicStampTo">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,209,47"/>
-<area shape="rect" id="node2" href="$struct_s_parameter_block.html#a5b76576a1e791d43acaf2ebf089ff748" title=" " alt="" coords="257,13,412,39"/>
-<area shape="rect" id="node3" href="$struct_s_parameter_block.html#ab7cf363417479e181f18a258c2001b47" title=" " alt="" coords="460,5,659,47"/>
+<area shape="rect" id="node1" title="Adds this component&#39;s dynamic stamp to the target stamp." alt="" coords="5,5,209,47"/>
+<area shape="rect" id="node2" href="$struct_s_parameter_block.html#a5b76576a1e791d43acaf2ebf089ff748" title="Determines the equivalent port voltage source by convolving the (historic) a wave values with the DTI..." alt="" coords="257,13,412,39"/>
+<area shape="rect" id="node3" href="$struct_s_parameter_block.html#ab7cf363417479e181f18a258c2001b47" title="performs a linear interpolation and returns the a wave value for use in the convolution." alt="" coords="460,5,659,47"/>
 </map>

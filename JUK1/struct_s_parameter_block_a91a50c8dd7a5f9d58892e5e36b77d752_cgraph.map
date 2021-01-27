@@ -1,5 +1,5 @@
 <map id="SParameterBlock::readInTouchstoneFile" name="SParameterBlock::readInTouchstoneFile">
-<area shape="rect" id="node1" title=" " alt="" coords="5,63,260,89"/>
+<area shape="rect" id="node1" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="5,63,260,89"/>
 <area shape="rect" id="node2" href="$_force_causal_8hpp.html#a1e25332eab5d78520fe2142b32724a27" title=" " alt="" coords="308,63,399,89"/>
 <area shape="rect" id="node3" href="$namespace_force_causal.html#adc77641ea6b87c6bfdae84b12dee33e9" title=" " alt="" coords="799,12,910,39"/>
 <area shape="rect" id="node4" href="$namespace_force_causal.html#a33497b490cbf0779950b663c8f88ac73" title=" " alt="" coords="447,37,589,64"/>

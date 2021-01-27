@@ -1,4 +1,4 @@
 <map id="CurrentSource&lt; T &gt;" name="CurrentSource&lt; T &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,141,107"/>
-<area shape="rect" id="node2" href="$struct_component.html" title=" " alt="" coords="14,5,133,32"/>
+<area shape="rect" id="node1" title="An ideal current source." alt="" coords="5,80,141,107"/>
+<area shape="rect" id="node2" href="$struct_component.html" title="A template base class to define the fundamental things a component should define." alt="" coords="14,5,133,32"/>
 </map>

@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title=" " alt="" coords="928,38,967,65"/>
 <area shape="rect" id="node2" href="$_force_causal_8hpp.html#a1e25332eab5d78520fe2142b32724a27" title=" " alt="" coords="789,13,880,39"/>
 <area shape="rect" id="node6" href="$fft_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="809,63,860,90"/>
-<area shape="rect" id="node3" href="$struct_s_parameter_block.html#a91a50c8dd7a5f9d58892e5e36b77d752" title=" " alt="" coords="487,13,741,39"/>
+<area shape="rect" id="node3" href="$struct_s_parameter_block.html#a91a50c8dd7a5f9d58892e5e36b77d752" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="487,13,741,39"/>
 <area shape="rect" id="node4" href="$struct_s_parameter_block.html#a9195f446cf3c7ea44523c316f7fb45c3" title=" " alt="" coords="216,13,439,39"/>
-<area shape="rect" id="node5" href="$class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title=" " alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node5" href="$class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title="Setup the simulation environment from a netlist." alt="" coords="5,5,168,47"/>
 </map>
