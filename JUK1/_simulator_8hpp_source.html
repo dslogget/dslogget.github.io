@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('_simulator_8hpp_source.html',''); init
 <div class="contents">
 <a href="_simulator_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _SIMULATOR_HPP_INC_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _SIMULATOR_HPP_INC_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="matplotlibcpp_8h.html">matplotlibcpp.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;matplotlibcpp.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_circuit_elements_8hpp.html">CircuitElements/CircuitElements.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_dynamic_matrix_8hpp.html">Maths/DynamicMatrix.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('_simulator_8hpp_source.html',''); init
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;   }</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
 <div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="class_simulation_environment.html#a5b7a9380bde1a783739d4839c3720242">  164</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_simulation_environment.html#a5b7a9380bde1a783739d4839c3720242">printGraph</a>( <span class="keywordtype">size_t</span> node ) {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keyword">namespace </span>plt = <a class="code" href="namespacematplotlibcpp.html">matplotlibcpp</a>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keyword">namespace </span>plt = matplotlibcpp;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      assert( node &gt; 0 );</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      std::vector&lt; double &gt; timeVector( steps );</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      std::vector&lt; double &gt; voltageNode( steps );</div>
@@ -258,22 +258,22 @@ $(document).ready(function(){initNavTree('_simulator_8hpp_source.html',''); init
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;         timeVector[ n ] = n * timestep;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      }</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <span class="comment">// Set the size of output image to 1200x780 pixels</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <a class="code" href="namespacematplotlibcpp.html#a91e91bcdcfc7632a917830bfe3f71ca3">plt::figure_size</a>( 1200, 780 );</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      plt::figure_size( 1200, 780 );</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="comment">// Plot line from given x and y data. Color is selected automatically.</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <a class="code" href="namespacematplotlibcpp.html#a06ac86c6fecaa5a9b3fb566bc31d6a3b">plt::plot</a>( timeVector, voltageNode );</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      plt::plot( timeVector, voltageNode );</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      std::string filename = <span class="stringliteral">&quot;Node &quot;</span> + std::to_string( node ) + <span class="stringliteral">&quot;.png&quot;</span>;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      std::string filenameEps = <span class="stringliteral">&quot;Node &quot;</span> + std::to_string( node ) + <span class="stringliteral">&quot;.eps&quot;</span>;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="comment">// std::cout &lt;&lt; &quot;Saving result to &quot; &lt;&lt; filename &lt;&lt; std::endl;</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <a class="code" href="namespacematplotlibcpp.html#a46a2869ed7cd834e93125a20e2a294c2">plt::save</a>( filename.c_str() );</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <a class="code" href="namespacematplotlibcpp.html#a46a2869ed7cd834e93125a20e2a294c2">plt::save</a>( filenameEps.c_str() );</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <a class="code" href="namespacematplotlibcpp.html#a62aaaf872c41a9d1b71add44c0cc0447">plt::close</a>();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      plt::save( filename.c_str() );</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      plt::save( filenameEps.c_str() );</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      plt::close();</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;   }</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;   <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="class_simulation_environment.html#aa69a97dfee1564d60a4ceebb27f5e3f8">  187</a></span>&#160;   <a class="code" href="class_simulation_environment.html#aa69a97dfee1564d60a4ceebb27f5e3f8">printMultipleOnGraph</a>( std::vector&lt; size_t &gt; nodeVec, std::string suffix = <span class="stringliteral">&quot;&quot;</span> ) {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <span class="keyword">namespace </span>plt = <a class="code" href="namespacematplotlibcpp.html">matplotlibcpp</a>;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <a class="code" href="namespacematplotlibcpp.html#a91e91bcdcfc7632a917830bfe3f71ca3">plt::figure_size</a>( 1200, 780 );</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <span class="keyword">namespace </span>plt = matplotlibcpp;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      plt::figure_size( 1200, 780 );</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> node : nodeVec ) {</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;         assert( node &gt; 0 );</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;         std::vector&lt; double &gt; timeVector( steps );</div>
@@ -286,15 +286,15 @@ $(document).ready(function(){initNavTree('_simulator_8hpp_source.html',''); init
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;         <span class="comment">// Plot line from given x and y data. Color is selected automatically.</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;         std::map&lt; std::string, std::string &gt; kwArgs;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;         kwArgs[ <span class="stringliteral">&quot;label&quot;</span> ] = <span class="stringliteral">&quot;Node &quot;</span> + std::to_string( node );</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;         <a class="code" href="namespacematplotlibcpp.html#a06ac86c6fecaa5a9b3fb566bc31d6a3b">plt::plot</a>( timeVector, voltageNode, kwArgs );</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;         plt::plot( timeVector, voltageNode, kwArgs );</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      <a class="code" href="namespacematplotlibcpp.html#a916bb5a9dc5f6a24877cc027bf4ee624">plt::legend</a>();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      plt::legend();</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      std::string name = <span class="stringliteral">&quot;Graph&quot;</span>;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      name += suffix;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      <a class="code" href="namespacematplotlibcpp.html#a46a2869ed7cd834e93125a20e2a294c2">plt::save</a>( name + <span class="stringliteral">&quot;.png&quot;</span> );</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <a class="code" href="namespacematplotlibcpp.html#a46a2869ed7cd834e93125a20e2a294c2">plt::save</a>( name + <span class="stringliteral">&quot;.eps&quot;</span> );</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <a class="code" href="namespacematplotlibcpp.html#a62aaaf872c41a9d1b71add44c0cc0447">plt::close</a>();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      plt::save( name + <span class="stringliteral">&quot;.png&quot;</span> );</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      plt::save( name + <span class="stringliteral">&quot;.eps&quot;</span> );</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      plt::close();</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;   }</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
 <div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="class_simulation_environment.html#a7cdefdab3f462a0ca724b0883b5e69fe">  213</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_simulation_environment.html#a7cdefdab3f462a0ca724b0883b5e69fe">dataDump</a>() {</div>
@@ -377,13 +377,6 @@ $(document).ready(function(){initNavTree('_simulator_8hpp_source.html',''); init
 <div class="ttc" id="aclass_simulation_environment_html_a7cdefdab3f462a0ca724b0883b5e69fe"><div class="ttname"><a href="class_simulation_environment.html#a7cdefdab3f462a0ca724b0883b5e69fe">SimulationEnvironment::dataDump</a></div><div class="ttdeci">void dataDump()</div><div class="ttdef"><b>Definition:</b> <a href="_simulator_8hpp_source.html#l00213">Simulator.hpp:213</a></div></div>
 <div class="ttc" id="aclass_simulation_environment_html_a88c21344d982fae4ed346091bb73e5aa"><div class="ttname"><a href="class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa">SimulationEnvironment::SimulationEnvironment</a></div><div class="ttdeci">SimulationEnvironment(std::string netlistPath)</div><div class="ttdef"><b>Definition:</b> <a href="_simulator_8hpp_source.html#l00032">Simulator.hpp:32</a></div></div>
 <div class="ttc" id="aclass_simulation_environment_html_aa69a97dfee1564d60a4ceebb27f5e3f8"><div class="ttname"><a href="class_simulation_environment.html#aa69a97dfee1564d60a4ceebb27f5e3f8">SimulationEnvironment::printMultipleOnGraph</a></div><div class="ttdeci">void printMultipleOnGraph(std::vector&lt; size_t &gt; nodeVec, std::string suffix=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="_simulator_8hpp_source.html#l00187">Simulator.hpp:187</a></div></div>
-<div class="ttc" id="amatplotlibcpp_8h_html"><div class="ttname"><a href="matplotlibcpp_8h.html">matplotlibcpp.h</a></div></div>
-<div class="ttc" id="anamespacematplotlibcpp_html"><div class="ttname"><a href="namespacematplotlibcpp.html">matplotlibcpp</a></div><div class="ttdef"><b>Definition:</b> <a href="matplotlibcpp_8h_source.html#l00049">matplotlibcpp.h:49</a></div></div>
-<div class="ttc" id="anamespacematplotlibcpp_html_a06ac86c6fecaa5a9b3fb566bc31d6a3b"><div class="ttname"><a href="namespacematplotlibcpp.html#a06ac86c6fecaa5a9b3fb566bc31d6a3b">matplotlibcpp::plot</a></div><div class="ttdeci">bool plot(const std::vector&lt; Numeric &gt; &amp;x, const std::vector&lt; Numeric &gt; &amp;y, const std::map&lt; std::string, std::string &gt; &amp;keywords)</div><div class="ttdef"><b>Definition:</b> <a href="matplotlibcpp_8h_source.html#l00486">matplotlibcpp.h:486</a></div></div>
-<div class="ttc" id="anamespacematplotlibcpp_html_a46a2869ed7cd834e93125a20e2a294c2"><div class="ttname"><a href="namespacematplotlibcpp.html#a46a2869ed7cd834e93125a20e2a294c2">matplotlibcpp::save</a></div><div class="ttdeci">void save(const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> <a href="matplotlibcpp_8h_source.html#l02430">matplotlibcpp.h:2430</a></div></div>
-<div class="ttc" id="anamespacematplotlibcpp_html_a62aaaf872c41a9d1b71add44c0cc0447"><div class="ttname"><a href="namespacematplotlibcpp.html#a62aaaf872c41a9d1b71add44c0cc0447">matplotlibcpp::close</a></div><div class="ttdeci">void close()</div><div class="ttdef"><b>Definition:</b> <a href="matplotlibcpp_8h_source.html#l02371">matplotlibcpp.h:2371</a></div></div>
-<div class="ttc" id="anamespacematplotlibcpp_html_a916bb5a9dc5f6a24877cc027bf4ee624"><div class="ttname"><a href="namespacematplotlibcpp.html#a916bb5a9dc5f6a24877cc027bf4ee624">matplotlibcpp::legend</a></div><div class="ttdeci">void legend()</div><div class="ttdef"><b>Definition:</b> <a href="matplotlibcpp_8h_source.html#l01763">matplotlibcpp.h:1763</a></div></div>
-<div class="ttc" id="anamespacematplotlibcpp_html_a91e91bcdcfc7632a917830bfe3f71ca3"><div class="ttname"><a href="namespacematplotlibcpp.html#a91e91bcdcfc7632a917830bfe3f71ca3">matplotlibcpp::figure_size</a></div><div class="ttdeci">void figure_size(size_t w, size_t h)</div><div class="ttdef"><b>Definition:</b> <a href="matplotlibcpp_8h_source.html#l01740">matplotlibcpp.h:1740</a></div></div>
 <div class="ttc" id="astruct_b_j_t_n_html_acd13cdb03aefb834a157fab9f1e6a7f6"><div class="ttname"><a href="struct_b_j_t_n.html#acd13cdb03aefb834a157fab9f1e6a7f6">BJTN::addToElements</a></div><div class="ttdeci">static void addToElements(const std::string &amp;line, CircuitElements&lt; T &gt; &amp;elements, size_t &amp;numNodes, size_t &amp;numCurrents)</div><div class="ttdef"><b>Definition:</b> <a href="_b_j_t_8hpp_source.html#l00111">BJT.hpp:111</a></div></div>
 <div class="ttc" id="astruct_capacitor_html"><div class="ttname"><a href="struct_capacitor.html">Capacitor</a></div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00007">Capacitor.hpp:7</a></div></div>
 <div class="ttc" id="astruct_capacitor_html_a1c191824148aba285e5a5011d58c89ce"><div class="ttname"><a href="struct_capacitor.html#a1c191824148aba285e5a5011d58c89ce">Capacitor::addToElements</a></div><div class="ttdeci">static void addToElements(const std::string &amp;line, CircuitElements&lt; T &gt; &amp;elements, size_t &amp;numNodes, size_t &amp;numCurrents)</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00086">Capacitor.hpp:86</a></div></div>

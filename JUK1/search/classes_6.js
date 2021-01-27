@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lupair_359',['LUPair',['../struct_l_u_pair.html',1,'']]],
-  ['lupair_3c_20vt_20_3e_360',['LUPair&lt; VT &gt;',['../struct_l_u_pair.html',1,'']]]
+  ['resistor_199',['Resistor',['../struct_resistor.html',1,'']]]
 ];
