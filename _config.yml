@@ -1,1 +1,1 @@
-include: ["_*.html"]
+include: ["_*.html", "_*.png", "_*.pdf"]
