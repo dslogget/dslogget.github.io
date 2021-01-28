@@ -1,7 +1,8 @@
 var dir_be9b97caf4a18446ff8dc4414b5cd8ab =
 [
     [ "BJT.hpp", "_b_j_t_8hpp.html", [
-      [ "BJTN", "struct_b_j_t_n.html", "struct_b_j_t_n" ]
+      [ "BJTN", "struct_b_j_t_n.html", "struct_b_j_t_n" ],
+      [ "BJTP", "struct_b_j_t_p.html", "struct_b_j_t_p" ]
     ] ],
     [ "Capacitor.hpp", "_capacitor_8hpp.html", [
       [ "Capacitor", "struct_capacitor.html", "struct_capacitor" ]

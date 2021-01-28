@@ -4,6 +4,7 @@ var annotated_dup =
       [ "CausalData", "struct_force_causal_1_1_causal_data.html", "struct_force_causal_1_1_causal_data" ]
     ] ],
     [ "BJTN", "struct_b_j_t_n.html", "struct_b_j_t_n" ],
+    [ "BJTP", "struct_b_j_t_p.html", "struct_b_j_t_p" ],
     [ "Capacitor", "struct_capacitor.html", "struct_capacitor" ],
     [ "CircuitElements", "struct_circuit_elements.html", "struct_circuit_elements" ],
     [ "Component", "struct_component.html", "struct_component" ],

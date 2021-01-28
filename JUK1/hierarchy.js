@@ -5,6 +5,7 @@ var hierarchy =
     [ "CircuitElements< VT >", "struct_circuit_elements.html", null ],
     [ "Component< T >", "struct_component.html", [
       [ "BJTN< T >", "struct_b_j_t_n.html", null ],
+      [ "BJTP< T >", "struct_b_j_t_p.html", null ],
       [ "Capacitor< T >", "struct_capacitor.html", null ],
       [ "CurrentSource< T >", "struct_current_source.html", null ],
       [ "Diode< T >", "struct_diode.html", null ],
