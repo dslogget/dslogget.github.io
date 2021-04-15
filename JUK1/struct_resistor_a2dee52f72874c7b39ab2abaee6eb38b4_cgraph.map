@@ -1,0 +1,4 @@
+<map id="Resistor::addDCAnalysisStampTo" name="Resistor::addDCAnalysisStampTo">
+<area shape="rect" id="node1" title="adds this component&#39;s DC stamp to the target stamp." alt="" coords="5,5,224,32"/>
+<area shape="rect" id="node2" href="$struct_resistor.html#ac5019c46bc6da5b1fa1b3aed9a36c1ef" title="Adds this component&#39;s static stamp to the target stamp." alt="" coords="272,5,457,32"/>
+</map>

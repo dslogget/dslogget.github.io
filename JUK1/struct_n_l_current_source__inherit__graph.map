@@ -1,0 +1,4 @@
+<map id="NLCurrentSource&lt; T &gt;" name="NLCurrentSource&lt; T &gt;">
+<area shape="rect" id="node1" title="An non&#45;linear current source for the COBRA transistor model." alt="" coords="5,80,157,107"/>
+<area shape="rect" id="node2" href="$struct_component.html" title="A template base class to define the fundamental things a component should define." alt="" coords="22,5,141,32"/>
+</map>

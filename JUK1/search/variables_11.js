@@ -1,11 +1,18 @@
 var searchData=
 [
-  ['v_360',['V',['../struct_sinusoidal_voltage_source.html#a21107c1c01896dc6876147769e49afbd',1,'SinusoidalVoltageSource']]],
-  ['v_5fbc_5fcrit_361',['V_bc_crit',['../struct_b_j_t_n.html#a8fe060e7664af614ad696c7ff154c569',1,'BJTN::V_bc_crit()'],['../struct_b_j_t_p.html#af38778d9a7bd650e586e91f94244e6cb',1,'BJTP::V_bc_crit()']]],
-  ['v_5fbe_5fcrit_362',['V_be_crit',['../struct_b_j_t_n.html#a775fe52b676f281482329dcc01302f71',1,'BJTN::V_be_crit()'],['../struct_b_j_t_p.html#a9c8cd59a979e959f9747feda1428547a',1,'BJTP::V_be_crit()']]],
-  ['v_5fcrit_363',['V_crit',['../struct_diode.html#af333a19a24fd2a286fa74e68dbebff8c',1,'Diode']]],
-  ['v_5ft_364',['V_T',['../struct_diode.html#a4dbc951caa429be5c83efec86af56023',1,'Diode']]],
-  ['v_5ftc_365',['V_Tc',['../struct_b_j_t_n.html#a24dd49cb7bcc31ad8a0a83f8c3b416c2',1,'BJTN::V_Tc()'],['../struct_b_j_t_p.html#a7ed0da848eb911e16a7acbb5be469bec',1,'BJTP::V_Tc()']]],
-  ['v_5fte_366',['V_Te',['../struct_b_j_t_n.html#a32e3f7b718e885c20de3c43768fc75d6',1,'BJTN::V_Te()'],['../struct_b_j_t_p.html#aec345ee43a355b47b0a3c4fe49f4a331',1,'BJTP::V_Te()']]],
-  ['value_367',['value',['../struct_capacitor.html#a1628cb29d72550967c78e25baf29e990',1,'Capacitor::value()'],['../struct_current_source.html#a4e5447a2fbdb8b1a672e3a3dcfc33e66',1,'CurrentSource::value()'],['../struct_inductor.html#a2b8304f27d37abd491e087bbcee41e8a',1,'Inductor::value()'],['../struct_resistor.html#ad8855242fa5eb48c82c307de8b040072',1,'Resistor::value()'],['../struct_voltage_source.html#a14a04cc38546ac1d30f05cf0c8d24cb3',1,'VoltageSource::value()']]]
+  ['r_839',['R',['../struct_s_parameter_port.html#a42467c7725ae91bc348d2cb9b984f1f2',1,'SParameterPort::R()'],['../struct_s_parameter_port_v_f.html#a1e1303338bd52e7017e91c1ebe7ed862',1,'SParameterPortVF::R()']]],
+  ['r_840',['r',['../find_complex_rational_approximation_8m.html#a514f1b439f404f86f77090fa9edc96ce',1,'findComplexRationalApproximation.m']]],
+  ['r1_5fneg_841',['r1_neg',['../struct_n_l_current_source.html#adbb1bbb04700279c6f61b199a451ba20',1,'NLCurrentSource']]],
+  ['r1_5fpos_842',['r1_pos',['../struct_n_l_current_source.html#af8750962860fc7d15fe278c7507c229f',1,'NLCurrentSource']]],
+  ['r2_5fneg_843',['r2_neg',['../struct_n_l_current_source.html#aa90ca267d4725d94230c7cc23b59ccd9',1,'NLCurrentSource']]],
+  ['r2_5fpos_844',['r2_pos',['../struct_n_l_current_source.html#a7363e28c9c3881688146a858f8804258',1,'NLCurrentSource']]],
+  ['remainder_845',['remainder',['../struct_s_param_v_f_data_from.html#ab29abb81d998d0cbe2b79be47e8ec865',1,'SParamVFDataFrom::remainder()'],['../find_complex_rational_approximation_8m.html#ad72875faade5521919b9c8f2ba82be31',1,'remainder():&#160;findComplexRationalApproximation.m']]],
+  ['res_846',['res',['../find_complex_rational_approximation_8m.html#a0332d90ff07648a038ae9c2a957081d9',1,'res():&#160;findComplexRationalApproximation.m'],['../get_residues_8m.html#ab0bd7560790c13b656fd58e17e35143e',1,'res():&#160;getResidues.m']]],
+  ['residual_847',['residual',['../find_complex_rational_approximation_8m.html#a6de1d8eb7e2677c0432590b3830ff19c',1,'residual():&#160;findComplexRationalApproximation.m'],['../get_residues_8m.html#a840cf6bbf9aacf15bd364b478394c3a7',1,'residual():&#160;getResidues.m']]],
+  ['residue_848',['residue',['../struct_s_param_v_f_data_from.html#ad8c810bbac25b52c189518f918f6ffd9',1,'SParamVFDataFrom']]],
+  ['residues_849',['residues',['../find_complex_rational_approximation_8m.html#aa47f8fd22c40ce45ebd5dd23fa0319f6',1,'residues():&#160;findComplexRationalApproximation.m'],['../get_residues_8m.html#aa47f8fd22c40ce45ebd5dd23fa0319f6',1,'residues():&#160;getResidues.m']]],
+  ['resiudes_850',['resiudes',['../find_complex_rational_approximation_8m.html#a940af39bd8874b68770022c1aa63b1fe',1,'findComplexRationalApproximation.m']]],
+  ['retval_851',['retVal',['../transistor_comparison_8m.html#a22584cc748beaa01dd43ed863902751f',1,'transistorComparison.m']]],
+  ['rows_852',['rows',['../struct_static_matrix.html#a51298f40f147b8bc87b2601971823128',1,'StaticMatrix']]],
+  ['rstoerst_853',['rstoerst',['../interch_8m.html#ace193c78b33d587ac0946a14495b9764',1,'interch.m']]]
 ];

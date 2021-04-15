@@ -1,0 +1,28 @@
+var get_residues_8m =
+[
+    [ "make", "get_residues_8m.html#ad09d5e2b38260605147c2f55bdacc7db", null ],
+    [ "res", "get_residues_8m.html#a4c3b92fa049c59390f9423e7c9fd2371", null ],
+    [ "res", "get_residues_8m.html#ae1a22e4540c4ab49bd05878400f00611", null ],
+    [ "res", "get_residues_8m.html#a5e39a934a7131f2f3cdbb6e5da7c1bb1", null ],
+    [ "sigma", "get_residues_8m.html#acb29169124bf58b172282850c7b3cf0a", null ],
+    [ "wSimFreqs", "get_residues_8m.html#a443728b95f291a10752c65328851b564", null ],
+    [ "A", "get_residues_8m.html#a0c8c4debc6d39f21547fca40c224adf5", null ],
+    [ "AsimFull", "get_residues_8m.html#a7d6748ef935a1a9374a2432ce884e82d", null ],
+    [ "b", "get_residues_8m.html#a21ad0bd836b90d08f4cf640b4c298e7c", null ],
+    [ "ctilde", "get_residues_8m.html#ac89234bc467e502b2cc2ac28b8be11a5", null ],
+    [ "freqDataFull", "get_residues_8m.html#a25ca1838d80b39c8e2b518a8ffbf1304", null ],
+    [ "function", "get_residues_8m.html#ae2f9c14006a70d0ec3c65880a70b9534", null ],
+    [ "H", "get_residues_8m.html#ad4f77c10e1e7f457cb8c095f0f16a59b", null ],
+    [ "matrix", "get_residues_8m.html#abe2340411a23afe1be8f0a486a4c92f1", null ],
+    [ "numPoles", "get_residues_8m.html#abac3ba76f44c776eeaf8bf9e0b72ef8c", null ],
+    [ "numVar", "get_residues_8m.html#adcbe59244e60094e3edfa8a5c231dbb9", null ],
+    [ "numVec", "get_residues_8m.html#a3ebdbc909186924676b255bffed338f1", null ],
+    [ "P", "get_residues_8m.html#ad0d510fe9c56e374c8837ea8f956f356", null ],
+    [ "pairs", "get_residues_8m.html#a1f968c23756f5fa9e380799acf8277c0", null ],
+    [ "res", "get_residues_8m.html#ab0bd7560790c13b656fd58e17e35143e", null ],
+    [ "residual", "get_residues_8m.html#a840cf6bbf9aacf15bd364b478394c3a7", null ],
+    [ "residues", "get_residues_8m.html#aa47f8fd22c40ce45ebd5dd23fa0319f6", null ],
+    [ "Sk", "get_residues_8m.html#a56ade29269ca6501ceb40884d359354a", null ],
+    [ "terms", "get_residues_8m.html#a83802d51e3c654ffd2b52b47ee144f22", null ],
+    [ "x", "get_residues_8m.html#aa67ca74f1a2f805ccd4f8460589ec897", null ]
+];

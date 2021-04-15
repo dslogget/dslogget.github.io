@@ -1,0 +1,5 @@
+<map id="TimeSeriesVoltageSource::lerp" name="TimeSeriesVoltageSource::lerp">
+<area shape="rect" id="node1" title=" " alt="" coords="445,5,617,47"/>
+<area shape="rect" id="node2" href="$struct_time_series_voltage_source.html#ab796438bbf12268d972a99d2c49d7f3f" title="Adds this component&#39;s dynamic stamp to the target stamp." alt="" coords="225,5,397,47"/>
+<area shape="rect" id="node3" href="$struct_time_series_voltage_source.html#a3f5e2ab76a678c39ea98cdd30c57f224" title="adds this component&#39;s DC stamp to the target stamp." alt="" coords="5,5,177,47"/>
+</map>

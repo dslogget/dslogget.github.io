@@ -6,5 +6,6 @@ var struct_static_row =
     [ "fill", "struct_static_row.html#a8914f013b433badc57501b169037b93f", null ],
     [ "operator[]", "struct_static_row.html#afe97afdedba80dbff8b78726a1318232", null ],
     [ "operator[]", "struct_static_row.html#ab65af0689cb486cecc25a37298d66b85", null ],
-    [ "columns", "struct_static_row.html#ad0e9283774a14956be6b71500020f537", null ]
+    [ "columns", "struct_static_row.html#ad0e9283774a14956be6b71500020f537", null ],
+    [ "sizeN", "struct_static_row.html#ab03dbab3bd7fca7cbdd149be383e417a", null ]
 ];

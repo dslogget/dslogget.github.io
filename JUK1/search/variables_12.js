@@ -1,4 +1,29 @@
 var searchData=
 [
-  ['z_5fref_368',['z_ref',['../struct_s_parameter_block.html#a3a9bc6b7d3e722f5a43801512b68aab5',1,'SParameterBlock']]]
+  ['s_854',['s',['../struct_stamp.html#afefccf1267e325435b1d9c1a2c61f212',1,'Stamp::s()'],['../struct_n_l_n_m_o_s.html#a39e36f4c2b78afe0adebf41e8c4188df',1,'NLNMOS::s()'],['../struct_s_parameter_block.html#a2c6b021e1aa712e3b9f8a8fa30d48e9f',1,'SParameterBlock::s()'],['../find_complex_rational_approximation_8m.html#ace5ae57a640fd6f3b4e6ed038aac371f',1,'s():&#160;findComplexRationalApproximation.m']]],
+  ['s_855',['S',['../generate_p_r_r_file_8m.html#ad53aeb78abc83a52ab8982f5c82a3d5b',1,'generatePRRFile.m']]],
+  ['s0_856',['s0',['../struct_s_parameter_port.html#a6c3ff7f3493c914dbf00ce8f3da9c9c7',1,'SParameterPort']]],
+  ['sametime_857',['sametime',['../comp_8m.html#a40d730727aeb077de07eaa693a30eee2',1,'sametime():&#160;comp.m'],['../transistor_comparison_8m.html#a40d730727aeb077de07eaa693a30eee2',1,'sametime():&#160;transistorComparison.m']]],
+  ['scratchspace_858',['scratchSpace',['../class_simulation_environment.html#a7ab5a5370037d455a6e990cd84e61122',1,'SimulationEnvironment']]],
+  ['sequence_859',['sequence',['../interch_8m.html#ae98a19b52bf92ee6dd63517d3939a4cc',1,'interch.m']]],
+  ['sigma_860',['sigma',['../find_complex_rational_approximation_8m.html#abc1de55a1ded540ae925d455d78d4573',1,'findComplexRationalApproximation.m']]],
+  ['sizeg_5fa_861',['sizeG_A',['../struct_stamp.html#aabc5719d9d1a3d96ace6506793d08df3',1,'Stamp']]],
+  ['sizeg_5fd_862',['sizeG_D',['../struct_stamp.html#ab0fc713f936c798e0d03a63e92b1a204',1,'Stamp']]],
+  ['sizem_863',['sizeM',['../struct_static_matrix.html#a0148893bff04450a58e9c76035b9daeb',1,'StaticMatrix']]],
+  ['sizen_864',['sizeN',['../struct_static_row.html#ab03dbab3bd7fca7cbdd149be383e417a',1,'StaticRow::sizeN()'],['../struct_static_matrix.html#a55310a88a7fe848df418205648ee8e1b',1,'StaticMatrix::sizeN()']]],
+  ['sk_865',['Sk',['../get_residues_8m.html#a56ade29269ca6501ceb40884d359354a',1,'getResidues.m']]],
+  ['skip_5fres_866',['skip_res',['../vectfit3_8m.html#a1876b9e22fe9c18599690da850c0d3d8',1,'vectfit3.m']]],
+  ['solutionmat_867',['solutionMat',['../class_simulation_environment.html#aae7db0fde8d25708541312aa93249fda',1,'SimulationEnvironment']]],
+  ['solver_868',['solver',['../_q_ppassive_8m.html#a2debe316c6874c013213554b33d598bf',1,'QPpassive.m']]],
+  ['sparamlengthoffset_869',['sParamLengthOffset',['../struct_s_parameter_sequence.html#a8e435ecf1352184fce7db5f085697c08',1,'SParameterSequence']]],
+  ['spolefreqs_870',['sPoleFreqs',['../find_complex_rational_approximation_8m.html#a93a9958826fe33381581320d39d229fe',1,'findComplexRationalApproximation.m']]],
+  ['spy1_871',['spy1',['../vectfit3_8m.html#a2d6365ba9c4986ccd25d2a6255aaa975',1,'vectfit3.m']]],
+  ['spy2_872',['spy2',['../vectfit3_8m.html#a1fa4192670bf44f6f0a620b55b725635',1,'vectfit3.m']]],
+  ['stable_5fp_873',['stable_p',['../flip_real_8m.html#a026b2053335370bf411c822e983352b1',1,'flipReal.m']]],
+  ['staticelements_874',['staticElements',['../struct_circuit_elements.html#a375c1f55b0dd8c9d8a03dbcadab929ab',1,'CircuitElements']]],
+  ['staticstamp_875',['staticStamp',['../struct_circuit_elements.html#ace09c09c80226a4640759edb560895dd',1,'CircuitElements']]],
+  ['staticstampisfresh_876',['staticStampIsFresh',['../struct_circuit_elements.html#a71c9882467b68a6586e8ce145280494f',1,'CircuitElements']]],
+  ['steps_877',['steps',['../class_simulation_environment.html#a9d2bc063f25aeb24ad296aae587e3a01',1,'SimulationEnvironment']]],
+  ['subtractableresult_878',['SubtractableResult',['../namespace_auto_differentiation.html#a0f8c9442b2b1037746d427d1da0604c6',1,'AutoDifferentiation']]],
+  ['systems_879',['Systems',['../_q_ppassive_8m.html#ae5176806f82ad3078a14f4c935f4737e',1,'QPpassive.m']]]
 ];

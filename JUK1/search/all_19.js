@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_7ecomponent_340',['~Component',['../struct_component.html#a2d2fd772fc1a945ab88556e95db62b9b',1,'Component']]],
-  ['_7eplot_341',['~Plot',['../classmatplotlibcpp_1_1_plot.html#a82d08055d06388b56feed10602d2208b',1,'matplotlibcpp::Plot']]]
+  ['z_5fref_451',['z_ref',['../struct_s_parameter_block.html#a3a9bc6b7d3e722f5a43801512b68aab5',1,'SParameterBlock::z_ref()'],['../struct_s_parameter_block_v_f.html#a6e3f745282aa0c423c27b6779271a41e',1,'SParameterBlockVF::z_ref()']]],
+  ['zr_452',['zR',['../flip_real_8m.html#ad19dc277f4b99140fefe8098b7f52776',1,'flipReal.m']]]
 ];

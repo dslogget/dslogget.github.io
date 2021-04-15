@@ -1,7 +1,9 @@
 var struct_b_j_t_n =
 [
-    [ "addNonLinearStampTo", "struct_b_j_t_n.html#a55e9ba6de8139ebd171f74a4463a568a", null ],
-    [ "updateStoredState", "struct_b_j_t_n.html#a3698c455e894a532c28aa3beafded9fd", null ],
+    [ "addDCAnalysisStampTo", "struct_b_j_t_n.html#ad0eecbf8cddcc4f53eeec017276317a5", null ],
+    [ "addNonLinearStampTo", "struct_b_j_t_n.html#aa7217c802962e386e83b28b2d3057180", null ],
+    [ "addToElements", "struct_b_j_t_n.html#a88c336c234ef1fd188d6d059c2efecd3", null ],
+    [ "updateStoredState", "struct_b_j_t_n.html#a1f661048a88bb887d8b84683bbe29ec1", null ],
     [ "alpha_f", "struct_b_j_t_n.html#a3fac7f6dd2cf9fd62fac69cd4a0dfa8d", null ],
     [ "alpha_r", "struct_b_j_t_n.html#a282d20db8a8a056d58bd9ce02355951c", null ],
     [ "b", "struct_b_j_t_n.html#a63cf3c5a2a7407473966e5a00fc8ee56", null ],

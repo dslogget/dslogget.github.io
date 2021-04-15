@@ -1,5 +1,27 @@
 var searchData=
 [
-  ['updatestoredstate_298',['updateStoredState',['../struct_b_j_t_n.html#a3698c455e894a532c28aa3beafded9fd',1,'BJTN::updateStoredState()'],['../struct_b_j_t_p.html#a248630d86cf1a0f60fddf550fba59184',1,'BJTP::updateStoredState()'],['../struct_capacitor.html#a18d553bc74432f9962193dd11f8f90d3',1,'Capacitor::updateStoredState()'],['../struct_component.html#ab932580c43337bf2208c18b07097774e',1,'Component::updateStoredState()'],['../struct_diode.html#a74a08b4be0c89d8e6dc9b4bd5958162f',1,'Diode::updateStoredState()'],['../struct_inductor.html#a3c0e4730d826ea906a1ed86a46f8d4f6',1,'Inductor::updateStoredState()'],['../struct_sinusoidal_voltage_source.html#a087ae397b4b27f65e71ed73a720ac65a',1,'SinusoidalVoltageSource::updateStoredState()'],['../struct_s_parameter_block.html#a57fe696928bab22f9a0a1b276eb083b9',1,'SParameterBlock::updateStoredState()']]],
-  ['updatetimestep_299',['updateTimeStep',['../struct_circuit_elements.html#ab741f41e89cf6ec665430a6b67cca1e9',1,'CircuitElements']]]
+  ['s_627',['S',['../interch_8m.html#a76ab9ac393c20139247166d4dc6f8df9',1,'S(:, ii):&#160;interch.m'],['../interch_8m.html#aeca2e0ad7f6913d60e4c8788aa2a9729',1,'S(:, istoerst):&#160;interch.m']]],
+  ['sb_628',['SB',['../rot_8m.html#ab6062d310c0d5f474a052e57c03f3ca6',1,'rot.m']]],
+  ['scale_629',['scale',['../rot_8m.html#ab0af012900d619eab5ab7f86d3280e1a',1,'rot.m']]],
+  ['scale1_630',['scale1',['../rot_8m.html#a6fd3224a623ee00e1d304eb404d348ea',1,'rot.m']]],
+  ['scale2_631',['scale2',['../rot_8m.html#a9d0488ca470341c02c2434a8f816af21',1,'rot.m']]],
+  ['set_632',['set',['../transistor_comparison_8m.html#ac942409636bb3e8c820ec266573990a2',1,'transistorComparison.m']]],
+  ['setconstants_633',['setConstants',['../struct_s_parameter_block_v_f.html#adea15adf7cf3284a17170f92acb8c464',1,'SParameterBlockVF']]],
+  ['setdcoppoint_634',['setDCOpPoint',['../class_simulation_environment.html#af0ed5c4af36e750f803642b22be8c3e7',1,'SimulationEnvironment']]],
+  ['setfirstorder_635',['setFirstOrder',['../struct_s_parameter_block_v_f.html#af562696b38c1b697d436e0dc00cc9ce3',1,'SParameterBlockVF']]],
+  ['setnewstampsize_636',['setNewStampSize',['../struct_circuit_elements.html#aaf7e7f97838aef1c49973cafa0b560af',1,'CircuitElements']]],
+  ['setsecondorder_637',['setSecondOrder',['../struct_s_parameter_block_v_f.html#aa3a6cc32867501d5adeb741a2dedadd1',1,'SParameterBlockVF']]],
+  ['settimestep_638',['setTimestep',['../struct_component.html#a7c311599418f7efd7714acbdea201a75',1,'Component::setTimestep()'],['../struct_s_parameter_block_v_f.html#a08ca2e36b51e56d3587304d229d86756',1,'SParameterBlockVF::setTimestep()']]],
+  ['sigma_639',['sigma',['../get_residues_8m.html#acb29169124bf58b172282850c7b3cf0a',1,'getResidues.m']]],
+  ['simulate_640',['simulate',['../class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2',1,'SimulationEnvironment']]],
+  ['simulationenvironment_641',['SimulationEnvironment',['../class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa',1,'SimulationEnvironment']]],
+  ['sin_642',['sin',['../rot_8m.html#a081c431de89805bcb17574fd2a6ca274',1,'rot.m']]],
+  ['solve_643',['solve',['../struct_stamp.html#a27298a7e47ee5e3d561058b275530f74',1,'Stamp']]],
+  ['stable_644',['stable',['../vectfit3_8m.html#a3a292ee37dd5b3d3e29181014ccabc01',1,'vectfit3.m']]],
+  ['stamp_645',['Stamp',['../struct_stamp.html#aacbbb3227232a12b9b0f4efce8865561',1,'Stamp']]],
+  ['staticmatrix_646',['StaticMatrix',['../struct_static_matrix.html#a80723fc84e00a93cf657bcf6b96033d9',1,'StaticMatrix::StaticMatrix()'],['../struct_static_matrix.html#af271d05946d8425361a2fb6306e64a76',1,'StaticMatrix::StaticMatrix(T initialValue)']]],
+  ['staticrow_647',['StaticRow',['../struct_static_row.html#a9c7bc988ccc7c57f2bc6a2e70abd1175',1,'StaticRow::StaticRow()'],['../struct_static_row.html#ace1b34ebfdd440cf5b1fa1aaf4b78c70',1,'StaticRow::StaticRow(T initialValue)']]],
+  ['subtract_648',['subtract',['../struct_matrix.html#a436a9006a79ca7aa54c09594f52b635c',1,'Matrix::subtract(const Matrix&lt; T &gt; &amp;rhs) const'],['../struct_matrix.html#a337b0b1813cfa72178cacb5fbf7998cc',1,'Matrix::subtract(const Matrix&lt; T &gt; &amp;rhs, Matrix&lt; T &gt; &amp;dest) const'],['../struct_static_matrix.html#a5d1902a43a98c1acea12d9a6f658977a',1,'StaticMatrix::subtract(const StaticMatrix&lt; T, N, N &gt; &amp;rhs) const'],['../struct_static_matrix.html#a3fe11fb8acde280443886b9caf68b6fc',1,'StaticMatrix::subtract(const StaticMatrix&lt; T, N, N &gt; &amp;rhs, StaticMatrix&lt; T, M, N &gt; &amp;dest) const']]],
+  ['sum_649',['sum',['../rot_8m.html#a08a8fae29827bd080fd336a8b6ba58c6',1,'rot.m']]],
+  ['swaprows_650',['swapRows',['../struct_matrix.html#a1db90b9c38cd8b56c0a487dadd632ae8',1,'Matrix::swapRows()'],['../struct_static_matrix.html#a89abffa4d11c6440b7d39bed19c76791',1,'StaticMatrix::swapRows()']]]
 ];

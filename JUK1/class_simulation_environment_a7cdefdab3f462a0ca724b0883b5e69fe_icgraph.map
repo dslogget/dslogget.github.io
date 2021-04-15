@@ -1,5 +1,5 @@
 <map id="SimulationEnvironment::dataDump" name="SimulationEnvironment::dataDump">
-<area shape="rect" id="node1" title="Simple function to dump the output of the simulator in a matlab table readable format" alt="" coords="307,5,461,47"/>
+<area shape="rect" id="node1" title="Simple function to dump the output of the simulator in a matlab table readable format." alt="" coords="307,5,461,47"/>
 <area shape="rect" id="node2" href="$class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2" title="Where a lot of the magic starts. This is what runs the simulation." alt="" coords="104,5,259,47"/>
-<area shape="rect" id="node3" href="$_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,56,39"/>
+<area shape="rect" id="node3" href="$_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main function to launch the circuit simulator" alt="" coords="5,13,56,39"/>
 </map>

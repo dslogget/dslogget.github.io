@@ -110,9 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4f9582b3647b6d80693529e36837d21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7628be83efd3834ca5d09d1d5bb72def"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_matrix.html#a7628be83efd3834ca5d09d1d5bb72def">Matrix</a> (size_t <a class="el" href="struct_matrix.html#a5d54d88e231fcc5bb91c88661f7f9d16">M</a>, size_t <a class="el" href="struct_matrix.html#a3095589c03b42ed095222ea51991cc30">N</a>, T initialValue)</td></tr>
 <tr class="separator:a7628be83efd3834ca5d09d1d5bb72def"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6c1e7949a9eb1e93b38bb9e0eca07d5"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_matrix.html#ae6c1e7949a9eb1e93b38bb9e0eca07d5">operator()</a> (size_t m, size_t n)</td></tr>
+<tr class="memitem:ae6c1e7949a9eb1e93b38bb9e0eca07d5"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_matrix.html#ae6c1e7949a9eb1e93b38bb9e0eca07d5">operator()</a> (size_t <a class="el" href="_q_ppassive_8m.html#ab20e317c6d731cc3115f2630675017be">m</a>, size_t n)</td></tr>
 <tr class="separator:ae6c1e7949a9eb1e93b38bb9e0eca07d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d780cfd4ecd5f08fefb72d5e071ce96"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_matrix.html#a1d780cfd4ecd5f08fefb72d5e071ce96">operator()</a> (size_t m, size_t n) const</td></tr>
+<tr class="memitem:a1d780cfd4ecd5f08fefb72d5e071ce96"><td class="memItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_matrix.html#a1d780cfd4ecd5f08fefb72d5e071ce96">operator()</a> (size_t <a class="el" href="_q_ppassive_8m.html#ab20e317c6d731cc3115f2630675017be">m</a>, size_t n) const</td></tr>
 <tr class="separator:a1d780cfd4ecd5f08fefb72d5e071ce96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3bde34a3a88bdbe5fc0b45d3dd9cfc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_matrix.html#af3bde34a3a88bdbe5fc0b45d3dd9cfc2">fill</a> (T fillVal)</td></tr>
 <tr class="separator:af3bde34a3a88bdbe5fc0b45d3dd9cfc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +144,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:affa396b55a7d4f97f083e0388e525374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a250a21a0f104d0be0566b3b73d8f12cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_matrix.html#a250a21a0f104d0be0566b3b73d8f12cb">leftDivide</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;rhs, const <a class="el" href="struct_l_u_pair.html">LUPair</a>&lt; T &gt; &amp;lu, <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;scratchSpace, <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;dest) const</td></tr>
 <tr class="separator:a250a21a0f104d0be0566b3b73d8f12cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179301e17aca5aa3c01208d897fb9b96"><td class="memTemplParams" colspan="2">template&lt;typename Iterator &gt; </td></tr>
+<tr class="memitem:a179301e17aca5aa3c01208d897fb9b96"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_matrix.html#a179301e17aca5aa3c01208d897fb9b96">leftDivide</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;rhs, const <a class="el" href="struct_l_u_pair.html">LUPair</a>&lt; T &gt; &amp;lu, <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;scratchSpace, Iterator destBegin, Iterator destEnd) const</td></tr>
+<tr class="separator:a179301e17aca5aa3c01208d897fb9b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -365,7 +368,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="affa396b55a7d4f97f083e0388e525374"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affa396b55a7d4f97f083e0388e525374">&#9670;&nbsp;</a></span>leftDivide() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#affa396b55a7d4f97f083e0388e525374">&#9670;&nbsp;</a></span>leftDivide() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,15 +408,76 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_matrix_affa396b55a7d4f97f083e0388e525374_icgraph.png" border="0" usemap="#astruct_matrix_affa396b55a7d4f97f083e0388e525374_icgraph" alt=""/></div>
 <map name="astruct_matrix_affa396b55a7d4f97f083e0388e525374_icgraph" id="astruct_matrix_affa396b55a7d4f97f083e0388e525374_icgraph">
-<area shape="rect" title=" " alt="" coords="104,5,221,32"/>
-<area shape="rect" href="test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" title=" " alt="" coords="171,31,288,57"/>
+<area shape="rect" href="struct_matrix.html#a250a21a0f104d0be0566b3b73d8f12cb" title=" " alt="" coords="5,5,123,32"/>
+<area shape="rect" href="test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="39,56,89,83"/>
 </map>
 </div>
 
 </div>
 </div>
+<a id="a179301e17aca5aa3c01208d897fb9b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a179301e17aca5aa3c01208d897fb9b96">&#9670;&nbsp;</a></span>leftDivide() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename Iterator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt;::leftDivide </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_l_u_pair.html">LUPair</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>scratchSpace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iterator&#160;</td>
+          <td class="paramname"><em>destBegin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iterator&#160;</td>
+          <td class="paramname"><em>destEnd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dynamic_matrix_8hpp_source.html#l00239">239</a> of file <a class="el" href="_dynamic_matrix_8hpp_source.html">DynamicMatrix.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a250a21a0f104d0be0566b3b73d8f12cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a250a21a0f104d0be0566b3b73d8f12cb">&#9670;&nbsp;</a></span>leftDivide() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a250a21a0f104d0be0566b3b73d8f12cb">&#9670;&nbsp;</a></span>leftDivide() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -461,6 +525,16 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_matrix_8hpp_source.html#l00233">233</a> of file <a class="el" href="_dynamic_matrix_8hpp_source.html">DynamicMatrix.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_matrix_a250a21a0f104d0be0566b3b73d8f12cb_cgraph.png" border="0" usemap="#astruct_matrix_a250a21a0f104d0be0566b3b73d8f12cb_cgraph" alt=""/></div>
+<map name="astruct_matrix_a250a21a0f104d0be0566b3b73d8f12cb_cgraph" id="astruct_matrix_a250a21a0f104d0be0566b3b73d8f12cb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,123,32"/>
+<area shape="rect" href="struct_matrix.html#affa396b55a7d4f97f083e0388e525374" title=" " alt="" coords="171,5,288,32"/>
+<area shape="rect" href="struct_matrix.html#a6db3ba8a6abfeed9b96491dcb5c08b78" title=" " alt="" coords="336,5,435,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -495,9 +569,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_matrix_a6db3ba8a6abfeed9b96491dcb5c08b78_icgraph.png" border="0" usemap="#astruct_matrix_a6db3ba8a6abfeed9b96491dcb5c08b78_icgraph" alt=""/></div>
 <map name="astruct_matrix_a6db3ba8a6abfeed9b96491dcb5c08b78_icgraph" id="astruct_matrix_a6db3ba8a6abfeed9b96491dcb5c08b78_icgraph">
-<area shape="rect" title=" " alt="" coords="269,31,368,57"/>
-<area shape="rect" href="struct_matrix.html#affa396b55a7d4f97f083e0388e525374" title=" " alt="" coords="104,5,221,32"/>
-<area shape="rect" href="test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" title=" " alt="" coords="336,31,435,57"/>
+<area shape="rect" href="struct_matrix.html#affa396b55a7d4f97f083e0388e525374" title=" " alt="" coords="171,5,288,32"/>
+<area shape="rect" href="test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="39,56,89,83"/>
+<area shape="rect" href="struct_matrix.html#a250a21a0f104d0be0566b3b73d8f12cb" title=" " alt="" coords="5,5,123,32"/>
 </map>
 </div>
 
@@ -530,6 +605,15 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_matrix_8hpp_source.html#l00185">185</a> of file <a class="el" href="_dynamic_matrix_8hpp_source.html">DynamicMatrix.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_matrix_a381533fab14e2a759a659cfb4ff98bce_cgraph.png" border="0" usemap="#astruct_matrix_a381533fab14e2a759a659cfb4ff98bce_cgraph" alt=""/></div>
+<map name="astruct_matrix_a381533fab14e2a759a659cfb4ff98bce_cgraph" id="astruct_matrix_a381533fab14e2a759a659cfb4ff98bce_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,104,32"/>
+<area shape="rect" href="interch_8m.html#ae4e69912f5a2f923a187c235f950a7d2" title=" " alt="" coords="152,5,195,32"/>
+</map>
+</div>
 
 </div>
 </div>

@@ -1,10 +1,4 @@
 <map id="SimulationEnvironment::printGraph" name="SimulationEnvironment::printGraph">
-<area shape="rect" id="node1" title=" " alt="" coords="5,74,160,115"/>
-<area shape="rect" id="node2" href="$namespacematplotlibcpp.html#a62aaaf872c41a9d1b71add44c0cc0447" title=" " alt="" coords="223,5,362,32"/>
-<area shape="rect" id="node5" href="$namespacematplotlibcpp.html#a91e91bcdcfc7632a917830bfe3f71ca3" title=" " alt="" coords="208,56,377,83"/>
-<area shape="rect" id="node6" href="$namespacematplotlibcpp.html#a06ac86c6fecaa5a9b3fb566bc31d6a3b" title=" " alt="" coords="229,157,357,184"/>
-<area shape="rect" id="node8" href="$namespacematplotlibcpp.html#a46a2869ed7cd834e93125a20e2a294c2" title=" " alt="" coords="226,107,359,133"/>
-<area shape="rect" id="node3" href="$structmatplotlibcpp_1_1detail_1_1__interpreter.html#a3ddc4e50c23738307da3dc64c47cdbc0" title=" " alt="" coords="425,67,564,109"/>
-<area shape="rect" id="node4" href="$structmatplotlibcpp_1_1detail_1_1__interpreter.html#accf36ff8fd9f1bd757d028fa4a14be40" title=" " alt="" coords="612,67,779,109"/>
-<area shape="rect" id="node7" href="$namespacematplotlibcpp_1_1detail.html#a9bcca44556cf0ddbbf147a423d9a9496" title=" " alt="" coords="425,150,564,191"/>
+<area shape="rect" id="node1" title="Outputs a single node&#39;s (or current&#39;s) time series to a graph, saving as both eps and png." alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node2" href="$comp_8m.html#a119afed74ed106073a4a6d30c54c4c1d" title=" " alt="" coords="208,13,251,39"/>
 </map>

@@ -85,114 +85,117 @@ $(document).ready(function(){initNavTree('_circuit_simulator_8cpp_source.html','
 <div class="title">CircuitSimulator.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_circuit_simulator_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;matplotlibcpp.h&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_dynamic_matrix_8hpp.html">Maths/DynamicMatrix.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_circuit_elements_8hpp.html">CircuitElements/CircuitElements.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_simulator_8hpp.html">CircuitSimulator/Simulator.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;complex&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;direct.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;shobjidl.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;ShObjIdl_core.h&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">int</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">   18</a></span>&#160;<a class="code" href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[] ) {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;   <span class="comment">// credit for this way to get exe path:</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   <span class="comment">// https://gist.github.com/karolisjan/f9b8ac3ae2d41ec0ce70f2feac6bdfaf</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   <span class="keywordtype">char</span> buffer[ MAX_PATH ];</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;   GetModuleFileNameA( NULL, buffer, MAX_PATH );</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;   std::string::size_type pos = std::string( buffer ).find_last_of( <span class="stringliteral">&quot;\\/&quot;</span> );</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   _chdir( std::string( buffer ).substr( 0, pos ).c_str() );</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;   <span class="comment">// modification to get it as a wstring</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   <span class="keywordtype">wchar_t</span> bufferW[ MAX_PATH ];</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;   GetModuleFileNameW( NULL, bufferW, MAX_PATH );</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   std::string::size_type posW = std::wstring( bufferW ).find_last_of( L<span class="stringliteral">&quot;\\/&quot;</span> );</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   std::wstring exePathW = std::wstring( bufferW ).substr( 0, posW );</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;   std::string filePath = <span class="stringliteral">&quot;Netlists/Diode Test.netlist&quot;</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;   <span class="keywordflow">if</span> ( argc &gt; 1 ) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      filePath = argv[ 1 ];</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Using netlist: &quot;</span> &lt;&lt; filePath;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;   } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="comment">// example code from:</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="comment">// https://docs.microsoft.com/en-us/windows/win32/learnwin32/example--the-open-dialog-box</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="comment">// modified to use ascii</span></div>
+<a href="_circuit_simulator_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifdef WITH_PYTHON</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;matplotlibcpp.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_dynamic_matrix_8hpp.html">Maths/DynamicMatrix.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_circuit_elements_8hpp.html">CircuitElements/CircuitElements.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_simulator_8hpp.html">CircuitSimulator/Simulator.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;complex&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;direct.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;shobjidl.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;ShObjIdl_core.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">int</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">   29</a></span>&#160;<a class="code" href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[] ) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   <span class="comment">// credit for this way to get exe path:</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;   <span class="comment">// https://gist.github.com/karolisjan/f9b8ac3ae2d41ec0ce70f2feac6bdfaf</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;   <span class="keywordtype">char</span> buffer[ MAX_PATH ];</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;   GetModuleFileNameA( NULL, buffer, MAX_PATH );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;   std::string::size_type pos = std::string( buffer ).find_last_of( <span class="stringliteral">&quot;\\/&quot;</span> );</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;   _chdir( std::string( buffer ).substr( 0, pos ).c_str() );</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;   <span class="comment">// modification to get it as a wstring</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;   <span class="keywordtype">wchar_t</span> bufferW[ MAX_PATH ];</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;   GetModuleFileNameW( NULL, bufferW, MAX_PATH );</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   std::string::size_type posW = std::wstring( bufferW ).find_last_of( L<span class="stringliteral">&quot;\\/&quot;</span> );</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   std::wstring exePathW = std::wstring( bufferW ).substr( 0, posW );</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      HRESULT hr = CoInitializeEx( NULL, COINIT_APARTMENTTHREADED |</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                             COINIT_DISABLE_OLE1DDE );</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">if</span> ( SUCCEEDED( hr ) ) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;         IFileOpenDialog * pFileOpen;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;         IShellItem * defaultFolder;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;         <span class="comment">// Create the FileOpenDialog object.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;         hr = CoCreateInstance( CLSID_FileOpenDialog, NULL, CLSCTX_ALL,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                IID_IFileOpenDialog,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                <span class="keyword">reinterpret_cast&lt;</span> <span class="keywordtype">void</span> ** <span class="keyword">&gt;</span>( &amp;pFileOpen ) );</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;         std::wstring defaultNetlistPath = exePathW + L<span class="stringliteral">&quot;\\Netlists&quot;</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;         SHCreateItemFromParsingName( defaultNetlistPath.c_str(), NULL,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                      IID_IShellItem,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                      <span class="keyword">reinterpret_cast&lt;</span> <span class="keywordtype">void</span> ** <span class="keyword">&gt;</span>(</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                          &amp;defaultFolder ) );</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;         pFileOpen-&gt;SetDefaultFolder( defaultFolder );</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;         pFileOpen-&gt;SetFolder( defaultFolder );</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;         <span class="keywordflow">if</span> ( SUCCEEDED( hr ) ) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="comment">// Show the Open dialog box.</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            hr = pFileOpen-&gt;Show( NULL );</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="comment">// Get the file name from the dialog box.</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span> ( SUCCEEDED( hr ) ) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;               IShellItem * pItem;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;               hr = pFileOpen-&gt;GetResult( &amp;pItem );</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;               <span class="keywordflow">if</span> ( SUCCEEDED( hr ) ) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                  PWSTR pszFilePath;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                  hr = pItem-&gt;GetDisplayName( SIGDN_FILESYSPATH, &amp;pszFilePath );</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                  <span class="comment">// Display the file name to the user.</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                  <span class="keywordflow">if</span> ( SUCCEEDED( hr ) ) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                     <span class="comment">// MessageBoxW(NULL, pszFilePath, L&quot;File Path&quot;, MB_OK);</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                     WideCharToMultiByte( CP_UTF8, 0, pszFilePath, -1, buffer,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                          MAX_PATH, NULL, NULL );</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                     filePath = std::string( buffer );</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                     CoTaskMemFree( pszFilePath );</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                  }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                  pItem-&gt;Release();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;               }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            pFileOpen-&gt;Release();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;         }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;         CoUninitialize();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Using netlist: &quot;</span> &lt;&lt; filePath;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;No path given. Defaulting to using netlist: &quot;</span> &lt;&lt; filePath;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;   }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;   std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;   <a class="code" href="class_simulation_environment.html">SimulationEnvironment&lt; double &gt;</a> env( filePath );</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;   env.<a class="code" href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2">simulate</a>();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;   <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;   std::string filePath = <span class="stringliteral">&quot;Netlists/Diode Test.netlist&quot;</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;   <span class="keywordflow">if</span> ( argc &gt; 1 ) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      filePath = argv[ 1 ];</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Using netlist: &quot;</span> &lt;&lt; filePath;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="comment">// example code from:</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="comment">// https://docs.microsoft.com/en-us/windows/win32/learnwin32/example--the-open-dialog-box</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="comment">// modified to use ascii</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      HRESULT hr = CoInitializeEx( NULL, COINIT_APARTMENTTHREADED |</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                             COINIT_DISABLE_OLE1DDE );</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">if</span> ( SUCCEEDED( hr ) ) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;         IFileOpenDialog * pFileOpen;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;         IShellItem * defaultFolder;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;         <span class="comment">// Create the FileOpenDialog object.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;         hr = CoCreateInstance( CLSID_FileOpenDialog, NULL, CLSCTX_ALL,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                IID_IFileOpenDialog,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                <span class="keyword">reinterpret_cast&lt;</span> <span class="keywordtype">void</span> ** <span class="keyword">&gt;</span>( &amp;pFileOpen ) );</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;         std::wstring defaultNetlistPath = exePathW + L<span class="stringliteral">&quot;\\Netlists&quot;</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;         SHCreateItemFromParsingName( defaultNetlistPath.c_str(), NULL,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                      IID_IShellItem,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                      <span class="keyword">reinterpret_cast&lt;</span> <span class="keywordtype">void</span> ** <span class="keyword">&gt;</span>(</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                          &amp;defaultFolder ) );</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;         pFileOpen-&gt;SetDefaultFolder( defaultFolder );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;         pFileOpen-&gt;SetFolder( defaultFolder );</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;         <span class="keywordflow">if</span> ( SUCCEEDED( hr ) ) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="comment">// Show the Open dialog box.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            hr = pFileOpen-&gt;Show( NULL );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="comment">// Get the file name from the dialog box.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">if</span> ( SUCCEEDED( hr ) ) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;               IShellItem * pItem;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;               hr = pFileOpen-&gt;GetResult( &amp;pItem );</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;               <span class="keywordflow">if</span> ( SUCCEEDED( hr ) ) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                  PWSTR pszFilePath;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                  hr = pItem-&gt;GetDisplayName( SIGDN_FILESYSPATH, &amp;pszFilePath );</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                  <span class="comment">// Display the file name to the user.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                  <span class="keywordflow">if</span> ( SUCCEEDED( hr ) ) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                     <span class="comment">// MessageBoxW(NULL, pszFilePath, L&quot;File Path&quot;, MB_OK);</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                     WideCharToMultiByte( CP_UTF8, 0, pszFilePath, -1, buffer,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                          MAX_PATH, NULL, NULL );</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                     filePath = std::string( buffer );</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                     CoTaskMemFree( pszFilePath );</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                  }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                  pItem-&gt;Release();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;               }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            pFileOpen-&gt;Release();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;         }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;         CoUninitialize();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Using netlist: &quot;</span> &lt;&lt; filePath;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;No path given. Defaulting to using netlist: &quot;</span> &lt;&lt; filePath;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;   }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;   std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;   <a class="code" href="class_simulation_environment.html">SimulationEnvironment&lt; double &gt;</a> env( filePath );</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;   env.<a class="code" href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2">simulate</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;   <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
 <div class="ttc" id="a_circuit_elements_8hpp_html"><div class="ttname"><a href="_circuit_elements_8hpp.html">CircuitElements.hpp</a></div></div>
-<div class="ttc" id="a_circuit_simulator_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="_circuit_simulator_8cpp_source.html#l00018">CircuitSimulator.cpp:18</a></div></div>
+<div class="ttc" id="a_circuit_simulator_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdoc">main function to launch the circuit simulator</div><div class="ttdef"><b>Definition:</b> <a href="_circuit_simulator_8cpp_source.html#l00029">CircuitSimulator.cpp:29</a></div></div>
 <div class="ttc" id="a_dynamic_matrix_8hpp_html"><div class="ttname"><a href="_dynamic_matrix_8hpp.html">DynamicMatrix.hpp</a></div></div>
 <div class="ttc" id="a_simulator_8hpp_html"><div class="ttname"><a href="_simulator_8hpp.html">Simulator.hpp</a></div></div>
-<div class="ttc" id="aclass_simulation_environment_html"><div class="ttname"><a href="class_simulation_environment.html">SimulationEnvironment</a></div><div class="ttdoc">The main class to hold all of the relevant simulation data.</div><div class="ttdef"><b>Definition:</b> <a href="_simulator_8hpp_source.html#l00035">Simulator.hpp:35</a></div></div>
-<div class="ttc" id="aclass_simulation_environment_html_a1b133fa2ad9af152621860e79ea66bf2"><div class="ttname"><a href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2">SimulationEnvironment::simulate</a></div><div class="ttdeci">void simulate()</div><div class="ttdoc">Where a lot of the magic starts. This is what runs the simulation.</div><div class="ttdef"><b>Definition:</b> <a href="_simulator_8hpp_source.html#l00154">Simulator.hpp:154</a></div></div>
+<div class="ttc" id="aclass_simulation_environment_html"><div class="ttname"><a href="class_simulation_environment.html">SimulationEnvironment</a></div><div class="ttdoc">The main class to hold all of the relevant simulation data.</div><div class="ttdef"><b>Definition:</b> <a href="_simulator_8hpp_source.html#l00046">Simulator.hpp:46</a></div></div>
+<div class="ttc" id="aclass_simulation_environment_html_a1b133fa2ad9af152621860e79ea66bf2"><div class="ttname"><a href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2">SimulationEnvironment::simulate</a></div><div class="ttdeci">void simulate()</div><div class="ttdoc">Where a lot of the magic starts. This is what runs the simulation.</div><div class="ttdef"><b>Definition:</b> <a href="_simulator_8hpp_source.html#l00254">Simulator.hpp:254</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

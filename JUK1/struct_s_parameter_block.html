@@ -116,43 +116,52 @@ Collaboration diagram for SParameterBlock&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab7cf363417479e181f18a258c2001b47"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#ab7cf363417479e181f18a258c2001b47">aWaveConvValue</a> (size_t portIndex, const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t n, T sTimePoint, const T simulationTimestep, size_t sizeG_A) const</td></tr>
-<tr class="memdesc:ab7cf363417479e181f18a258c2001b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs a linear interpolation and returns the a wave value for use in the convolution.  <a href="struct_s_parameter_block.html#ab7cf363417479e181f18a258c2001b47">More...</a><br /></td></tr>
-<tr class="separator:ab7cf363417479e181f18a258c2001b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b76576a1e791d43acaf2ebf089ff748"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a5b76576a1e791d43acaf2ebf089ff748">V_p</a> (size_t p, const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t n, T simulationTimestep, size_t sizeG_A) const</td></tr>
-<tr class="memdesc:a5b76576a1e791d43acaf2ebf089ff748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the equivalent port voltage source by convolving the (historic) a wave values with the DTIR.  <a href="struct_s_parameter_block.html#a5b76576a1e791d43acaf2ebf089ff748">More...</a><br /></td></tr>
-<tr class="separator:a5b76576a1e791d43acaf2ebf089ff748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0fb5e2fb29f005ece26d852476c9b3"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a4f0fb5e2fb29f005ece26d852476c9b3">aWaveConvValue</a> (size_t portIndex, const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t n, T sTimePoint, const T simulationTimestep, size_t sizeG_A) const</td></tr>
+<tr class="memdesc:a4f0fb5e2fb29f005ece26d852476c9b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs a linear interpolation and returns the a wave value for use in the convolution.  <a href="struct_s_parameter_block.html#a4f0fb5e2fb29f005ece26d852476c9b3">More...</a><br /></td></tr>
+<tr class="separator:a4f0fb5e2fb29f005ece26d852476c9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf70a2f96c33a2b557743dc8ede8d09"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a5bf70a2f96c33a2b557743dc8ede8d09">V_p</a> (size_t p, const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t n, T simulationTimestep, size_t sizeG_A) const</td></tr>
+<tr class="memdesc:a5bf70a2f96c33a2b557743dc8ede8d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the equivalent port voltage source by convolving the (historic) a wave values with the DTIR.  <a href="struct_s_parameter_block.html#a5bf70a2f96c33a2b557743dc8ede8d09">More...</a><br /></td></tr>
+<tr class="separator:a5bf70a2f96c33a2b557743dc8ede8d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7073466ede56710c9c0c2a8a0ea2ed88"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a7073466ede56710c9c0c2a8a0ea2ed88">R_p</a> (size_t p) const</td></tr>
 <tr class="separator:a7073466ede56710c9c0c2a8a0ea2ed88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4027a86b9d8d4c525c85c50ffba5c94e"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a4027a86b9d8d4c525c85c50ffba5c94e">beta_p</a> (size_t p) const</td></tr>
 <tr class="separator:a4027a86b9d8d4c525c85c50ffba5c94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17dfad1ceda5be326f9a042c5dcbab2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a17dfad1ceda5be326f9a042c5dcbab2a">addDynamicStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;stamp, const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T simulationTimestep) const</td></tr>
-<tr class="memdesc:a17dfad1ceda5be326f9a042c5dcbab2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds this component's dynamic stamp to the target stamp.  <a href="struct_s_parameter_block.html#a17dfad1ceda5be326f9a042c5dcbab2a">More...</a><br /></td></tr>
-<tr class="separator:a17dfad1ceda5be326f9a042c5dcbab2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57fe696928bab22f9a0a1b276eb083b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a57fe696928bab22f9a0a1b276eb083b9">updateStoredState</a> (const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T timestep)</td></tr>
-<tr class="memdesc:a57fe696928bab22f9a0a1b276eb083b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates any stored state based on the current solution index.  <a href="struct_s_parameter_block.html#a57fe696928bab22f9a0a1b276eb083b9">More...</a><br /></td></tr>
-<tr class="separator:a57fe696928bab22f9a0a1b276eb083b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae8e31fb949682e0255a82367a58dad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a7ae8e31fb949682e0255a82367a58dad">addStaticStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;stamp) const</td></tr>
+<tr class="memdesc:a7ae8e31fb949682e0255a82367a58dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds this component's static stamp to the target stamp.  <a href="struct_s_parameter_block.html#a7ae8e31fb949682e0255a82367a58dad">More...</a><br /></td></tr>
+<tr class="separator:a7ae8e31fb949682e0255a82367a58dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4a7f2ebc955b03c35ca1708cca2c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#aab4a7f2ebc955b03c35ca1708cca2c70">addDynamicStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;stamp, const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T simulationTimestep) const</td></tr>
+<tr class="memdesc:aab4a7f2ebc955b03c35ca1708cca2c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds this component's dynamic stamp to the target stamp.  <a href="struct_s_parameter_block.html#aab4a7f2ebc955b03c35ca1708cca2c70">More...</a><br /></td></tr>
+<tr class="separator:aab4a7f2ebc955b03c35ca1708cca2c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff4b989668fd3048f5ea827774b51b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a1ff4b989668fd3048f5ea827774b51b6">addDCAnalysisStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;stamp, const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionVector, size_t numCurrents) const</td></tr>
+<tr class="memdesc:a1ff4b989668fd3048f5ea827774b51b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds this component's DC stamp to the target stamp.  <a href="struct_s_parameter_block.html#a1ff4b989668fd3048f5ea827774b51b6">More...</a><br /></td></tr>
+<tr class="separator:a1ff4b989668fd3048f5ea827774b51b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afffbeb6876332341131fdbb6afcc5754"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#afffbeb6876332341131fdbb6afcc5754">updateStoredState</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep, size_t sizeG_A)</td></tr>
+<tr class="memdesc:afffbeb6876332341131fdbb6afcc5754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates any stored state based on the current solution index.  <a href="struct_s_parameter_block.html#afffbeb6876332341131fdbb6afcc5754">More...</a><br /></td></tr>
+<tr class="separator:afffbeb6876332341131fdbb6afcc5754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91a50c8dd7a5f9d58892e5e36b77d752"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a91a50c8dd7a5f9d58892e5e36b77d752">readInTouchstoneFile</a> ()</td></tr>
 <tr class="memdesc:a91a50c8dd7a5f9d58892e5e36b77d752"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads in the s-parameter data from a touchstone file. Currently it ignores the units of frequency, and only works with real-imag formatting  <a href="struct_s_parameter_block.html#a91a50c8dd7a5f9d58892e5e36b77d752">More...</a><br /></td></tr>
 <tr class="separator:a91a50c8dd7a5f9d58892e5e36b77d752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_component.html">Component&lt; T &gt;</a></td></tr>
-<tr class="memitem:a84e4548bed7632f47c51919d2d489c77 inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a84e4548bed7632f47c51919d2d489c77">addStaticStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;destination) const</td></tr>
-<tr class="memdesc:a84e4548bed7632f47c51919d2d489c77 inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds this component's static stamp to the target stamp.  <a href="struct_component.html#a84e4548bed7632f47c51919d2d489c77">More...</a><br /></td></tr>
-<tr class="separator:a84e4548bed7632f47c51919d2d489c77 inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44de5074a86d89d84ad7166f0c64a973 inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a44de5074a86d89d84ad7166f0c64a973">addNonLinearStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;destination, const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T timestep=0) const</td></tr>
-<tr class="memdesc:a44de5074a86d89d84ad7166f0c64a973 inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds this component's non-linear stamp to the target stamp.  <a href="struct_component.html#a44de5074a86d89d84ad7166f0c64a973">More...</a><br /></td></tr>
-<tr class="separator:a44de5074a86d89d84ad7166f0c64a973 inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3148dc9109a2d92df0519cb32130044e inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a3148dc9109a2d92df0519cb32130044e">addNonLinearStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;destination, const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep=0) const</td></tr>
+<tr class="memdesc:a3148dc9109a2d92df0519cb32130044e inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds this component's non-linear stamp to the target stamp.  <a href="struct_component.html#a3148dc9109a2d92df0519cb32130044e">More...</a><br /></td></tr>
+<tr class="separator:a3148dc9109a2d92df0519cb32130044e inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa09e5adb1144f269735a379a2e5e9e inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#acaa09e5adb1144f269735a379a2e5e9e">updateDCStoredState</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionVector, size_t sizeG_A, size_t numCurrents)</td></tr>
+<tr class="memdesc:acaa09e5adb1144f269735a379a2e5e9e inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">a function to update the stored state of a component based on a DC value  <a href="struct_component.html#acaa09e5adb1144f269735a379a2e5e9e">More...</a><br /></td></tr>
+<tr class="separator:acaa09e5adb1144f269735a379a2e5e9e inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c311599418f7efd7714acbdea201a75 inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a7c311599418f7efd7714acbdea201a75">setTimestep</a> (T timestep)</td></tr>
+<tr class="memdesc:a7c311599418f7efd7714acbdea201a75 inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialises the component  <a href="struct_component.html#a7c311599418f7efd7714acbdea201a75">More...</a><br /></td></tr>
+<tr class="separator:a7c311599418f7efd7714acbdea201a75 inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d2fd772fc1a945ab88556e95db62b9b inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a2d2fd772fc1a945ab88556e95db62b9b">~Component</a> ()</td></tr>
 <tr class="separator:a2d2fd772fc1a945ab88556e95db62b9b inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9195f446cf3c7ea44523c316f7fb45c3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a9195f446cf3c7ea44523c316f7fb45c3">addToElements</a> (const std::string &amp;line, <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt; &amp;elements, size_t &amp;numNodes, size_t &amp;numCurrents)</td></tr>
-<tr class="separator:a9195f446cf3c7ea44523c316f7fb45c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab4b46f02af89238ee28c2f5bad5135"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#abab4b46f02af89238ee28c2f5bad5135">addToElements</a> (const std::string &amp;line, <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt; &amp;<a class="el" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>, size_t &amp;numNodes, size_t &amp;numCurrents, size_t &amp;numDCCurrents)</td></tr>
+<tr class="separator:abab4b46f02af89238ee28c2f5bad5135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_struct_component"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_struct_component')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="struct_component.html">Component&lt; T &gt;</a></td></tr>
-<tr class="memitem:ac5e46c014be509bef88c6e9e0ba7f457 inherit pub_static_methods_struct_component"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#ac5e46c014be509bef88c6e9e0ba7f457">addToElements</a> (const std::string &amp;line, <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt; &amp;elements, size_t &amp;numNodes, size_t &amp;numCurrents)</td></tr>
-<tr class="memdesc:ac5e46c014be509bef88c6e9e0ba7f457 inherit pub_static_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called as a helper to add the component to the elements class.  <a href="struct_component.html#ac5e46c014be509bef88c6e9e0ba7f457">More...</a><br /></td></tr>
-<tr class="separator:ac5e46c014be509bef88c6e9e0ba7f457 inherit pub_static_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2202ea3a02eb55437cc69323e3149518 inherit pub_static_methods_struct_component"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a2202ea3a02eb55437cc69323e3149518">addToElements</a> (const std::string &amp;line, <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt; &amp;<a class="el" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>, size_t &amp;numNodes, size_t &amp;numCurrents, size_t &amp;numDCCurrents)</td></tr>
+<tr class="memdesc:a2202ea3a02eb55437cc69323e3149518 inherit pub_static_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called as a helper to add the component to the elements class.  <a href="struct_component.html#a2202ea3a02eb55437cc69323e3149518">More...</a><br /></td></tr>
+<tr class="separator:a2202ea3a02eb55437cc69323e3149518 inherit pub_static_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -164,6 +173,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2c6b021e1aa712e3b9f8a8fa30d48e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a9bc6b7d3e722f5a43801512b68aab5"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a3a9bc6b7d3e722f5a43801512b68aab5">z_ref</a> = 0</td></tr>
 <tr class="separator:a3a9bc6b7d3e722f5a43801512b68aab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d264a41add597ee68fe9a5db6343855"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_parameter_block.html#a3d264a41add597ee68fe9a5db6343855">fracMaxToKeep</a> = 0</td></tr>
+<tr class="separator:a3d264a41add597ee68fe9a5db6343855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_component"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_component')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_component.html">Component&lt; T &gt;</a></td></tr>
 <tr class="memitem:aed9ba9f3e2315cf384ef3e6eb45c8010 inherit pub_attribs_struct_component"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">designator</a> = &quot;&quot;</td></tr>
 <tr class="memdesc:aed9ba9f3e2315cf384ef3e6eb45c8010 inherit pub_attribs_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">The designator as in the netlist for e.g.  <a href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">More...</a><br /></td></tr>
@@ -181,10 +192,68 @@ struct SParameterBlock&lt; T &gt;</h3>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00067">67</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00087">87</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a17dfad1ceda5be326f9a042c5dcbab2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17dfad1ceda5be326f9a042c5dcbab2a">&#9670;&nbsp;</a></span>addDynamicStampTo()</h2>
+<a id="a1ff4b989668fd3048f5ea827774b51b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff4b989668fd3048f5ea827774b51b6">&#9670;&nbsp;</a></span>addDCAnalysisStampTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_s_parameter_block.html">SParameterBlock</a>&lt; T &gt;::addDCAnalysisStampTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>solutionVector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numCurrents</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>adds this component's DC stamp to the target stamp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destination</td><td>The stamp to be added to. </td></tr>
+    <tr><td class="paramname">solutionMatrix</td><td>A vector containing all past solutions to the circuit </td></tr>
+    <tr><td class="paramname">numCurrents</td><td>The number of currents used by the transient simulation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="struct_component.html#aafc78b3192019974d03384c37421beca">Component&lt; T &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00241">241</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aab4a7f2ebc955b03c35ca1708cca2c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab4a7f2ebc955b03c35ca1708cca2c70">&#9670;&nbsp;</a></span>addDynamicStampTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,8 +272,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>solutionVector</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>solutionMatrix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -235,31 +304,71 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">destination</td><td>The stamp to be added to. </td></tr>
-    <tr><td class="paramname">solutionVector</td><td>A vector containing all past solutions to the circuit </td></tr>
+    <tr><td class="paramname">solutionMatrix</td><td>A vector containing all past solutions to the circuit </td></tr>
     <tr><td class="paramname">currentSolutionIndex</td><td>The current timeStep index </td></tr>
     <tr><td class="paramname">timestep</td><td>The length of each time step </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="struct_component.html#ab572c67300b95e6ab69df0c2b856c4fe">Component&lt; T &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="struct_component.html#addab43f9a2af13951c5dee06e78f595a">Component&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00174">174</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00228">228</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_s_parameter_block_a17dfad1ceda5be326f9a042c5dcbab2a_cgraph.png" border="0" usemap="#astruct_s_parameter_block_a17dfad1ceda5be326f9a042c5dcbab2a_cgraph" alt=""/></div>
-<map name="astruct_s_parameter_block_a17dfad1ceda5be326f9a042c5dcbab2a_cgraph" id="astruct_s_parameter_block_a17dfad1ceda5be326f9a042c5dcbab2a_cgraph">
+<div class="center"><img src="struct_s_parameter_block_aab4a7f2ebc955b03c35ca1708cca2c70_cgraph.png" border="0" usemap="#astruct_s_parameter_block_aab4a7f2ebc955b03c35ca1708cca2c70_cgraph" alt=""/></div>
+<map name="astruct_s_parameter_block_aab4a7f2ebc955b03c35ca1708cca2c70_cgraph" id="astruct_s_parameter_block_aab4a7f2ebc955b03c35ca1708cca2c70_cgraph">
 <area shape="rect" title="Adds this component&#39;s dynamic stamp to the target stamp." alt="" coords="5,5,209,47"/>
-<area shape="rect" href="struct_s_parameter_block.html#a5b76576a1e791d43acaf2ebf089ff748" title="Determines the equivalent port voltage source by convolving the (historic) a wave values with the DTI..." alt="" coords="257,13,412,39"/>
-<area shape="rect" href="struct_s_parameter_block.html#ab7cf363417479e181f18a258c2001b47" title="performs a linear interpolation and returns the a wave value for use in the convolution." alt="" coords="460,5,659,47"/>
+<area shape="rect" href="struct_s_parameter_block.html#a5bf70a2f96c33a2b557743dc8ede8d09" title="Determines the equivalent port voltage source by convolving the (historic) a wave values with the DTI..." alt="" coords="257,13,412,39"/>
+<area shape="rect" href="struct_s_parameter_block.html#a4f0fb5e2fb29f005ece26d852476c9b3" title="performs a linear interpolation and returns the a wave value for use in the convolution." alt="" coords="460,5,659,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a9195f446cf3c7ea44523c316f7fb45c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9195f446cf3c7ea44523c316f7fb45c3">&#9670;&nbsp;</a></span>addToElements()</h2>
+<a id="a7ae8e31fb949682e0255a82367a58dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ae8e31fb949682e0255a82367a58dad">&#9670;&nbsp;</a></span>addStaticStampTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_s_parameter_block.html">SParameterBlock</a>&lt; T &gt;::addStaticStampTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>destination</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds this component's static stamp to the target stamp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destination</td><td>The stamp to be added to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="struct_component.html#a84e4548bed7632f47c51919d2d489c77">Component&lt; T &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00195">195</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+
+</div>
+</div>
+<a id="abab4b46f02af89238ee28c2f5bad5135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abab4b46f02af89238ee28c2f5bad5135">&#9670;&nbsp;</a></span>addToElements()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +400,13 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t &amp;&#160;</td>
-          <td class="paramname"><em>numCurrents</em>&#160;</td>
+          <td class="paramname"><em>numCurrents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>numDCCurrents</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -306,28 +421,29 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00281">281</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00382">382</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_s_parameter_block_a9195f446cf3c7ea44523c316f7fb45c3_cgraph.png" border="0" usemap="#astruct_s_parameter_block_a9195f446cf3c7ea44523c316f7fb45c3_cgraph" alt=""/></div>
-<map name="astruct_s_parameter_block_a9195f446cf3c7ea44523c316f7fb45c3_cgraph" id="astruct_s_parameter_block_a9195f446cf3c7ea44523c316f7fb45c3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,37,228,64"/>
-<area shape="rect" href="_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40" title="a helper function to aid in the construction of regexes for parsing netlist files" alt="" coords="349,12,458,39"/>
-<area shape="rect" href="struct_s_parameter_block.html#a91a50c8dd7a5f9d58892e5e36b77d752" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="276,63,531,89"/>
-<area shape="rect" href="_force_causal_8hpp.html#a1e25332eab5d78520fe2142b32724a27" title=" " alt="" coords="579,63,669,89"/>
-<area shape="rect" href="namespace_force_causal.html#adc77641ea6b87c6bfdae84b12dee33e9" title=" " alt="" coords="1070,12,1181,39"/>
-<area shape="rect" href="namespace_force_causal.html#a33497b490cbf0779950b663c8f88ac73" title=" " alt="" coords="717,37,860,64"/>
-<area shape="rect" href="namespace_force_causal.html#a19b3d69e4d05f839c4c6edec91ff7db5" title=" " alt="" coords="1069,63,1181,89"/>
-<area shape="rect" href="dft_8hpp.html#ad89d79493db5dbc3c9b1b1f701b51d4f" title=" " alt="" coords="769,139,808,165"/>
-<area shape="rect" href="namespace_force_causal.html#ad2828d6cc4de61cb8a40d053aac0c763" title=" " alt="" coords="908,37,1021,64"/>
+<div class="center"><img src="struct_s_parameter_block_abab4b46f02af89238ee28c2f5bad5135_cgraph.png" border="0" usemap="#astruct_s_parameter_block_abab4b46f02af89238ee28c2f5bad5135_cgraph" alt=""/></div>
+<map name="astruct_s_parameter_block_abab4b46f02af89238ee28c2f5bad5135_cgraph" id="astruct_s_parameter_block_abab4b46f02af89238ee28c2f5bad5135_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,228,57"/>
+<area shape="rect" href="_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40" title="a helper function to aid in the construction of regexes for parsing netlist files" alt="" coords="349,5,458,32"/>
+<area shape="rect" href="struct_s_parameter_block.html#a91a50c8dd7a5f9d58892e5e36b77d752" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="276,56,531,83"/>
+<area shape="rect" href="interch_8m.html#ae4e69912f5a2f923a187c235f950a7d2" title=" " alt="" coords="767,5,810,32"/>
+<area shape="rect" href="_force_causal_8hpp.html#a1e25332eab5d78520fe2142b32724a27" title=" " alt="" coords="579,81,669,108"/>
+<area shape="rect" href="namespace_force_causal.html#adc77641ea6b87c6bfdae84b12dee33e9" title=" " alt="" coords="1070,81,1181,108"/>
+<area shape="rect" href="namespace_force_causal.html#a33497b490cbf0779950b663c8f88ac73" title=" " alt="" coords="717,107,860,133"/>
+<area shape="rect" href="namespace_force_causal.html#a19b3d69e4d05f839c4c6edec91ff7db5" title=" " alt="" coords="1069,132,1181,159"/>
+<area shape="rect" href="dft_8hpp.html#ad89d79493db5dbc3c9b1b1f701b51d4f" title=" " alt="" coords="769,208,808,235"/>
+<area shape="rect" href="namespace_force_causal.html#ad2828d6cc4de61cb8a40d053aac0c763" title=" " alt="" coords="908,107,1021,133"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_s_parameter_block_a9195f446cf3c7ea44523c316f7fb45c3_icgraph.png" border="0" usemap="#astruct_s_parameter_block_a9195f446cf3c7ea44523c316f7fb45c3_icgraph" alt=""/></div>
-<map name="astruct_s_parameter_block_a9195f446cf3c7ea44523c316f7fb45c3_icgraph" id="astruct_s_parameter_block_a9195f446cf3c7ea44523c316f7fb45c3_icgraph">
+<div class="center"><img src="struct_s_parameter_block_abab4b46f02af89238ee28c2f5bad5135_icgraph.png" border="0" usemap="#astruct_s_parameter_block_abab4b46f02af89238ee28c2f5bad5135_icgraph" alt=""/></div>
+<map name="astruct_s_parameter_block_abab4b46f02af89238ee28c2f5bad5135_icgraph" id="astruct_s_parameter_block_abab4b46f02af89238ee28c2f5bad5135_icgraph">
 <area shape="rect" title=" " alt="" coords="216,13,439,39"/>
 <area shape="rect" href="class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title="Setup the simulation environment from a netlist." alt="" coords="5,5,168,47"/>
 </map>
@@ -335,8 +451,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab7cf363417479e181f18a258c2001b47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7cf363417479e181f18a258c2001b47">&#9670;&nbsp;</a></span>aWaveConvValue()</h2>
+<a id="a4f0fb5e2fb29f005ece26d852476c9b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f0fb5e2fb29f005ece26d852476c9b3">&#9670;&nbsp;</a></span>aWaveConvValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,8 +471,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>solutionVector</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>solutionMatrix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -399,7 +515,7 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">portIndex</td><td>The port being processed </td></tr>
-    <tr><td class="paramname">solutionVector</td><td>The working solution vector </td></tr>
+    <tr><td class="paramname">solutionMatrix</td><td>The working solution vector </td></tr>
     <tr><td class="paramname">n</td><td>The current time step </td></tr>
     <tr><td class="paramname">sTimePoint</td><td>The time of DTIR </td></tr>
     <tr><td class="paramname">simulationTimestep</td><td>The timestep of the simulation </td></tr>
@@ -409,15 +525,15 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the value for use in the convolution </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00086">86</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00107">107</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_s_parameter_block_ab7cf363417479e181f18a258c2001b47_icgraph.png" border="0" usemap="#astruct_s_parameter_block_ab7cf363417479e181f18a258c2001b47_icgraph" alt=""/></div>
-<map name="astruct_s_parameter_block_ab7cf363417479e181f18a258c2001b47_icgraph" id="astruct_s_parameter_block_ab7cf363417479e181f18a258c2001b47_icgraph">
+<div class="center"><img src="struct_s_parameter_block_a4f0fb5e2fb29f005ece26d852476c9b3_icgraph.png" border="0" usemap="#astruct_s_parameter_block_a4f0fb5e2fb29f005ece26d852476c9b3_icgraph" alt=""/></div>
+<map name="astruct_s_parameter_block_a4f0fb5e2fb29f005ece26d852476c9b3_icgraph" id="astruct_s_parameter_block_a4f0fb5e2fb29f005ece26d852476c9b3_icgraph">
 <area shape="rect" title="performs a linear interpolation and returns the a wave value for use in the convolution." alt="" coords="460,5,659,47"/>
-<area shape="rect" href="struct_s_parameter_block.html#a5b76576a1e791d43acaf2ebf089ff748" title="Determines the equivalent port voltage source by convolving the (historic) a wave values with the DTI..." alt="" coords="257,13,412,39"/>
-<area shape="rect" href="struct_s_parameter_block.html#a17dfad1ceda5be326f9a042c5dcbab2a" title="Adds this component&#39;s dynamic stamp to the target stamp." alt="" coords="5,5,209,47"/>
+<area shape="rect" href="struct_s_parameter_block.html#a5bf70a2f96c33a2b557743dc8ede8d09" title="Determines the equivalent port voltage source by convolving the (historic) a wave values with the DTI..." alt="" coords="257,13,412,39"/>
+<area shape="rect" href="struct_s_parameter_block.html#aab4a7f2ebc955b03c35ca1708cca2c70" title="Adds this component&#39;s dynamic stamp to the target stamp." alt="" coords="5,5,209,47"/>
 </map>
 </div>
 
@@ -449,7 +565,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00170">170</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00191">191</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 
 </div>
 </div>
@@ -479,7 +595,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00166">166</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00187">187</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 
 </div>
 </div>
@@ -510,19 +626,20 @@ template&lt;typename T &gt; </div>
 
 <p>reads in the s-parameter data from a touchstone file. Currently it ignores the units of frequency, and only works with real-imag formatting </p>
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00221">221</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00307">307</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_s_parameter_block_a91a50c8dd7a5f9d58892e5e36b77d752_cgraph.png" border="0" usemap="#astruct_s_parameter_block_a91a50c8dd7a5f9d58892e5e36b77d752_cgraph" alt=""/></div>
 <map name="astruct_s_parameter_block_a91a50c8dd7a5f9d58892e5e36b77d752_cgraph" id="astruct_s_parameter_block_a91a50c8dd7a5f9d58892e5e36b77d752_cgraph">
-<area shape="rect" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="5,63,260,89"/>
-<area shape="rect" href="_force_causal_8hpp.html#a1e25332eab5d78520fe2142b32724a27" title=" " alt="" coords="308,63,399,89"/>
-<area shape="rect" href="namespace_force_causal.html#adc77641ea6b87c6bfdae84b12dee33e9" title=" " alt="" coords="799,12,910,39"/>
-<area shape="rect" href="namespace_force_causal.html#a33497b490cbf0779950b663c8f88ac73" title=" " alt="" coords="447,37,589,64"/>
-<area shape="rect" href="namespace_force_causal.html#a19b3d69e4d05f839c4c6edec91ff7db5" title=" " alt="" coords="799,63,911,89"/>
-<area shape="rect" href="dft_8hpp.html#ad89d79493db5dbc3c9b1b1f701b51d4f" title=" " alt="" coords="499,139,537,165"/>
-<area shape="rect" href="namespace_force_causal.html#ad2828d6cc4de61cb8a40d053aac0c763" title=" " alt="" coords="637,37,751,64"/>
+<area shape="rect" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="5,56,260,83"/>
+<area shape="rect" href="interch_8m.html#ae4e69912f5a2f923a187c235f950a7d2" title=" " alt="" coords="497,5,539,32"/>
+<area shape="rect" href="_force_causal_8hpp.html#a1e25332eab5d78520fe2142b32724a27" title=" " alt="" coords="308,81,399,108"/>
+<area shape="rect" href="namespace_force_causal.html#adc77641ea6b87c6bfdae84b12dee33e9" title=" " alt="" coords="799,81,910,108"/>
+<area shape="rect" href="namespace_force_causal.html#a33497b490cbf0779950b663c8f88ac73" title=" " alt="" coords="447,107,589,133"/>
+<area shape="rect" href="namespace_force_causal.html#a19b3d69e4d05f839c4c6edec91ff7db5" title=" " alt="" coords="799,132,911,159"/>
+<area shape="rect" href="dft_8hpp.html#ad89d79493db5dbc3c9b1b1f701b51d4f" title=" " alt="" coords="499,208,537,235"/>
+<area shape="rect" href="namespace_force_causal.html#ad2828d6cc4de61cb8a40d053aac0c763" title=" " alt="" coords="637,107,751,133"/>
 </map>
 </div>
 <div class="dynheader">
@@ -531,15 +648,15 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="struct_s_parameter_block_a91a50c8dd7a5f9d58892e5e36b77d752_icgraph.png" border="0" usemap="#astruct_s_parameter_block_a91a50c8dd7a5f9d58892e5e36b77d752_icgraph" alt=""/></div>
 <map name="astruct_s_parameter_block_a91a50c8dd7a5f9d58892e5e36b77d752_icgraph" id="astruct_s_parameter_block_a91a50c8dd7a5f9d58892e5e36b77d752_icgraph">
 <area shape="rect" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="487,13,741,39"/>
-<area shape="rect" href="struct_s_parameter_block.html#a9195f446cf3c7ea44523c316f7fb45c3" title=" " alt="" coords="216,13,439,39"/>
+<area shape="rect" href="struct_s_parameter_block.html#abab4b46f02af89238ee28c2f5bad5135" title=" " alt="" coords="216,13,439,39"/>
 <area shape="rect" href="class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title="Setup the simulation environment from a netlist." alt="" coords="5,5,168,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a57fe696928bab22f9a0a1b276eb083b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57fe696928bab22f9a0a1b276eb083b9">&#9670;&nbsp;</a></span>updateStoredState()</h2>
+<a id="afffbeb6876332341131fdbb6afcc5754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afffbeb6876332341131fdbb6afcc5754">&#9670;&nbsp;</a></span>updateStoredState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,8 +669,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="struct_s_parameter_block.html">SParameterBlock</a>&lt; T &gt;::updateStoredState </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>solutionVector</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>solutionMatrix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -565,7 +682,13 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>timestep</em>&#160;</td>
+          <td class="paramname"><em>timestep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numCurrents</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -583,21 +706,22 @@ template&lt;typename T &gt; </div>
 <p>Updates any stored state based on the current solution index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">solutionVector</td><td>A vector containing all past solutions to the circuit </td></tr>
+    <tr><td class="paramname">solutionMatrix</td><td>A vector containing all past solutions to the circuit </td></tr>
     <tr><td class="paramname">currentSolutionIndex</td><td>The current timeStep index </td></tr>
     <tr><td class="paramname">timestep</td><td>The length of each time step </td></tr>
+    <tr><td class="paramname">sizeG_A</td><td>the size of the A portion of G, marks the end of the equiv currents </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="struct_component.html#ab932580c43337bf2208c18b07097774e">Component&lt; T &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="struct_component.html#aeba1d7d863e6a8d66a38cd81dfb4b613">Component&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00214">214</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00298">298</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a5b76576a1e791d43acaf2ebf089ff748"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b76576a1e791d43acaf2ebf089ff748">&#9670;&nbsp;</a></span>V_p()</h2>
+<a id="a5bf70a2f96c33a2b557743dc8ede8d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf70a2f96c33a2b557743dc8ede8d09">&#9670;&nbsp;</a></span>V_p()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -616,8 +740,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>solutionVector</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>solutionMatrix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -654,7 +778,7 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>The port index </td></tr>
-    <tr><td class="paramname">solutionVector</td><td>The solution vector of the circuit </td></tr>
+    <tr><td class="paramname">solutionMatrix</td><td>The solution vector of the circuit </td></tr>
     <tr><td class="paramname">n</td><td>The current timestep </td></tr>
     <tr><td class="paramname">simulationTimestep</td><td>the simulations timestep </td></tr>
     <tr><td class="paramname">sizeG_A</td><td>the size of the voltage dependant part of the stamp</td></tr>
@@ -663,29 +787,47 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Equivalent port voltage source voltage </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00146">146</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00167">167</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_s_parameter_block_a5b76576a1e791d43acaf2ebf089ff748_cgraph.png" border="0" usemap="#astruct_s_parameter_block_a5b76576a1e791d43acaf2ebf089ff748_cgraph" alt=""/></div>
-<map name="astruct_s_parameter_block_a5b76576a1e791d43acaf2ebf089ff748_cgraph" id="astruct_s_parameter_block_a5b76576a1e791d43acaf2ebf089ff748_cgraph">
+<div class="center"><img src="struct_s_parameter_block_a5bf70a2f96c33a2b557743dc8ede8d09_cgraph.png" border="0" usemap="#astruct_s_parameter_block_a5bf70a2f96c33a2b557743dc8ede8d09_cgraph" alt=""/></div>
+<map name="astruct_s_parameter_block_a5bf70a2f96c33a2b557743dc8ede8d09_cgraph" id="astruct_s_parameter_block_a5bf70a2f96c33a2b557743dc8ede8d09_cgraph">
 <area shape="rect" title="Determines the equivalent port voltage source by convolving the (historic) a wave values with the DTI..." alt="" coords="5,13,160,39"/>
-<area shape="rect" href="struct_s_parameter_block.html#ab7cf363417479e181f18a258c2001b47" title="performs a linear interpolation and returns the a wave value for use in the convolution." alt="" coords="208,5,407,47"/>
+<area shape="rect" href="struct_s_parameter_block.html#a4f0fb5e2fb29f005ece26d852476c9b3" title="performs a linear interpolation and returns the a wave value for use in the convolution." alt="" coords="208,5,407,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_s_parameter_block_a5b76576a1e791d43acaf2ebf089ff748_icgraph.png" border="0" usemap="#astruct_s_parameter_block_a5b76576a1e791d43acaf2ebf089ff748_icgraph" alt=""/></div>
-<map name="astruct_s_parameter_block_a5b76576a1e791d43acaf2ebf089ff748_icgraph" id="astruct_s_parameter_block_a5b76576a1e791d43acaf2ebf089ff748_icgraph">
+<div class="center"><img src="struct_s_parameter_block_a5bf70a2f96c33a2b557743dc8ede8d09_icgraph.png" border="0" usemap="#astruct_s_parameter_block_a5bf70a2f96c33a2b557743dc8ede8d09_icgraph" alt=""/></div>
+<map name="astruct_s_parameter_block_a5bf70a2f96c33a2b557743dc8ede8d09_icgraph" id="astruct_s_parameter_block_a5bf70a2f96c33a2b557743dc8ede8d09_icgraph">
 <area shape="rect" title="Determines the equivalent port voltage source by convolving the (historic) a wave values with the DTI..." alt="" coords="257,13,412,39"/>
-<area shape="rect" href="struct_s_parameter_block.html#a17dfad1ceda5be326f9a042c5dcbab2a" title="Adds this component&#39;s dynamic stamp to the target stamp." alt="" coords="5,5,209,47"/>
+<area shape="rect" href="struct_s_parameter_block.html#aab4a7f2ebc955b03c35ca1708cca2c70" title="Adds this component&#39;s dynamic stamp to the target stamp." alt="" coords="5,5,209,47"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3d264a41add597ee68fe9a5db6343855"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d264a41add597ee68fe9a5db6343855">&#9670;&nbsp;</a></span>fracMaxToKeep</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="struct_s_parameter_block.html">SParameterBlock</a>&lt; T &gt;::fracMaxToKeep = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00093">93</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a744b628260838b9c9151ef46e3b9676d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a744b628260838b9c9151ef46e3b9676d">&#9670;&nbsp;</a></span>port</h2>
 
@@ -700,7 +842,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00069">69</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00089">89</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 
 </div>
 </div>
@@ -718,7 +860,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00070">70</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00090">90</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 
 </div>
 </div>
@@ -736,7 +878,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00068">68</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00088">88</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 
 </div>
 </div>
@@ -754,7 +896,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00072">72</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_parameter_block_8hpp_source.html#l00092">92</a> of file <a class="el" href="_s_parameter_block_8hpp_source.html">SParameterBlock.hpp</a>.</p>
 
 </div>
 </div>

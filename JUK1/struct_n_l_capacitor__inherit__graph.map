@@ -1,0 +1,4 @@
+<map id="NLCapacitor&lt; T &gt;" name="NLCapacitor&lt; T &gt;">
+<area shape="rect" id="node1" title="a non&#45;linear capacitor model of the form C = C_p + C_o * ( 1.0 + tanh( P_10 + P_11 * u ) )" alt="" coords="5,80,129,107"/>
+<area shape="rect" id="node2" href="$struct_component.html" title="A template base class to define the fundamental things a component should define." alt="" coords="8,5,127,32"/>
+</map>

@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "BJTResults< T >", "struct_b_j_t_results.html", null ],
     [ "ForceCausal::CausalData< T >", "struct_force_causal_1_1_causal_data.html", null ],
     [ "CircuitElements< T >", "struct_circuit_elements.html", null ],
     [ "CircuitElements< VT >", "struct_circuit_elements.html", null ],
@@ -10,9 +11,14 @@ var hierarchy =
       [ "CurrentSource< T >", "struct_current_source.html", null ],
       [ "Diode< T >", "struct_diode.html", null ],
       [ "Inductor< T >", "struct_inductor.html", null ],
+      [ "NLCapacitor< T >", "struct_n_l_capacitor.html", null ],
+      [ "NLCurrentSource< T >", "struct_n_l_current_source.html", null ],
+      [ "NLNMOS< T >", "struct_n_l_n_m_o_s.html", null ],
       [ "Resistor< T >", "struct_resistor.html", null ],
       [ "SParameterBlock< T >", "struct_s_parameter_block.html", null ],
+      [ "SParameterBlockVF< T >", "struct_s_parameter_block_v_f.html", null ],
       [ "SinusoidalVoltageSource< T >", "struct_sinusoidal_voltage_source.html", null ],
+      [ "TimeSeriesVoltageSource< T >", "struct_time_series_voltage_source.html", null ],
       [ "VoltageSource< T >", "struct_voltage_source.html", null ]
     ] ],
     [ "LUPair< T >", "struct_l_u_pair.html", null ],
@@ -21,10 +27,14 @@ var hierarchy =
     [ "Matrix< VT >", "struct_matrix.html", null ],
     [ "SimulationEnvironment< VT >", "class_simulation_environment.html", null ],
     [ "SParameterPort< T >", "struct_s_parameter_port.html", null ],
+    [ "SParameterPortVF< T >", "struct_s_parameter_port_v_f.html", null ],
     [ "SParameterSequence< T >", "struct_s_parameter_sequence.html", null ],
+    [ "SParamLengthOffset", "struct_s_param_length_offset.html", null ],
+    [ "SParamVFDataFrom< T >", "struct_s_param_v_f_data_from.html", null ],
     [ "Stamp< T >", "struct_stamp.html", null ],
     [ "StaticLUPair< T, M >", "struct_static_l_u_pair.html", null ],
     [ "StaticMatrix< T, M, N, ST >", "struct_static_matrix.html", null ],
     [ "StaticMatrix< T, M, M >", "struct_static_matrix.html", null ],
-    [ "StaticRow< T, N, ST >", "struct_static_row.html", null ]
+    [ "StaticRow< T, N, ST >", "struct_static_row.html", null ],
+    [ "TransistorTestResult< T >", "struct_transistor_test_result.html", null ]
 ];

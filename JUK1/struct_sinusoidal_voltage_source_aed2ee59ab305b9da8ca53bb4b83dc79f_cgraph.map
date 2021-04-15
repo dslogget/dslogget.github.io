@@ -1,0 +1,5 @@
+<map id="SinusoidalVoltageSource::addDCAnalysisStampTo" name="SinusoidalVoltageSource::addDCAnalysisStampTo">
+<area shape="rect" id="node1" title="adds this component&#39;s DC stamp to the target stamp." alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node2" href="$struct_sinusoidal_voltage_source.html#abe25f3f2abc3f1ca52f55871d2714878" title="Adds this component&#39;s dynamic stamp to the target stamp." alt="" coords="224,5,391,47"/>
+<area shape="rect" id="node3" href="$rot_8m.html#a081c431de89805bcb17574fd2a6ca274" title=" " alt="" coords="439,13,477,39"/>
+</map>

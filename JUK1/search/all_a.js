@@ -1,10 +1,4 @@
 var searchData=
 [
-  ['l_85',['l',['../struct_l_u_pair.html#a076fe547f25da940188ccf5db9543b32',1,'LUPair::l()'],['../struct_static_l_u_pair.html#aebaff70e780d43ffc8abfe7e9225310e',1,'StaticLUPair::l()']]],
-  ['lastcurrent_86',['lastCurrent',['../struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c',1,'Capacitor::lastCurrent()'],['../struct_inductor.html#a3724989610cb371e55760cd8324267f8',1,'Inductor::lastCurrent()']]],
-  ['leftdivide_87',['leftDivide',['../struct_matrix.html#affa396b55a7d4f97f083e0388e525374',1,'Matrix::leftDivide(const Matrix&lt; T &gt; &amp;rhs) const'],['../struct_matrix.html#a250a21a0f104d0be0566b3b73d8f12cb',1,'Matrix::leftDivide(const Matrix&lt; T &gt; &amp;rhs, const LUPair&lt; T &gt; &amp;lu, Matrix&lt; T &gt; &amp;scratchSpace, Matrix&lt; T &gt; &amp;dest) const'],['../struct_static_matrix.html#a776e2601b7215c91393c0e0fa561cead',1,'StaticMatrix::leftDivide(const StaticMatrix&lt; T, M, 1 &gt; &amp;rhs) const'],['../struct_static_matrix.html#a21840cfa7b671e93a06f7e09e72578e1',1,'StaticMatrix::leftDivide(const StaticMatrix&lt; T, M, 1 &gt; &amp;rhs, const StaticLUPair&lt; T, M &gt; &amp;lu, StaticMatrix&lt; T, M, 1 &gt; &amp;scratchSpace, StaticMatrix&lt; T, M, 1 &gt; &amp;dest) const']]],
-  ['linetype_88',['LineType',['../_simulator_8hpp.html#afd074c27ba0a2809258258751b754f52',1,'Simulator.hpp']]],
-  ['lupair_89',['LUPair',['../struct_l_u_pair.html',1,'LUPair&lt; T &gt;'],['../struct_l_u_pair.html#aa4a3d3446b9a6524e3f115a1fa9ae418',1,'LUPair::LUPair(size_t _M)'],['../struct_l_u_pair.html#a3c23d260012d59ce40dc1dfa26bdbc67',1,'LUPair::LUPair(const LUPair&lt; T &gt; &amp;other)']]],
-  ['lupair_90',['luPair',['../struct_matrix.html#a6db3ba8a6abfeed9b96491dcb5c08b78',1,'Matrix::luPair() const'],['../struct_matrix.html#a381533fab14e2a759a659cfb4ff98bce',1,'Matrix::luPair(LUPair&lt; T &gt; &amp;dest) const'],['../struct_static_matrix.html#abd5451853f4976cd3da9301aa134ea37',1,'StaticMatrix::luPair() const'],['../struct_static_matrix.html#a8dd465765fe491c1c392aee0f5d275fc',1,'StaticMatrix::luPair(StaticLUPair&lt; T, M &gt; &amp;dest) const']]],
-  ['lupair_3c_20vt_20_3e_91',['LUPair&lt; VT &gt;',['../struct_l_u_pair.html',1,'']]]
+  ['j_194',['j',['../interch_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6',1,'j():&#160;interch.m'],['../rot_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6',1,'j():&#160;rot.m']]]
 ];

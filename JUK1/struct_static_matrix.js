@@ -19,5 +19,7 @@ var struct_static_matrix =
     [ "swapRows", "struct_static_matrix.html#a89abffa4d11c6440b7d39bed19c76791", null ],
     [ "toString", "struct_static_matrix.html#a4a18328b3dda4657e2c0336183a0c64e", null ],
     [ "transpose", "struct_static_matrix.html#a38d140bc7c06668db998621bf9ea8c48", null ],
-    [ "rows", "struct_static_matrix.html#a51298f40f147b8bc87b2601971823128", null ]
+    [ "rows", "struct_static_matrix.html#a51298f40f147b8bc87b2601971823128", null ],
+    [ "sizeM", "struct_static_matrix.html#a0148893bff04450a58e9c76035b9daeb", null ],
+    [ "sizeN", "struct_static_matrix.html#a55310a88a7fe848df418205648ee8e1b", null ]
 ];

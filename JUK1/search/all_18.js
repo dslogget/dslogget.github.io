@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_5fref_339',['z_ref',['../struct_s_parameter_block.html#a3a9bc6b7d3e722f5a43801512b68aab5',1,'SParameterBlock']]]
+  ['x_450',['x',['../struct_s_param_v_f_data_from.html#a48444a87646fc23ebf0d7b1a28cb7e0d',1,'SParamVFDataFrom::x()'],['../get_residues_8m.html#aa67ca74f1a2f805ccd4f8460589ec897',1,'x():&#160;getResidues.m']]]
 ];

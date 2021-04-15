@@ -1,0 +1,5 @@
+<map id="SimulationEnvironment::setDCOpPoint" name="SimulationEnvironment::setDCOpPoint">
+<area shape="rect" id="node1" title="a function to determine and set the DC operating point" alt="" coords="5,39,160,80"/>
+<area shape="rect" id="node2" href="$struct_circuit_elements.html#a09dd7c40d61a8cfb4691f7b1955006d9" title="Generates the complete DC stamp." alt="" coords="231,5,403,47"/>
+<area shape="rect" id="node3" href="$struct_circuit_elements.html#a457f815721305405cac5a18b1cd293ff" title="Updates the components based on their DC value. Applies to dynamic and non&#45;linear components." alt="" coords="208,71,425,112"/>
+</map>

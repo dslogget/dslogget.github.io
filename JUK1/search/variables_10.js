@@ -1,4 +1,21 @@
 var searchData=
 [
-  ['u_359',['u',['../struct_l_u_pair.html#acab98eb13fb2627f0282bbc48b3a10a4',1,'LUPair::u()'],['../struct_static_l_u_pair.html#aeff44d19fa814c617aaa3497ded9b6c0',1,'StaticLUPair::u()']]]
+  ['p_821',['p',['../struct_l_u_pair.html#a13a9196935267b57b79331581663e20e',1,'LUPair::p()'],['../struct_static_l_u_pair.html#a204d87739719b7c61378fa77867647b9',1,'StaticLUPair::p()']]],
+  ['p_822',['P',['../get_residues_8m.html#ad0d510fe9c56e374c8837ea8f956f356',1,'getResidues.m']]],
+  ['p_5f10_823',['P_10',['../struct_n_l_capacitor.html#a5c63872d45eaf8fef24f4cd39e44cd40',1,'NLCapacitor']]],
+  ['p_5f11_824',['P_11',['../struct_n_l_capacitor.html#a21874924414f6c6c14c83923585037f6',1,'NLCapacitor']]],
+  ['p_5fd10_825',['P_D10',['../struct_n_l_n_m_o_s.html#a05a8971cfc477b23d5ee57d9e94dd2a8',1,'NLNMOS']]],
+  ['p_5fd11_826',['P_D11',['../struct_n_l_n_m_o_s.html#ac4973c35b58ab362785da18215364328',1,'NLNMOS']]],
+  ['p_5fs10_827',['P_S10',['../struct_n_l_n_m_o_s.html#aef6ec4e54f0b28e68e822f5b3f072861',1,'NLNMOS']]],
+  ['p_5fs11_828',['P_S11',['../struct_n_l_n_m_o_s.html#ab87b21b390de352b62a84d1faf3afd57',1,'NLNMOS']]],
+  ['pairs_829',['pairs',['../get_residues_8m.html#a1f968c23756f5fa9e380799acf8277c0',1,'getResidues.m']]],
+  ['performdcanalysis_830',['performDCAnalysis',['../class_simulation_environment.html#a950a49995d499b6293c8a4a5a31261e2',1,'SimulationEnvironment']]],
+  ['phase_831',['phase',['../struct_sinusoidal_voltage_source.html#a3e688d1bfb56fd8b83ce6304abffe205',1,'SinusoidalVoltageSource']]],
+  ['phaseplot_832',['phaseplot',['../vectfit3_8m.html#ac31e858b1752c374e24ca249b311a362',1,'vectfit3.m']]],
+  ['pole_833',['pole',['../struct_s_param_v_f_data_from.html#a210ef2a013c49ef46797edb36b629107',1,'SParamVFDataFrom']]],
+  ['poles_834',['poles',['../find_complex_rational_approximation_8m.html#a941bc79a8e80f2d30662d054fb5648f7',1,'findComplexRationalApproximation.m']]],
+  ['port_835',['port',['../struct_s_parameter_block.html#a744b628260838b9c9151ef46e3b9676d',1,'SParameterBlock::port()'],['../struct_s_parameter_block_v_f.html#aeac1a75e89a9b70b48d29cb96a4e559a',1,'SParameterBlockVF::port()']]],
+  ['positive_836',['positive',['../struct_s_parameter_port.html#ad609e29f9a85e3870381071e0dd84510',1,'SParameterPort::positive()'],['../struct_s_parameter_port_v_f.html#ab2a9793e6cb4820b583dc0d83a552d0f',1,'SParameterPortVF::positive()']]],
+  ['proportional_837',['proportional',['../find_complex_rational_approximation_8m.html#af383db1ca04bcd1de1fd223c192f6081',1,'findComplexRationalApproximation.m']]],
+  ['prrfile_838',['prrFile',['../generate_p_r_r_file_8m.html#a6d52c3c1a83030f31f9ea9a0e6d907ab',1,'generatePRRFile.m']]]
 ];

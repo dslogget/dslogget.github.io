@@ -1,0 +1,4 @@
+<map id="Resistor::addStaticStampTo" name="Resistor::addStaticStampTo">
+<area shape="rect" id="node1" title="Adds this component&#39;s static stamp to the target stamp." alt="" coords="272,5,457,32"/>
+<area shape="rect" id="node2" href="$struct_resistor.html#a2dee52f72874c7b39ab2abaee6eb38b4" title="adds this component&#39;s DC stamp to the target stamp." alt="" coords="5,5,224,32"/>
+</map>

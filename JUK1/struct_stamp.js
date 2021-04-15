@@ -2,8 +2,9 @@ var struct_stamp =
 [
     [ "Stamp", "struct_stamp.html#aacbbb3227232a12b9b0f4efce8865561", null ],
     [ "add", "struct_stamp.html#acb1f5756fdf68666b2049628211f0c3c", null ],
-    [ "addDynamicStamp", "struct_stamp.html#add916241e9efca42e3f343d4295074b7", null ],
-    [ "addNonLinearStamp", "struct_stamp.html#a236bdbee60ebfb364b3e57dadf938e29", null ],
+    [ "addDCAnalysisStamp", "struct_stamp.html#a1ea5fe9592ac1d3aa401a9a780683779", null ],
+    [ "addDynamicStamp", "struct_stamp.html#a464597e2dadad1431a1b6cfba25b002f", null ],
+    [ "addNonLinearStamp", "struct_stamp.html#ac923d8f7e5f96351e025a19f238644df", null ],
     [ "addStaticStamp", "struct_stamp.html#acd3afe8a78b7a2498849efa04ab089de", null ],
     [ "clear", "struct_stamp.html#a66c152f92c0b0b0497ae5a41609f7601", null ],
     [ "solve", "struct_stamp.html#a27298a7e47ee5e3d561058b275530f74", null ],

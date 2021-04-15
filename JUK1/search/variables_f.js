@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['tau_355',['tau',['../struct_force_causal_1_1_causal_data.html#ad78960278b40b23c26b69153c229def8',1,'ForceCausal::CausalData']]],
-  ['touchstonefilepath_356',['touchstoneFilePath',['../struct_s_parameter_block.html#ad27b27d4d01ec0e722f8fb27fb79845d',1,'SParameterBlock']]],
-  ['trapezoidalrule_357',['trapezoidalRule',['../struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5',1,'Capacitor::trapezoidalRule()'],['../struct_inductor.html#ae8ae18a2d4cd6ca405a15530025abaf8',1,'Inductor::trapezoidalRule()']]],
-  ['ts_358',['Ts',['../struct_force_causal_1_1_causal_data.html#a5e56df1b87e67c6eb3a94b4364d8e33a',1,'ForceCausal::CausalData']]]
+  ['off_812',['off',['../comp_8m.html#a835accca41274fb237599d9b3c117fcf',1,'off():&#160;comp.m'],['../transistor_comparison_8m.html#a835accca41274fb237599d9b3c117fcf',1,'off():&#160;transistorComparison.m'],['../find_complex_rational_approximation_8m.html#a835accca41274fb237599d9b3c117fcf',1,'off():&#160;findComplexRationalApproximation.m'],['../_solution_disp_8m.html#a835accca41274fb237599d9b3c117fcf',1,'off():&#160;SolutionDisp.m']]],
+  ['offset_813',['offset',['../struct_sinusoidal_voltage_source.html#ac17de8b2d92a45855d6e7d486eac4e4b',1,'SinusoidalVoltageSource::offset()'],['../struct_s_param_length_offset.html#adeb05d76a0a0f4072f1e5e4e99c84519',1,'SParamLengthOffset::offset()']]],
+  ['olds_814',['oldS',['../interch_8m.html#a1776e69ea47ac5c9e93d11f3aae94510',1,'interch.m']]],
+  ['on_815',['on',['../comp_8m.html#a58ab1fd68e97078232808206b850161b',1,'on():&#160;comp.m'],['../transistor_comparison_8m.html#a58ab1fd68e97078232808206b850161b',1,'on():&#160;transistorComparison.m'],['../find_complex_rational_approximation_8m.html#a58ab1fd68e97078232808206b850161b',1,'on():&#160;findComplexRationalApproximation.m'],['../_solution_disp_8m.html#a58ab1fd68e97078232808206b850161b',1,'on():&#160;SolutionDisp.m']]],
+  ['out_816',['OUT',['../rot_8m.html#aa3e65b837527ca5f7e63c0bd87921f2f',1,'rot.m']]],
+  ['outd_817',['OUTD',['../interch_8m.html#a3ead0bab11c6aa6e47249d5045035ead',1,'interch.m']]],
+  ['outolds_818',['OUToldS',['../interch_8m.html#a70d4ad5d6040828e6eacde096f3dcbad',1,'interch.m']]],
+  ['outputfilepath_819',['outputFilePath',['../class_simulation_environment.html#a383dc56226b6761fc47920f0973f7427',1,'SimulationEnvironment']]],
+  ['outs_820',['OUTS',['../interch_8m.html#a86349fc7137e0274b67f03c4063aa715',1,'interch.m']]]
 ];

@@ -6,6 +6,7 @@ var struct_matrix =
     [ "add", "struct_matrix.html#af81a0e425864e0c97c708823f3062331", null ],
     [ "fill", "struct_matrix.html#af3bde34a3a88bdbe5fc0b45d3dd9cfc2", null ],
     [ "leftDivide", "struct_matrix.html#affa396b55a7d4f97f083e0388e525374", null ],
+    [ "leftDivide", "struct_matrix.html#a179301e17aca5aa3c01208d897fb9b96", null ],
     [ "leftDivide", "struct_matrix.html#a250a21a0f104d0be0566b3b73d8f12cb", null ],
     [ "luPair", "struct_matrix.html#a6db3ba8a6abfeed9b96491dcb5c08b78", null ],
     [ "luPair", "struct_matrix.html#a381533fab14e2a759a659cfb4ff98bce", null ],

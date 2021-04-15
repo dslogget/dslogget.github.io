@@ -1,14 +1,19 @@
 <map id="generateRegex" name="generateRegex">
-<area shape="rect" id="node1" title="a helper function to aid in the construction of regexes for parsing netlist files" alt="" coords="487,233,596,260"/>
-<area shape="rect" id="node2" href="$struct_b_j_t_n.html#acd13cdb03aefb834a157fab9f1e6a7f6" title=" " alt="" coords="252,5,403,32"/>
-<area shape="rect" id="node4" href="$struct_b_j_t_p.html#ac3434bd65912863659ef13060d9e0a14" title=" " alt="" coords="252,56,403,83"/>
-<area shape="rect" id="node5" href="$struct_capacitor.html#a1c191824148aba285e5a5011d58c89ce" title=" " alt="" coords="240,107,415,133"/>
-<area shape="rect" id="node6" href="$struct_current_source.html#aaafadebb23bf59c8578f07867f981a20" title=" " alt="" coords="226,157,429,184"/>
-<area shape="rect" id="node7" href="$struct_diode.html#aed72c63ff272a2b13b70a4b7be4c9e4e" title=" " alt="" coords="251,208,404,235"/>
-<area shape="rect" id="node8" href="$struct_inductor.html#ab7e5b6ae1464667ba4d6694f2462332f" title=" " alt="" coords="244,259,411,285"/>
-<area shape="rect" id="node9" href="$struct_resistor.html#a581314c42793e5754e5e3bb3a1d2ac97" title=" " alt="" coords="243,309,411,336"/>
-<area shape="rect" id="node10" href="$struct_sinusoidal_voltage_source.html#a3e77f464946d510537b57dc456c3d41c" title=" " alt="" coords="244,361,411,402"/>
-<area shape="rect" id="node11" href="$struct_s_parameter_block.html#a9195f446cf3c7ea44523c316f7fb45c3" title=" " alt="" coords="216,427,439,453"/>
-<area shape="rect" id="node12" href="$struct_voltage_source.html#a5b47f508fac7776ac13c696e7fbec36f" title=" " alt="" coords="225,477,430,504"/>
-<area shape="rect" id="node3" href="$class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title="Setup the simulation environment from a netlist." alt="" coords="5,226,168,267"/>
+<area shape="rect" id="node1" title="a helper function to aid in the construction of regexes for parsing netlist files" alt="" coords="487,360,596,387"/>
+<area shape="rect" id="node2" href="$struct_b_j_t_n.html#a88c336c234ef1fd188d6d059c2efecd3" title=" " alt="" coords="252,5,403,32"/>
+<area shape="rect" id="node4" href="$struct_b_j_t_p.html#a453ab6e56288e7a25a4658a37ba69c85" title=" " alt="" coords="252,56,403,83"/>
+<area shape="rect" id="node5" href="$struct_capacitor.html#ad58abd51f8ee47c8d73510da8de9129b" title=" " alt="" coords="240,107,415,133"/>
+<area shape="rect" id="node6" href="$struct_current_source.html#a36fca156f3a2cd6b90ca958d54e2cd5b" title=" " alt="" coords="226,157,429,184"/>
+<area shape="rect" id="node7" href="$struct_diode.html#a17895a5367f7419159bea7770d132800" title=" " alt="" coords="251,208,404,235"/>
+<area shape="rect" id="node8" href="$struct_inductor.html#a33743240036261484817c11745969c72" title=" " alt="" coords="244,259,411,285"/>
+<area shape="rect" id="node9" href="$struct_n_l_capacitor.html#a8b05b960d81764a564e6385533ce834b" title=" " alt="" coords="232,309,423,336"/>
+<area shape="rect" id="node10" href="$struct_n_l_current_source.html#a2e2d07ecc129bb5a080c05b1d8c5ab4c" title=" " alt="" coords="218,360,437,387"/>
+<area shape="rect" id="node11" href="$struct_n_l_n_m_o_s.html#aed8502a37f09bfa5888de16487531ea4" title=" " alt="" coords="240,411,415,437"/>
+<area shape="rect" id="node12" href="$struct_resistor.html#a982eb8cabce26c876fc11ec0a4f7d50d" title=" " alt="" coords="243,461,411,488"/>
+<area shape="rect" id="node13" href="$struct_sinusoidal_voltage_source.html#a2ed546d4c51664f6b7f151bb44719c79" title=" " alt="" coords="244,513,411,554"/>
+<area shape="rect" id="node14" href="$struct_s_parameter_block.html#abab4b46f02af89238ee28c2f5bad5135" title=" " alt="" coords="216,579,439,605"/>
+<area shape="rect" id="node15" href="$struct_s_parameter_block_v_f.html#acf7d18776720a157ec3f7b1a290cda81" title=" " alt="" coords="253,630,402,671"/>
+<area shape="rect" id="node16" href="$struct_time_series_voltage_source.html#a9ef4635ed66d2af0916e95ede4b92dcd" title=" " alt="" coords="241,695,413,737"/>
+<area shape="rect" id="node17" href="$struct_voltage_source.html#aa61376691e26c381d9f75c0bd2263266" title=" " alt="" coords="225,761,430,788"/>
+<area shape="rect" id="node3" href="$class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title="Setup the simulation environment from a netlist." alt="" coords="5,353,168,394"/>
 </map>

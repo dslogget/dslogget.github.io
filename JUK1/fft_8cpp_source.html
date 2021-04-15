@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('fft_8cpp_source.html',''); initResizab
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">double</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="fft_8cpp.html#abaffbcf63ab5bb7b38d1c686c75b1f7e">   11</a></span>&#160;<a class="code" href="fft_8cpp.html#abaffbcf63ab5bb7b38d1c686c75b1f7e">myFunctionToSample</a>( <span class="keywordtype">double</span> t ) {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   constexpr <span class="keywordtype">double</span> freqSine = 1;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <span class="keywordflow">return</span> std::sin( 2 * std::numbers::pi * freqSine * t );</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <span class="keywordflow">return</span> <a class="code" href="rot_8m.html#a081c431de89805bcb17574fd2a6ca274">std::sin</a>( 2 * std::numbers::pi * freqSine * t );</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
@@ -110,8 +110,8 @@ $(document).ready(function(){initNavTree('fft_8cpp_source.html',''); initResizab
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   std::vector&lt; double &gt; inputData; <span class="comment">// = { 0, 1, 0, -1, 0, 1, 0, -1 };</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;   <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; numPoints; i++ ) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      inputData.push_back( <a class="code" href="fft_8cpp.html#abaffbcf63ab5bb7b38d1c686c75b1f7e">myFunctionToSample</a>( <span class="keyword">static_cast&lt;</span> <span class="keywordtype">double</span> <span class="keyword">&gt;</span>( i ) / f_s ) );</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;   <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> <a class="code" href="generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; numPoints; <a class="code" href="generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++ ) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      inputData.push_back( <a class="code" href="fft_8cpp.html#abaffbcf63ab5bb7b38d1c686c75b1f7e">myFunctionToSample</a>( <span class="keyword">static_cast&lt;</span> <span class="keywordtype">double</span> <span class="keyword">&gt;</span>( <a class="code" href="generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> ) / f_s ) );</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   <span class="comment">// print data as csv</span></div>
@@ -126,14 +126,14 @@ $(document).ready(function(){initNavTree('fft_8cpp_source.html',''); initResizab
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;   <span class="keyword">auto</span> fftres = <a class="code" href="dft_8hpp.html#a0da3a93d96e7bc63e6327f305e6eb098">fft</a>( inputData );</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   <span class="keywordflow">for</span> ( <span class="keyword">const</span> <span class="keyword">auto</span> &amp; num : dftres ) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      std::cout &lt;&lt; std::setprecision( 5 ) &lt;&lt; std::abs( num ) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      std::cout &lt;&lt; std::setprecision( 5 ) &lt;&lt; <a class="code" href="interch_8m.html#ae4e69912f5a2f923a187c235f950a7d2">std::abs</a>( num ) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;   }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;   std::cout &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;   std::cout &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;   std::cout &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;   <span class="keywordflow">for</span> ( <span class="keyword">const</span> <span class="keyword">auto</span> &amp; num : fftres ) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      std::cout &lt;&lt; std::setprecision( 5 ) &lt;&lt; std::abs( num ) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      std::cout &lt;&lt; std::setprecision( 5 ) &lt;&lt; <a class="code" href="interch_8m.html#ae4e69912f5a2f923a187c235f950a7d2">std::abs</a>( num ) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   std::cout &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;   std::cout &lt;&lt; std::endl;</div>
@@ -164,6 +164,9 @@ $(document).ready(function(){initNavTree('fft_8cpp_source.html',''); initResizab
 <div class="ttc" id="adft_8hpp_html_ae062a7429211563a0d692a2a441f85e4"><div class="ttname"><a href="dft_8hpp.html#ae062a7429211563a0d692a2a441f85e4">ifft</a></div><div class="ttdeci">std::vector&lt; std::complex&lt; T &gt; &gt; ifft(const std::vector&lt; std::complex&lt; T &gt; &gt; &amp;inputData)</div><div class="ttdef"><b>Definition:</b> <a href="dft_8hpp_source.html#l00066">dft.hpp:66</a></div></div>
 <div class="ttc" id="afft_8cpp_html_abaffbcf63ab5bb7b38d1c686c75b1f7e"><div class="ttname"><a href="fft_8cpp.html#abaffbcf63ab5bb7b38d1c686c75b1f7e">myFunctionToSample</a></div><div class="ttdeci">double myFunctionToSample(double t)</div><div class="ttdef"><b>Definition:</b> <a href="fft_8cpp_source.html#l00011">fft.cpp:11</a></div></div>
 <div class="ttc" id="afft_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="fft_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="fft_8cpp_source.html#l00018">fft.cpp:18</a></div></div>
+<div class="ttc" id="agenerate_p_r_r_file_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="generate_p_r_r_file_8m_source.html#l00019">generatePRRFile.m:19</a></div></div>
+<div class="ttc" id="ainterch_8m_html_ae4e69912f5a2f923a187c235f950a7d2"><div class="ttname"><a href="interch_8m.html#ae4e69912f5a2f923a187c235f950a7d2">abs</a></div><div class="ttdeci">end if abs(real(dotprod))&gt;rstoerst rstoerst</div></div>
+<div class="ttc" id="arot_8m_html_a081c431de89805bcb17574fd2a6ca274"><div class="ttname"><a href="rot_8m.html#a081c431de89805bcb17574fd2a6ca274">sin</a></div><div class="ttdeci">ang(col sin()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

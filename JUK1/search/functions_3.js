@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['circuitelements_246',['CircuitElements',['../struct_circuit_elements.html#aac413e221f742adfdaf2bfad3d3030d1',1,'CircuitElements']]],
-  ['clear_247',['clear',['../struct_stamp.html#a66c152f92c0b0b0497ae5a41609f7601',1,'Stamp']]]
+  ['circuitelements_552',['CircuitElements',['../struct_circuit_elements.html#aad493b05ba0d5258df3e04fbc0d6ecbb',1,'CircuitElements']]],
+  ['clear_553',['clear',['../struct_stamp.html#a66c152f92c0b0b0497ae5a41609f7601',1,'Stamp']]],
+  ['col_3a_554',['col:',['../rot_8m.html#a03b720afb69816752f3521b718354109',1,'rot.m']]]
 ];

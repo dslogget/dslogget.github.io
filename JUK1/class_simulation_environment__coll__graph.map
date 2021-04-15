@@ -1,0 +1,9 @@
+<map id="SimulationEnvironment&lt; VT &gt;" name="SimulationEnvironment&lt; VT &gt;">
+<area shape="rect" id="node1" title="The main class to hold all of the relevant simulation data." alt="" coords="156,199,311,240"/>
+<area shape="rect" id="node2" href="$struct_circuit_elements.html" title=" " alt="" coords="5,95,160,121"/>
+<area shape="rect" id="node3" href="$struct_circuit_elements.html" title="a glorified container for the different types of components." alt="" coords="10,5,155,32"/>
+<area shape="rect" id="node4" href="$struct_matrix.html" title=" " alt="" coords="184,95,283,121"/>
+<area shape="rect" id="node5" href="$struct_matrix.html" title="A matrix class with support for LU&#45;decomposition, and left division." alt="" coords="189,5,278,32"/>
+<area shape="rect" id="node6" href="$struct_l_u_pair.html" title=" " alt="" coords="307,95,408,121"/>
+<area shape="rect" id="node7" href="$struct_l_u_pair.html" title="A helper class to store the L U and pivot matrices. Mainly useful in solving systems of equations." alt="" coords="311,5,403,32"/>
+</map>

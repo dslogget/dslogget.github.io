@@ -1,11 +1,4 @@
 <map id="SimulationEnvironment::printMultipleOnGraph" name="SimulationEnvironment::printMultipleOnGraph">
-<area shape="rect" id="node1" title=" " alt="" coords="5,99,160,141"/>
-<area shape="rect" id="node2" href="$namespacematplotlibcpp.html#a62aaaf872c41a9d1b71add44c0cc0447" title=" " alt="" coords="223,5,362,32"/>
-<area shape="rect" id="node5" href="$namespacematplotlibcpp.html#a91e91bcdcfc7632a917830bfe3f71ca3" title=" " alt="" coords="208,56,377,83"/>
-<area shape="rect" id="node6" href="$namespacematplotlibcpp.html#a916bb5a9dc5f6a24877cc027bf4ee624" title=" " alt="" coords="220,107,365,133"/>
-<area shape="rect" id="node7" href="$namespacematplotlibcpp.html#a06ac86c6fecaa5a9b3fb566bc31d6a3b" title=" " alt="" coords="229,208,357,235"/>
-<area shape="rect" id="node9" href="$namespacematplotlibcpp.html#a46a2869ed7cd834e93125a20e2a294c2" title=" " alt="" coords="226,157,359,184"/>
-<area shape="rect" id="node3" href="$structmatplotlibcpp_1_1detail_1_1__interpreter.html#a3ddc4e50c23738307da3dc64c47cdbc0" title=" " alt="" coords="425,99,564,141"/>
-<area shape="rect" id="node4" href="$structmatplotlibcpp_1_1detail_1_1__interpreter.html#accf36ff8fd9f1bd757d028fa4a14be40" title=" " alt="" coords="612,99,779,141"/>
-<area shape="rect" id="node8" href="$namespacematplotlibcpp_1_1detail.html#a9bcca44556cf0ddbbf147a423d9a9496" title=" " alt="" coords="425,201,564,242"/>
+<area shape="rect" id="node1" title="Similar to printGraph, but instead can plot multiple series on the same graph." alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node2" href="$comp_8m.html#a119afed74ed106073a4a6d30c54c4c1d" title=" " alt="" coords="208,13,251,39"/>
 </map>

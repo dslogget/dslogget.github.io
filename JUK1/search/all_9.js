@@ -1,4 +1,25 @@
 var searchData=
 [
-  ['k_84',['K',['../namespace_force_causal.html#a19b3d69e4d05f839c4c6edec91ff7db5',1,'ForceCausal']]]
+  ['i_172',['i',['../generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426',1,'generatePRRFile.m']]],
+  ['i_5fc_173',['I_c',['../struct_b_j_t_results.html#af142cc761552ac57fbe9673fdb6b3bf7',1,'BJTResults']]],
+  ['i_5fcs_174',['I_cs',['../struct_b_j_t_n.html#ad94a532dd8d2abb6e69e57aa60857833',1,'BJTN::I_cs()'],['../struct_b_j_t_p.html#a12758261ea8623ff16c013b3b1e5c48e',1,'BJTP::I_cs()']]],
+  ['i_5fe_175',['I_e',['../struct_b_j_t_results.html#a5b687644595e9add4a179d91577f6d79',1,'BJTResults']]],
+  ['i_5fes_176',['I_es',['../struct_b_j_t_n.html#ad1a1bc61a50c30ad33fefc09f59894cc',1,'BJTN::I_es()'],['../struct_b_j_t_p.html#a41c57c016e37c0261ca7f8ff8a8fd5f9',1,'BJTP::I_es()']]],
+  ['i_5fgd_5flast_177',['i_gd_last',['../struct_n_l_n_m_o_s.html#afd5a4a13a3cf6abdc377ba11e7f18eee',1,'NLNMOS']]],
+  ['i_5fgs_5flast_178',['i_gs_last',['../struct_n_l_n_m_o_s.html#a07f7cff9573ce1b6487f5997e664e0ec',1,'NLNMOS']]],
+  ['i_5flast_179',['i_last',['../struct_n_l_capacitor.html#a850f2de72b8a8aabe634089d8ac31379',1,'NLCapacitor']]],
+  ['i_5fsat_180',['I_sat',['../struct_diode.html#a2c808fc434882188c82ec380dc4e73c1',1,'Diode']]],
+  ['idft_181',['idft',['../dft_8hpp.html#ad89d79493db5dbc3c9b1b1f701b51d4f',1,'dft.hpp']]],
+  ['ifft_182',['ifft',['../dft_8hpp.html#ae062a7429211563a0d692a2a441f85e4',1,'dft.hpp']]],
+  ['ihjelp_183',['ihjelp',['../interch_8m.html#a1ad5a4a436997603556809e7e18660da',1,'interch.m']]],
+  ['ii_184',['ii',['../find_complex_rational_approximation_8m.html#abf9d47cd7d4fbc942e618bb1977019c2',1,'findComplexRationalApproximation.m']]],
+  ['ind_185',['ind',['../interch_8m.html#aee07e61f5849dffc85ee13ddef5c47b3',1,'ind(ii):&#160;interch.m'],['../interch_8m.html#aac760a3c8e064634533999f1da165c56',1,'ind(j+1):&#160;interch.m'],['../interch_8m.html#a52f5ab7056442031c31802e814efd3dd',1,'ind(j):&#160;interch.m']]],
+  ['inductor_186',['Inductor',['../struct_inductor.html',1,'Inductor&lt; T &gt;'],['../_circuit_elements_8hpp.html#a81f78fc173dedefe5a049c0aa3eed2c0a38cfc0407199cb51b81ebe1192172624',1,'Inductor():&#160;CircuitElements.hpp'],['../_simulator_8hpp.html#afd074c27ba0a2809258258751b754f52a38cfc0407199cb51b81ebe1192172624',1,'Inductor():&#160;Simulator.hpp']]],
+  ['inductor_2ehpp_187',['Inductor.hpp',['../_inductor_8hpp.html',1,'']]],
+  ['initialtime_188',['initialTime',['../class_simulation_environment.html#a6e9d25f47f901437b003e07ff293372d',1,'SimulationEnvironment']]],
+  ['interch_2em_189',['interch.m',['../interch_8m.html',1,'']]],
+  ['istoerst_190',['istoerst',['../interch_8m.html#a745ac79715ded0c8506e7ac5c89444ef',1,'interch.m']]],
+  ['it1_191',['it1',['../namespace_auto_differentiation.html#a97cda064efa79a4c19af1dc987f31d4f',1,'AutoDifferentiation']]],
+  ['it2_192',['it2',['../namespace_auto_differentiation.html#a7300142bdb52ad64186675d6a1114379',1,'AutoDifferentiation']]],
+  ['it3_193',['it3',['../namespace_auto_differentiation.html#afe2704ef8d58e207f621acc3117640e5',1,'AutoDifferentiation']]]
 ];

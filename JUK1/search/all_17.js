@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['ylabel_336',['ylabel',['../namespacematplotlibcpp.html#adaa29542f05e1acb0850b7e4619a9359',1,'matplotlibcpp']]],
-  ['ylim_337',['ylim',['../namespacematplotlibcpp.html#a4645651772918e2dad7d36d9eeaeaefa',1,'matplotlibcpp::ylim(Numeric left, Numeric right)'],['../namespacematplotlibcpp.html#a2bbe226f1dee9763197d9ab7692f4dc7',1,'matplotlibcpp::ylim()']]],
-  ['yticks_338',['yticks',['../namespacematplotlibcpp.html#ab934ebc4f4f6be6f5f9679f15c0f6f11',1,'matplotlibcpp::yticks(const std::vector&lt; Numeric &gt; &amp;ticks, const std::vector&lt; std::string &gt; &amp;labels={}, const std::map&lt; std::string, std::string &gt; &amp;keywords={})'],['../namespacematplotlibcpp.html#a6111e7efdb413c79258daeb584c6c715',1,'matplotlibcpp::yticks(const std::vector&lt; Numeric &gt; &amp;ticks, const std::map&lt; std::string, std::string &gt; &amp;keywords)']]]
+  ['weighting_445',['weighting',['../_q_ppassive_8m.html#a1d55f8bde712a83fc0abaddd0e76d831',1,'QPpassive.m']]],
+  ['wfreqbins_446',['wFreqBins',['../find_complex_rational_approximation_8m.html#aa7ade1f2de7f4a34e7f5c6f29820c3f3',1,'findComplexRationalApproximation.m']]],
+  ['while_447',['while',['../namespace_auto_differentiation.html#a15db9b54995e8c3f486b73b4ba19ebd3',1,'AutoDifferentiation']]],
+  ['wpolefreqs_448',['wPoleFreqs',['../find_complex_rational_approximation_8m.html#ac48854b0101bd8772a4259eaeaeaaf56',1,'findComplexRationalApproximation.m']]],
+  ['wsimfreqs_449',['wSimFreqs',['../get_residues_8m.html#a443728b95f291a10752c65328851b564',1,'getResidues.m']]]
 ];

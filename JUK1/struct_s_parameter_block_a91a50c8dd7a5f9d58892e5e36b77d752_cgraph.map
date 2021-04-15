@@ -1,9 +1,10 @@
 <map id="SParameterBlock::readInTouchstoneFile" name="SParameterBlock::readInTouchstoneFile">
-<area shape="rect" id="node1" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="5,63,260,89"/>
-<area shape="rect" id="node2" href="$_force_causal_8hpp.html#a1e25332eab5d78520fe2142b32724a27" title=" " alt="" coords="308,63,399,89"/>
-<area shape="rect" id="node3" href="$namespace_force_causal.html#adc77641ea6b87c6bfdae84b12dee33e9" title=" " alt="" coords="799,12,910,39"/>
-<area shape="rect" id="node4" href="$namespace_force_causal.html#a33497b490cbf0779950b663c8f88ac73" title=" " alt="" coords="447,37,589,64"/>
-<area shape="rect" id="node6" href="$namespace_force_causal.html#a19b3d69e4d05f839c4c6edec91ff7db5" title=" " alt="" coords="799,63,911,89"/>
-<area shape="rect" id="node7" href="$dft_8hpp.html#ad89d79493db5dbc3c9b1b1f701b51d4f" title=" " alt="" coords="499,139,537,165"/>
-<area shape="rect" id="node5" href="$namespace_force_causal.html#ad2828d6cc4de61cb8a40d053aac0c763" title=" " alt="" coords="637,37,751,64"/>
+<area shape="rect" id="node1" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="5,56,260,83"/>
+<area shape="rect" id="node2" href="$interch_8m.html#ae4e69912f5a2f923a187c235f950a7d2" title=" " alt="" coords="497,5,539,32"/>
+<area shape="rect" id="node3" href="$_force_causal_8hpp.html#a1e25332eab5d78520fe2142b32724a27" title=" " alt="" coords="308,81,399,108"/>
+<area shape="rect" id="node4" href="$namespace_force_causal.html#adc77641ea6b87c6bfdae84b12dee33e9" title=" " alt="" coords="799,81,910,108"/>
+<area shape="rect" id="node5" href="$namespace_force_causal.html#a33497b490cbf0779950b663c8f88ac73" title=" " alt="" coords="447,107,589,133"/>
+<area shape="rect" id="node7" href="$namespace_force_causal.html#a19b3d69e4d05f839c4c6edec91ff7db5" title=" " alt="" coords="799,132,911,159"/>
+<area shape="rect" id="node8" href="$dft_8hpp.html#ad89d79493db5dbc3c9b1b1f701b51d4f" title=" " alt="" coords="499,208,537,235"/>
+<area shape="rect" id="node6" href="$namespace_force_causal.html#ad2828d6cc4de61cb8a40d053aac0c763" title=" " alt="" coords="637,107,751,133"/>
 </map>

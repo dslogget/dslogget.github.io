@@ -116,30 +116,39 @@ Collaboration diagram for Diode&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d78f60d3a4733aba3bd0b9c4d07d0b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_diode.html#a9d78f60d3a4733aba3bd0b9c4d07d0b2">addNonLinearStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;stamp, const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T timestep=0) const</td></tr>
-<tr class="memdesc:a9d78f60d3a4733aba3bd0b9c4d07d0b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds this component's non-linear stamp to the target stamp.  <a href="struct_diode.html#a9d78f60d3a4733aba3bd0b9c4d07d0b2">More...</a><br /></td></tr>
-<tr class="separator:a9d78f60d3a4733aba3bd0b9c4d07d0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74a08b4be0c89d8e6dc9b4bd5958162f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_diode.html#a74a08b4be0c89d8e6dc9b4bd5958162f">updateStoredState</a> (const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T timestep)</td></tr>
-<tr class="memdesc:a74a08b4be0c89d8e6dc9b4bd5958162f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates any stored state based on the current solution index.  <a href="struct_diode.html#a74a08b4be0c89d8e6dc9b4bd5958162f">More...</a><br /></td></tr>
-<tr class="separator:a74a08b4be0c89d8e6dc9b4bd5958162f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6ca4e3736f981b9f5b13dac71fa69b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_diode.html#aed6ca4e3736f981b9f5b13dac71fa69b">addNonLinearStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;stamp, const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep=0) const</td></tr>
+<tr class="memdesc:aed6ca4e3736f981b9f5b13dac71fa69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds this component's non-linear stamp to the target stamp.  <a href="struct_diode.html#aed6ca4e3736f981b9f5b13dac71fa69b">More...</a><br /></td></tr>
+<tr class="separator:aed6ca4e3736f981b9f5b13dac71fa69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e3e2364f0e851c054197f5239f88e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_diode.html#ae4e3e2364f0e851c054197f5239f88e6">updateStoredState</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep, size_t sizeG_A)</td></tr>
+<tr class="memdesc:ae4e3e2364f0e851c054197f5239f88e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates any stored state based on the current solution index.  <a href="struct_diode.html#ae4e3e2364f0e851c054197f5239f88e6">More...</a><br /></td></tr>
+<tr class="separator:ae4e3e2364f0e851c054197f5239f88e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd37ffda72e52713759b051d411a547a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_diode.html#afd37ffda72e52713759b051d411a547a">addDCAnalysisStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;stamp, const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionVector, size_t numCurrents) const</td></tr>
+<tr class="memdesc:afd37ffda72e52713759b051d411a547a"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds this component's DC stamp to the target stamp.  <a href="struct_diode.html#afd37ffda72e52713759b051d411a547a">More...</a><br /></td></tr>
+<tr class="separator:afd37ffda72e52713759b051d411a547a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_component.html">Component&lt; T &gt;</a></td></tr>
 <tr class="memitem:a84e4548bed7632f47c51919d2d489c77 inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a84e4548bed7632f47c51919d2d489c77">addStaticStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;destination) const</td></tr>
 <tr class="memdesc:a84e4548bed7632f47c51919d2d489c77 inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds this component's static stamp to the target stamp.  <a href="struct_component.html#a84e4548bed7632f47c51919d2d489c77">More...</a><br /></td></tr>
 <tr class="separator:a84e4548bed7632f47c51919d2d489c77 inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab572c67300b95e6ab69df0c2b856c4fe inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#ab572c67300b95e6ab69df0c2b856c4fe">addDynamicStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;destination, const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;solutionVector, const size_t currentSolutionIndex, T timestep) const</td></tr>
-<tr class="memdesc:ab572c67300b95e6ab69df0c2b856c4fe inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds this component's dynamic stamp to the target stamp.  <a href="struct_component.html#ab572c67300b95e6ab69df0c2b856c4fe">More...</a><br /></td></tr>
-<tr class="separator:ab572c67300b95e6ab69df0c2b856c4fe inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addab43f9a2af13951c5dee06e78f595a inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#addab43f9a2af13951c5dee06e78f595a">addDynamicStampTo</a> (<a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;destination, const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep) const</td></tr>
+<tr class="memdesc:addab43f9a2af13951c5dee06e78f595a inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds this component's dynamic stamp to the target stamp.  <a href="struct_component.html#addab43f9a2af13951c5dee06e78f595a">More...</a><br /></td></tr>
+<tr class="separator:addab43f9a2af13951c5dee06e78f595a inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa09e5adb1144f269735a379a2e5e9e inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#acaa09e5adb1144f269735a379a2e5e9e">updateDCStoredState</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionVector, size_t sizeG_A, size_t numCurrents)</td></tr>
+<tr class="memdesc:acaa09e5adb1144f269735a379a2e5e9e inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">a function to update the stored state of a component based on a DC value  <a href="struct_component.html#acaa09e5adb1144f269735a379a2e5e9e">More...</a><br /></td></tr>
+<tr class="separator:acaa09e5adb1144f269735a379a2e5e9e inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c311599418f7efd7714acbdea201a75 inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a7c311599418f7efd7714acbdea201a75">setTimestep</a> (T timestep)</td></tr>
+<tr class="memdesc:a7c311599418f7efd7714acbdea201a75 inherit pub_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialises the component  <a href="struct_component.html#a7c311599418f7efd7714acbdea201a75">More...</a><br /></td></tr>
+<tr class="separator:a7c311599418f7efd7714acbdea201a75 inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d2fd772fc1a945ab88556e95db62b9b inherit pub_methods_struct_component"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a2d2fd772fc1a945ab88556e95db62b9b">~Component</a> ()</td></tr>
 <tr class="separator:a2d2fd772fc1a945ab88556e95db62b9b inherit pub_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aed72c63ff272a2b13b70a4b7be4c9e4e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_diode.html#aed72c63ff272a2b13b70a4b7be4c9e4e">addToElements</a> (const std::string &amp;line, <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt; &amp;elements, size_t &amp;numNodes, size_t &amp;numCurrents)</td></tr>
-<tr class="separator:aed72c63ff272a2b13b70a4b7be4c9e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17895a5367f7419159bea7770d132800"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_diode.html#a17895a5367f7419159bea7770d132800">addToElements</a> (const std::string &amp;line, <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt; &amp;<a class="el" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>, size_t &amp;numNodes, size_t &amp;numCurrents, size_t &amp;numDCCurrents)</td></tr>
+<tr class="separator:a17895a5367f7419159bea7770d132800"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_struct_component"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_struct_component')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="struct_component.html">Component&lt; T &gt;</a></td></tr>
-<tr class="memitem:ac5e46c014be509bef88c6e9e0ba7f457 inherit pub_static_methods_struct_component"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#ac5e46c014be509bef88c6e9e0ba7f457">addToElements</a> (const std::string &amp;line, <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt; &amp;elements, size_t &amp;numNodes, size_t &amp;numCurrents)</td></tr>
-<tr class="memdesc:ac5e46c014be509bef88c6e9e0ba7f457 inherit pub_static_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called as a helper to add the component to the elements class.  <a href="struct_component.html#ac5e46c014be509bef88c6e9e0ba7f457">More...</a><br /></td></tr>
-<tr class="separator:ac5e46c014be509bef88c6e9e0ba7f457 inherit pub_static_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2202ea3a02eb55437cc69323e3149518 inherit pub_static_methods_struct_component"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_component.html#a2202ea3a02eb55437cc69323e3149518">addToElements</a> (const std::string &amp;line, <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt; &amp;<a class="el" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>, size_t &amp;numNodes, size_t &amp;numCurrents, size_t &amp;numDCCurrents)</td></tr>
+<tr class="memdesc:a2202ea3a02eb55437cc69323e3149518 inherit pub_static_methods_struct_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called as a helper to add the component to the elements class.  <a href="struct_component.html#a2202ea3a02eb55437cc69323e3149518">More...</a><br /></td></tr>
+<tr class="separator:a2202ea3a02eb55437cc69323e3149518 inherit pub_static_methods_struct_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -174,8 +183,75 @@ struct Diode&lt; T &gt;</h3>
 
 <p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00011">11</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9d78f60d3a4733aba3bd0b9c4d07d0b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d78f60d3a4733aba3bd0b9c4d07d0b2">&#9670;&nbsp;</a></span>addNonLinearStampTo()</h2>
+<a id="afd37ffda72e52713759b051d411a547a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd37ffda72e52713759b051d411a547a">&#9670;&nbsp;</a></span>addDCAnalysisStampTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_diode.html">Diode</a>&lt; T &gt;::addDCAnalysisStampTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>solutionVector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numCurrents</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>adds this component's DC stamp to the target stamp. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destination</td><td>The stamp to be added to. </td></tr>
+    <tr><td class="paramname">solutionMatrix</td><td>A vector containing all past solutions to the circuit </td></tr>
+    <tr><td class="paramname">numCurrents</td><td>The number of currents used by the transient simulation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="struct_component.html#aafc78b3192019974d03384c37421beca">Component&lt; T &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00066">66</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_diode_afd37ffda72e52713759b051d411a547a_cgraph.png" border="0" usemap="#astruct_diode_afd37ffda72e52713759b051d411a547a_cgraph" alt=""/></div>
+<map name="astruct_diode_afd37ffda72e52713759b051d411a547a_cgraph" id="astruct_diode_afd37ffda72e52713759b051d411a547a_cgraph">
+<area shape="rect" title="adds this component&#39;s DC stamp to the target stamp." alt="" coords="5,5,209,32"/>
+<area shape="rect" href="struct_diode.html#aed6ca4e3736f981b9f5b13dac71fa69b" title="adds this component&#39;s non&#45;linear stamp to the target stamp." alt="" coords="257,5,452,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed6ca4e3736f981b9f5b13dac71fa69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6ca4e3736f981b9f5b13dac71fa69b">&#9670;&nbsp;</a></span>addNonLinearStampTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,8 +270,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>solutionVector</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>solutionMatrix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -226,21 +302,30 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">destination</td><td>The stamp to be added to. </td></tr>
-    <tr><td class="paramname">solutionVector</td><td>A vector containing all past solutions to the circuit </td></tr>
+    <tr><td class="paramname">solutionMatrix</td><td>A vector containing all past solutions to the circuit </td></tr>
     <tr><td class="paramname">currentSolutionIndex</td><td>The current timeStep index </td></tr>
     <tr><td class="paramname">timestep</td><td>The length of each time step </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="struct_component.html#a44de5074a86d89d84ad7166f0c64a973">Component&lt; T &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="struct_component.html#a3148dc9109a2d92df0519cb32130044e">Component&lt; T &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00024">24</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_diode_aed6ca4e3736f981b9f5b13dac71fa69b_icgraph.png" border="0" usemap="#astruct_diode_aed6ca4e3736f981b9f5b13dac71fa69b_icgraph" alt=""/></div>
+<map name="astruct_diode_aed6ca4e3736f981b9f5b13dac71fa69b_icgraph" id="astruct_diode_aed6ca4e3736f981b9f5b13dac71fa69b_icgraph">
+<area shape="rect" title="adds this component&#39;s non&#45;linear stamp to the target stamp." alt="" coords="257,5,452,32"/>
+<area shape="rect" href="struct_diode.html#afd37ffda72e52713759b051d411a547a" title="adds this component&#39;s DC stamp to the target stamp." alt="" coords="5,5,209,32"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="aed72c63ff272a2b13b70a4b7be4c9e4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed72c63ff272a2b13b70a4b7be4c9e4e">&#9670;&nbsp;</a></span>addToElements()</h2>
+<a id="a17895a5367f7419159bea7770d132800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17895a5367f7419159bea7770d132800">&#9670;&nbsp;</a></span>addToElements()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +357,13 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t &amp;&#160;</td>
-          <td class="paramname"><em>numCurrents</em>&#160;</td>
+          <td class="paramname"><em>numCurrents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>numDCCurrents</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -287,12 +378,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00066">66</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00073">73</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_cgraph.png" border="0" usemap="#astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_cgraph" alt=""/></div>
-<map name="astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_cgraph" id="astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_cgraph">
+<div class="center"><img src="struct_diode_a17895a5367f7419159bea7770d132800_cgraph.png" border="0" usemap="#astruct_diode_a17895a5367f7419159bea7770d132800_cgraph" alt=""/></div>
+<map name="astruct_diode_a17895a5367f7419159bea7770d132800_cgraph" id="astruct_diode_a17895a5367f7419159bea7770d132800_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,159,32"/>
 <area shape="rect" href="_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40" title="a helper function to aid in the construction of regexes for parsing netlist files" alt="" coords="207,5,316,32"/>
 </map>
@@ -300,8 +391,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_icgraph.png" border="0" usemap="#astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_icgraph" alt=""/></div>
-<map name="astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_icgraph" id="astruct_diode_aed72c63ff272a2b13b70a4b7be4c9e4e_icgraph">
+<div class="center"><img src="struct_diode_a17895a5367f7419159bea7770d132800_icgraph.png" border="0" usemap="#astruct_diode_a17895a5367f7419159bea7770d132800_icgraph" alt=""/></div>
+<map name="astruct_diode_a17895a5367f7419159bea7770d132800_icgraph" id="astruct_diode_a17895a5367f7419159bea7770d132800_icgraph">
 <area shape="rect" title=" " alt="" coords="216,13,369,39"/>
 <area shape="rect" href="class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title="Setup the simulation environment from a netlist." alt="" coords="5,5,168,47"/>
 </map>
@@ -309,8 +400,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a74a08b4be0c89d8e6dc9b4bd5958162f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74a08b4be0c89d8e6dc9b4bd5958162f">&#9670;&nbsp;</a></span>updateStoredState()</h2>
+<a id="ae4e3e2364f0e851c054197f5239f88e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e3e2364f0e851c054197f5239f88e6">&#9670;&nbsp;</a></span>updateStoredState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,8 +414,8 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="struct_diode.html">Diode</a>&lt; T &gt;::updateStoredState </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>solutionVector</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>solutionMatrix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -336,7 +427,13 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>timestep</em>&#160;</td>
+          <td class="paramname"><em>timestep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numCurrents</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -354,14 +451,15 @@ template&lt;typename T &gt; </div>
 <p>Updates any stored state based on the current solution index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">solutionVector</td><td>A vector containing all past solutions to the circuit </td></tr>
+    <tr><td class="paramname">solutionMatrix</td><td>A vector containing all past solutions to the circuit </td></tr>
     <tr><td class="paramname">currentSolutionIndex</td><td>The current timeStep index </td></tr>
     <tr><td class="paramname">timestep</td><td>The length of each time step </td></tr>
+    <tr><td class="paramname">sizeG_A</td><td>the size of the A portion of G, marks the end of the equiv currents </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="struct_component.html#ab932580c43337bf2208c18b07097774e">Component&lt; T &gt;</a>.</p>
+<p>Reimplemented from <a class="el" href="struct_component.html#aeba1d7d863e6a8d66a38cd81dfb4b613">Component&lt; T &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_diode_8hpp_source.html#l00061">61</a> of file <a class="el" href="_diode_8hpp_source.html">Diode.hpp</a>.</p>
 

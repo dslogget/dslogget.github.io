@@ -1,0 +1,4 @@
+<map id="SParameterBlock::V_p" name="SParameterBlock::V_p">
+<area shape="rect" id="node1" title="Determines the equivalent port voltage source by convolving the (historic) a wave values with the DTI..." alt="" coords="5,13,160,39"/>
+<area shape="rect" id="node2" href="$struct_s_parameter_block.html#a4f0fb5e2fb29f005ece26d852476c9b3" title="performs a linear interpolation and returns the a wave value for use in the convolution." alt="" coords="208,5,407,47"/>
+</map>

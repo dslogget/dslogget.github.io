@@ -1,13 +1,18 @@
 <map id="Component&lt; T &gt;" name="Component&lt; T &gt;">
-<area shape="rect" id="node1" title="A template base class to define the fundamental things a component should define." alt="" coords="5,233,124,260"/>
-<area shape="rect" id="node2" href="$struct_b_j_t_n.html" title="A simple NPN BJT model." alt="" coords="229,5,313,32"/>
-<area shape="rect" id="node3" href="$struct_b_j_t_p.html" title="A simple PNP BJT model." alt="" coords="229,56,313,83"/>
-<area shape="rect" id="node4" href="$struct_capacitor.html" title="An ideal capacitor model." alt="" coords="217,107,325,133"/>
-<area shape="rect" id="node5" href="$struct_current_source.html" title="An ideal current source." alt="" coords="203,157,339,184"/>
-<area shape="rect" id="node6" href="$struct_diode.html" title="An ebbers moll diode model." alt="" coords="228,208,315,235"/>
-<area shape="rect" id="node7" href="$struct_inductor.html" title="An ideal inductor model." alt="" coords="222,259,321,285"/>
-<area shape="rect" id="node8" href="$struct_resistor.html" title="An ideal resistor model." alt="" coords="221,309,322,336"/>
-<area shape="rect" id="node9" href="$struct_s_parameter_block.html" title="A DTIR based model of an s&#45;parameter block." alt="" coords="194,360,349,387"/>
-<area shape="rect" id="node10" href="$struct_sinusoidal_voltage_source.html" title="A sinusoidal voltage source model." alt="" coords="172,411,371,437"/>
-<area shape="rect" id="node11" href="$struct_voltage_source.html" title="An ideal voltageSource." alt="" coords="202,461,341,488"/>
+<area shape="rect" id="node1" title="A template base class to define the fundamental things a component should define." alt="" coords="5,360,124,387"/>
+<area shape="rect" id="node2" href="$struct_b_j_t_n.html" title="A simple NPN BJT model." alt="" coords="231,5,315,32"/>
+<area shape="rect" id="node3" href="$struct_b_j_t_p.html" title="A simple PNP BJT model." alt="" coords="231,56,315,83"/>
+<area shape="rect" id="node4" href="$struct_capacitor.html" title="An ideal capacitor model." alt="" coords="219,107,327,133"/>
+<area shape="rect" id="node5" href="$struct_current_source.html" title="An ideal current source." alt="" coords="205,157,341,184"/>
+<area shape="rect" id="node6" href="$struct_diode.html" title="An ebbers moll diode model." alt="" coords="230,208,317,235"/>
+<area shape="rect" id="node7" href="$struct_inductor.html" title="An ideal inductor model." alt="" coords="224,259,323,285"/>
+<area shape="rect" id="node8" href="$struct_n_l_capacitor.html" title="a non&#45;linear capacitor model of the form C = C_p + C_o * ( 1.0 + tanh( P_10 + P_11 * u ) )" alt="" coords="211,309,335,336"/>
+<area shape="rect" id="node9" href="$struct_n_l_current_source.html" title="An non&#45;linear current source for the COBRA transistor model." alt="" coords="197,360,349,387"/>
+<area shape="rect" id="node10" href="$struct_n_l_n_m_o_s.html" title="a non&#45;linear FET model" alt="" coords="219,411,327,437"/>
+<area shape="rect" id="node11" href="$struct_resistor.html" title="An ideal resistor model." alt="" coords="223,461,324,488"/>
+<area shape="rect" id="node12" href="$struct_s_parameter_block.html" title="A DTIR based model of an s&#45;parameter block." alt="" coords="196,512,351,539"/>
+<area shape="rect" id="node13" href="$struct_s_parameter_block_v_f.html" title="A vectorfitting based model of an s&#45;parameter block." alt="" coords="187,563,359,589"/>
+<area shape="rect" id="node14" href="$struct_sinusoidal_voltage_source.html" title="A sinusoidal voltage source model." alt="" coords="174,613,373,640"/>
+<area shape="rect" id="node15" href="$struct_time_series_voltage_source.html" title="A time series voltage source model." alt="" coords="172,664,375,691"/>
+<area shape="rect" id="node16" href="$struct_voltage_source.html" title="An ideal voltageSource." alt="" coords="204,715,343,741"/>
 </map>
