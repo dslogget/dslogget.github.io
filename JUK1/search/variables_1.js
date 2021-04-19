@@ -3,7 +3,7 @@ var searchData=
   ['a_679',['A',['../get_residues_8m.html#a0c8c4debc6d39f21547fca40c224adf5',1,'getResidues.m']]],
   ['a_680',['a',['../generate_p_r_r_file_8m.html#a45d9f8dad1bcc7195d94b27e4ab44377',1,'generatePRRFile.m']]],
   ['addableresult_681',['AddableResult',['../namespace_auto_differentiation.html#a789f0f2bade583e89ed02296f35d639d',1,'AutoDifferentiation']]],
-  ['alpha_682',['alpha',['../struct_s_parameter_port_v_f.html#aa623ec1d256b42a08182f3a7b458a6fc',1,'SParameterPortVF']]],
+  ['alpha_682',['alpha',['../struct_s_parameter_port_v_f.html#a30091c80f2efc4a35e7e31deb11fae7d',1,'SParameterPortVF']]],
   ['alpha_5fds_683',['alpha_DS',['../struct_n_l_n_m_o_s.html#a6c320c94c215f362c0e711984988f666',1,'NLNMOS']]],
   ['alpha_5ff_684',['alpha_f',['../struct_b_j_t_n.html#a3fac7f6dd2cf9fd62fac69cd4a0dfa8d',1,'BJTN::alpha_f()'],['../struct_b_j_t_p.html#a108ca595163ac4f7eaf315f50ee42600',1,'BJTP::alpha_f()']]],
   ['alpha_5fr_685',['alpha_r',['../struct_b_j_t_n.html#a282d20db8a8a056d58bd9ce02355951c',1,'BJTN::alpha_r()'],['../struct_b_j_t_p.html#acf2012c418d7b69f1faa4555e135faf8',1,'BJTP::alpha_r()']]],

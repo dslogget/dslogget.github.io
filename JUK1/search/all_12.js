@@ -1,7 +1,7 @@
 var searchData=
 [
   ['r_313',['r',['../find_complex_rational_approximation_8m.html#a514f1b439f404f86f77090fa9edc96ce',1,'findComplexRationalApproximation.m']]],
-  ['r_314',['R',['../struct_s_parameter_port.html#a42467c7725ae91bc348d2cb9b984f1f2',1,'SParameterPort::R()'],['../struct_s_parameter_port_v_f.html#a1e1303338bd52e7017e91c1ebe7ed862',1,'SParameterPortVF::R()']]],
+  ['r_314',['R',['../struct_s_parameter_port.html#a42467c7725ae91bc348d2cb9b984f1f2',1,'SParameterPort::R()'],['../struct_s_parameter_port_v_f.html#af7a99cf824558da953c0adfe4b66a0bd',1,'SParameterPortVF::R()']]],
   ['r1_5fneg_315',['r1_neg',['../struct_n_l_current_source.html#adbb1bbb04700279c6f61b199a451ba20',1,'NLCurrentSource']]],
   ['r1_5fpos_316',['r1_pos',['../struct_n_l_current_source.html#af8750962860fc7d15fe278c7507c229f',1,'NLCurrentSource']]],
   ['r2_5fneg_317',['r2_neg',['../struct_n_l_current_source.html#aa90ca267d4725d94230c7cc23b59ccd9',1,'NLCurrentSource']]],
@@ -10,11 +10,11 @@ var searchData=
   ['readinprr_320',['readInPRR',['../struct_s_parameter_block_v_f.html#a6c919df4dd9d320f5e2a558ba417e12d',1,'SParameterBlockVF']]],
   ['readintimeseries_321',['readInTimeSeries',['../struct_time_series_voltage_source.html#a3e2c5bd5ad30ecacf4532212499f8e70',1,'TimeSeriesVoltageSource']]],
   ['readintouchstonefile_322',['readInTouchstoneFile',['../struct_s_parameter_block.html#a91a50c8dd7a5f9d58892e5e36b77d752',1,'SParameterBlock']]],
-  ['remainder_323',['remainder',['../struct_s_param_v_f_data_from.html#ab29abb81d998d0cbe2b79be47e8ec865',1,'SParamVFDataFrom::remainder()'],['../find_complex_rational_approximation_8m.html#ad72875faade5521919b9c8f2ba82be31',1,'remainder():&#160;findComplexRationalApproximation.m']]],
+  ['remainder_323',['remainder',['../struct_s_param_v_f_data_from.html#a13ed40898f842f888e9faae391e11721',1,'SParamVFDataFrom::remainder()'],['../find_complex_rational_approximation_8m.html#ad72875faade5521919b9c8f2ba82be31',1,'remainder():&#160;findComplexRationalApproximation.m']]],
   ['requires_324',['requires',['../namespace_auto_differentiation.html#a68d98f618db4b660c9be6a19d0e46bdb',1,'AutoDifferentiation::requires(std::is_arithmetic&lt; ValType &gt;::value &amp;&amp;NumVars &gt;=0) &amp;&amp;(!std'],['../namespace_auto_differentiation.html#a1f2c71f10af29f82bd480c529716e0c5',1,'AutoDifferentiation::requires(std::is_arithmetic&lt; ValType &gt;::value &amp;&amp;NumVars &gt;=0) const expr auto diffFunc(const DiffVar&lt; ValType'],['../namespace_auto_differentiation.html#a682536c1bd9fbd0d3c295de3d64e066b',1,'AutoDifferentiation::requires(std::is_arithmetic&lt; ValType &gt;::value &amp;&amp;NumVars &gt;=0) struct DiffVar']]],
   ['res_325',['res',['../find_complex_rational_approximation_8m.html#a0332d90ff07648a038ae9c2a957081d9',1,'res():&#160;findComplexRationalApproximation.m'],['../get_residues_8m.html#ab0bd7560790c13b656fd58e17e35143e',1,'res():&#160;getResidues.m'],['../get_residues_8m.html#a4c3b92fa049c59390f9423e7c9fd2371',1,'res(:, 2):&#160;getResidues.m'],['../get_residues_8m.html#ae1a22e4540c4ab49bd05878400f00611',1,'res(:, 3):&#160;getResidues.m'],['../get_residues_8m.html#a5e39a934a7131f2f3cdbb6e5da7c1bb1',1,'res(:, 4):&#160;getResidues.m']]],
   ['residual_326',['residual',['../find_complex_rational_approximation_8m.html#a6de1d8eb7e2677c0432590b3830ff19c',1,'residual():&#160;findComplexRationalApproximation.m'],['../get_residues_8m.html#a840cf6bbf9aacf15bd364b478394c3a7',1,'residual():&#160;getResidues.m']]],
-  ['residue_327',['residue',['../struct_s_param_v_f_data_from.html#ad8c810bbac25b52c189518f918f6ffd9',1,'SParamVFDataFrom']]],
+  ['residue_327',['residue',['../struct_s_param_v_f_data_from.html#ae1e2577b68bb6545da9fc1f53286ede2',1,'SParamVFDataFrom']]],
   ['residues_328',['residues',['../find_complex_rational_approximation_8m.html#aa47f8fd22c40ce45ebd5dd23fa0319f6',1,'residues():&#160;findComplexRationalApproximation.m'],['../get_residues_8m.html#aa47f8fd22c40ce45ebd5dd23fa0319f6',1,'residues():&#160;getResidues.m']]],
   ['resistor_329',['Resistor',['../struct_resistor.html',1,'Resistor&lt; T &gt;'],['../_circuit_elements_8hpp.html#a81f78fc173dedefe5a049c0aa3eed2c0a858963014279696926a05dcfe822b2d9',1,'Resistor():&#160;CircuitElements.hpp'],['../_simulator_8hpp.html#afd074c27ba0a2809258258751b754f52a858963014279696926a05dcfe822b2d9',1,'Resistor():&#160;Simulator.hpp']]],
   ['resistor_2ehpp_330',['Resistor.hpp',['../_resistor_8hpp.html',1,'']]],

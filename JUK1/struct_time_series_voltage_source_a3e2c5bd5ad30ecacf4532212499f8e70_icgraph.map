@@ -1,5 +1,4 @@
 <map id="TimeSeriesVoltageSource::readInTimeSeries" name="TimeSeriesVoltageSource::readInTimeSeries">
-<area shape="rect" id="node1" title=" " alt="" coords="436,5,608,47"/>
-<area shape="rect" id="node2" href="$struct_time_series_voltage_source.html#a9ef4635ed66d2af0916e95ede4b92dcd" title=" " alt="" coords="216,5,388,47"/>
-<area shape="rect" id="node3" href="$class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title="Setup the simulation environment from a netlist." alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="225,5,397,47"/>
+<area shape="rect" id="node2" href="$struct_time_series_voltage_source.html#a9ef4635ed66d2af0916e95ede4b92dcd" title=" " alt="" coords="5,5,177,47"/>
 </map>

@@ -2,10 +2,10 @@
 <area shape="rect" id="node1" title="Where a lot of the magic starts. This is what runs the simulation." alt="" coords="5,122,160,163"/>
 <area shape="rect" id="node2" href="$interch_8m.html#ae4e69912f5a2f923a187c235f950a7d2" title=" " alt="" coords="295,5,337,32"/>
 <area shape="rect" id="node3" href="$class_simulation_environment.html#a7cdefdab3f462a0ca724b0883b5e69fe" title="Simple function to dump the output of the simulator in a matlab table readable format." alt="" coords="239,57,393,98"/>
-<area shape="rect" id="node4" href="$struct_circuit_elements.html#ac7dcbdc07fa81da0dd140dc5c69950ba" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="230,122,402,163"/>
+<area shape="rect" id="node4" href="$struct_circuit_elements.html#a9640eb48ce26d8650598fe017e48cf1f" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="230,122,402,163"/>
 <area shape="rect" id="node7" href="$class_simulation_environment.html#aa69a97dfee1564d60a4ceebb27f5e3f8" title="Similar to printGraph, but instead can plot multiple series on the same graph." alt="" coords="239,187,393,229"/>
 <area shape="rect" id="node9" href="$struct_circuit_elements.html#af2c41540156db4d154858cb897759082" title="Updates the components at the end of each time step. Applies to dynamic and non&#45;linear components." alt="" coords="208,253,424,280"/>
-<area shape="rect" id="node5" href="$struct_circuit_elements.html#a0f37a58fab9bfe8bd708784b83adfe44" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="472,122,644,163"/>
-<area shape="rect" id="node6" href="$struct_circuit_elements.html#a03d1004bedf06fe776451ca815fcfd7d" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="692,122,864,163"/>
+<area shape="rect" id="node5" href="$struct_circuit_elements.html#ac38f0240e2404325f26435bd6a2fb7ce" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="472,122,644,163"/>
+<area shape="rect" id="node6" href="$struct_circuit_elements.html#a04e21f387fb000383064c4681b3482a3" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="692,122,864,163"/>
 <area shape="rect" id="node8" href="$comp_8m.html#a119afed74ed106073a4a6d30c54c4c1d" title=" " alt="" coords="537,195,579,221"/>
 </map>

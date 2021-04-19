@@ -11,8 +11,8 @@ var struct_s_parameter_block =
     [ "updateStoredState", "struct_s_parameter_block.html#afffbeb6876332341131fdbb6afcc5754", null ],
     [ "V_p", "struct_s_parameter_block.html#a5bf70a2f96c33a2b557743dc8ede8d09", null ],
     [ "fracMaxToKeep", "struct_s_parameter_block.html#a3d264a41add597ee68fe9a5db6343855", null ],
-    [ "port", "struct_s_parameter_block.html#a744b628260838b9c9151ef46e3b9676d", null ],
-    [ "s", "struct_s_parameter_block.html#a2c6b021e1aa712e3b9f8a8fa30d48e9f", null ],
+    [ "port", "struct_s_parameter_block.html#ac0a2dc3ffde342e127390f3876554023", null ],
+    [ "s", "struct_s_parameter_block.html#a055eed634158c1a20aea8f67dcfea654", null ],
     [ "touchstoneFilePath", "struct_s_parameter_block.html#ad27b27d4d01ec0e722f8fb27fb79845d", null ],
     [ "z_ref", "struct_s_parameter_block.html#a3a9bc6b7d3e722f5a43801512b68aab5", null ]
 ];

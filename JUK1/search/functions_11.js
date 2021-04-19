@@ -16,12 +16,12 @@ var searchData=
   ['simulate_646',['simulate',['../class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2',1,'SimulationEnvironment']]],
   ['simulationenvironment_647',['SimulationEnvironment',['../class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa',1,'SimulationEnvironment']]],
   ['sin_648',['sin',['../rot_8m.html#a081c431de89805bcb17574fd2a6ca274',1,'rot.m']]],
-  ['solve_649',['solve',['../struct_stamp.html#a27298a7e47ee5e3d561058b275530f74',1,'Stamp']]],
+  ['solve_649',['solve',['../struct_stamp.html#a91bcbe465c92d0287c9efd210950a5a1',1,'Stamp']]],
   ['stamp_650',['Stamp',['../struct_stamp.html#aacbbb3227232a12b9b0f4efce8865561',1,'Stamp']]],
   ['staticmatrix_651',['StaticMatrix',['../struct_static_matrix.html#a80723fc84e00a93cf657bcf6b96033d9',1,'StaticMatrix::StaticMatrix()'],['../struct_static_matrix.html#af271d05946d8425361a2fb6306e64a76',1,'StaticMatrix::StaticMatrix(T initialValue)']]],
   ['staticrow_652',['StaticRow',['../struct_static_row.html#a9c7bc988ccc7c57f2bc6a2e70abd1175',1,'StaticRow::StaticRow()'],['../struct_static_row.html#ace1b34ebfdd440cf5b1fa1aaf4b78c70',1,'StaticRow::StaticRow(T initialValue)']]],
   ['stem_653',['stem',['../_freq_8m.html#a8369f9181a36ac11444dbcd13d3e5192',1,'stem(freqSequence, dbmi):&#160;Freq.m'],['../_freq_8m.html#a348bcfe3fb664760bfd6effc0e8b1e13',1,'stem(freqSequence, dbm1):&#160;Freq.m'],['../_freq_8m.html#ae3c18fdcd686e2bbc2fa19b72841a5e7',1,'stem(freqSequence, dbm2):&#160;Freq.m']]],
-  ['subtract_654',['subtract',['../struct_matrix.html#a337b0b1813cfa72178cacb5fbf7998cc',1,'Matrix::subtract()'],['../struct_static_matrix.html#a5d1902a43a98c1acea12d9a6f658977a',1,'StaticMatrix::subtract(const StaticMatrix&lt; T, N, N &gt; &amp;rhs) const'],['../struct_static_matrix.html#a3fe11fb8acde280443886b9caf68b6fc',1,'StaticMatrix::subtract(const StaticMatrix&lt; T, N, N &gt; &amp;rhs, StaticMatrix&lt; T, M, N &gt; &amp;dest) const'],['../struct_matrix.html#a436a9006a79ca7aa54c09594f52b635c',1,'Matrix::subtract()']]],
+  ['subtract_654',['subtract',['../struct_matrix.html#a337b0b1813cfa72178cacb5fbf7998cc',1,'Matrix::subtract()'],['../struct_static_matrix.html#abd30a56f25a22da441aafe6c32866f43',1,'StaticMatrix::subtract(const StaticMatrix&lt; T, N, N &gt; &amp;rhs) const'],['../struct_static_matrix.html#a3fe11fb8acde280443886b9caf68b6fc',1,'StaticMatrix::subtract(const StaticMatrix&lt; T, N, N &gt; &amp;rhs, StaticMatrix&lt; T, M, N &gt; &amp;dest) const'],['../struct_matrix.html#aeba314f95003eeab2fc8b9bcef340cda',1,'Matrix::subtract()']]],
   ['sum_655',['sum',['../rot_8m.html#a08a8fae29827bd080fd336a8b6ba58c6',1,'rot.m']]],
   ['swaprows_656',['swapRows',['../struct_static_matrix.html#a89abffa4d11c6440b7d39bed19c76791',1,'StaticMatrix::swapRows()'],['../struct_matrix.html#a1db90b9c38cd8b56c0a487dadd632ae8',1,'Matrix::swapRows()']]]
 ];

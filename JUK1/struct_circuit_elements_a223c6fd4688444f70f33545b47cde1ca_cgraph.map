@@ -1,0 +1,6 @@
+<map id="CircuitElements::generateCompleteStamp" name="CircuitElements::generateCompleteStamp">
+<area shape="rect" id="node1" title="Generates the complete stamp up to a certain point." alt="" coords="5,25,177,66"/>
+<area shape="rect" id="node2" href="$struct_circuit_elements.html#ac38f0240e2404325f26435bd6a2fb7ce" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="445,25,617,66"/>
+<area shape="rect" id="node3" href="$struct_circuit_elements.html#a04e21f387fb000383064c4681b3482a3" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="665,54,837,96"/>
+<area shape="rect" id="node4" href="$struct_circuit_elements.html#a9640eb48ce26d8650598fe017e48cf1f" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="225,25,397,66"/>
+</map>

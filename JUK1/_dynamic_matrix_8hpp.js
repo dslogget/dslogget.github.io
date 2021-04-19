@@ -2,9 +2,9 @@ var _dynamic_matrix_8hpp =
 [
     [ "Matrix", "struct_matrix.html", "struct_matrix" ],
     [ "LUPair", "struct_l_u_pair.html", "struct_l_u_pair" ],
-    [ "operator<", "_dynamic_matrix_8hpp.html#a1b3b94d7c861a4686c0d15e11a300b52", null ],
-    [ "operator<=", "_dynamic_matrix_8hpp.html#aba10b80b5ebf525f3ee6b7b95a2cb085", null ],
-    [ "operator>", "_dynamic_matrix_8hpp.html#a29f177fbdb8f5fb498c22e6d3212820e", null ],
-    [ "operator>=", "_dynamic_matrix_8hpp.html#a95aa04c6862be92b29b8317bc35710b3", null ],
+    [ "operator<", "_dynamic_matrix_8hpp.html#a1d33267bf83bc930bcdc35cc6c9e3573", null ],
+    [ "operator<=", "_dynamic_matrix_8hpp.html#afde42d21403eb15e182610560933e374", null ],
+    [ "operator>", "_dynamic_matrix_8hpp.html#a19bdd9a89a56445b78a20c52dc49f2ae", null ],
+    [ "operator>=", "_dynamic_matrix_8hpp.html#aeac663421ba11c02222e0e5849dc8158", null ],
     [ "arithmetic", "_dynamic_matrix_8hpp.html#ae4de4baf3026a8895e06ea93937af7a5", null ]
 ];

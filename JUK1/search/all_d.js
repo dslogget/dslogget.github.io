@@ -9,9 +9,9 @@ var searchData=
   ['matrix_223',['matrix',['../find_complex_rational_approximation_8m.html#abe2340411a23afe1be8f0a486a4c92f1',1,'matrix():&#160;findComplexRationalApproximation.m'],['../get_residues_8m.html#abe2340411a23afe1be8f0a486a4c92f1',1,'matrix():&#160;getResidues.m']]],
   ['matrix_3c_20vt_20_3e_224',['Matrix&lt; VT &gt;',['../struct_matrix.html',1,'']]],
   ['maxfreq_225',['maxFreq',['../find_complex_rational_approximation_8m.html#a8c8bb4eb02fd72d3d754aa3fe9981e0d',1,'findComplexRationalApproximation.m']]],
-  ['mu_226',['mu',['../struct_s_param_v_f_data_from.html#a78ba8e6ec075645e3dd9b33267552bfa',1,'SParamVFDataFrom']]],
-  ['mu_5fp_227',['mu_p',['../struct_s_param_v_f_data_from.html#a57b902b46db29df69e23aec3050b80df',1,'SParamVFDataFrom']]],
+  ['mu_226',['mu',['../struct_s_param_v_f_data_from.html#ae1fe2f0379d2486bab8a4295316b2c08',1,'SParamVFDataFrom']]],
+  ['mu_5fp_227',['mu_p',['../struct_s_param_v_f_data_from.html#ae65014932c5b4da7b5f228e0f73a56cd',1,'SParamVFDataFrom']]],
   ['multipliableresult_228',['MultipliableResult',['../namespace_auto_differentiation.html#af9a5f6513a02cfdee1eebdc35fe61de6',1,'AutoDifferentiation']]],
-  ['multiply_229',['multiply',['../struct_matrix.html#abf08a7fe98b9a90a1af10ae447ebb90b',1,'Matrix::multiply(const Matrix&lt; T &gt; &amp;rhs) const'],['../struct_matrix.html#a5a2c902daf80e8a369d181f135f865e4',1,'Matrix::multiply(const Matrix&lt; T &gt; &amp;rhs, Matrix&lt; T &gt; &amp;dest) const'],['../struct_static_matrix.html#ad6294c9a6040a20c22ef891a3e7eb9bf',1,'StaticMatrix::multiply(const StaticMatrix&lt; T, N, N2 &gt; &amp;rhs) const'],['../struct_static_matrix.html#ae968dbc885860fe0503d8441913cf129',1,'StaticMatrix::multiply(const StaticMatrix&lt; T, N, N2 &gt; &amp;rhs, StaticMatrix&lt; T, M, N2 &gt; &amp;dest) const']]],
+  ['multiply_229',['multiply',['../struct_matrix.html#aba804e57a1d026fcf771b72ca8410c94',1,'Matrix::multiply(const Matrix&lt; T &gt; &amp;rhs) const'],['../struct_matrix.html#a5a2c902daf80e8a369d181f135f865e4',1,'Matrix::multiply(const Matrix&lt; T &gt; &amp;rhs, Matrix&lt; T &gt; &amp;dest) const'],['../struct_static_matrix.html#a3fcada36262be05a195dafd53db8893e',1,'StaticMatrix::multiply(const StaticMatrix&lt; T, N, N2 &gt; &amp;rhs) const'],['../struct_static_matrix.html#ae968dbc885860fe0503d8441913cf129',1,'StaticMatrix::multiply(const StaticMatrix&lt; T, N, N2 &gt; &amp;rhs, StaticMatrix&lt; T, M, N2 &gt; &amp;dest) const']]],
   ['myfunctiontosample_230',['myFunctionToSample',['../fft_8cpp.html#abaffbcf63ab5bb7b38d1c686c75b1f7e',1,'fft.cpp']]]
 ];

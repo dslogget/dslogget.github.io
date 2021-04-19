@@ -91,131 +91,129 @@ $(document).ready(function(){initNavTree('_capacitor_8hpp_source.html',''); init
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_dynamic_matrix_8hpp.html">Maths/DynamicMatrix.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_capacitor.html">   11</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_capacitor.html">Capacitor</a> : <span class="keyword">public</span> <a class="code" href="struct_component.html">Component</a>&lt; T &gt; {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">   13</a></span>&#160;   T <a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_capacitor.html">   11</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_capacitor.html">Capacitor</a> : <span class="keyword">public</span> <a class="code" href="struct_component.html">Component</a>&lt;T&gt; {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">   13</a></span>&#160;    T <a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> = 0;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">   15</a></span>&#160;   <span class="keywordtype">size_t</span> <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> = 0;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">   16</a></span>&#160;   <span class="keywordtype">size_t</span> <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> = 0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c">   17</a></span>&#160;   T <a class="code" href="struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c">lastCurrent</a> = 0;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">   15</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">   16</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c">   17</a></span>&#160;    T <a class="code" href="struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c">lastCurrent</a> = 0;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5">   19</a></span>&#160;   <span class="keywordtype">bool</span> <a class="code" href="struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5">trapezoidalRule</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_capacitor.html#aa69e1f03fda055ac881f49f2b818a8d8">   20</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="struct_capacitor.html#aa69e1f03fda055ac881f49f2b818a8d8">addDynamicStampTo</a>( <a class="code" href="struct_stamp.html">Stamp&lt; T &gt;</a> &amp; stamp,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                           <span class="keyword">const</span> <a class="code" href="struct_matrix.html">Matrix&lt; T &gt;</a> &amp; solutionMatrix,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">size_t</span> currentSolutionIndex, T timestep )<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <span class="keywordtype">size_t</span> n1p = <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> - 1;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keywordtype">size_t</span> n2p = <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> - 1;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      T u0 = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keywordflow">if</span> ( <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> ) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;         u0 = solutionMatrix( n1p , currentSolutionIndex - 1 );</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">if</span> ( <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> ) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;         u0 -= solutionMatrix( n2p , currentSolutionIndex - 1 );</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      }</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5">   19</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5">trapezoidalRule</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_capacitor.html#aa69e1f03fda055ac881f49f2b818a8d8">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_capacitor.html#aa69e1f03fda055ac881f49f2b818a8d8">addDynamicStampTo</a>(<a class="code" href="struct_stamp.html">Stamp&lt;T&gt;</a> &amp; stamp, <span class="keyword">const</span> <a class="code" href="struct_matrix.html">Matrix&lt;T&gt;</a> &amp; solutionMatrix,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">size_t</span> currentSolutionIndex, T timestep)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">size_t</span> n1p = <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> - 1;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">size_t</span> n2p = <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> - 1;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        T u0 = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a>) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            u0 = solutionMatrix(n1p, currentSolutionIndex - 1);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a>) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            u0 -= solutionMatrix(n2p, currentSolutionIndex - 1);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      T G_eq = 0;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      T I_eq = 0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">if</span> ( <a class="code" href="struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5">trapezoidalRule</a> ) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;         G_eq = 2 * <a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> / timestep;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;         I_eq = <a class="code" href="struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c">lastCurrent</a> + G_eq * u0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;         G_eq = <a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> / timestep;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;         I_eq = <a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> * u0 / timestep;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">if</span> ( <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> ) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;         stamp.<a class="code" href="struct_stamp.html#a8bd5ddd40ee2be74d000ad61ddedeca3">G</a>( n1p, n1p ) += G_eq;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;         stamp.<a class="code" href="struct_stamp.html#afefccf1267e325435b1d9c1a2c61f212">s</a>( n1p, 0 ) += I_eq;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">if</span> ( <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> ) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;         stamp.<a class="code" href="struct_stamp.html#a8bd5ddd40ee2be74d000ad61ddedeca3">G</a>( n2p, n2p ) += G_eq;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;         stamp.<a class="code" href="struct_stamp.html#afefccf1267e325435b1d9c1a2c61f212">s</a>( n2p, 0 ) += -I_eq;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">if</span> ( <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> &amp;&amp; <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> ) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;         stamp.<a class="code" href="struct_stamp.html#a8bd5ddd40ee2be74d000ad61ddedeca3">G</a>( n1p, n2p ) += -G_eq;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;         stamp.<a class="code" href="struct_stamp.html#a8bd5ddd40ee2be74d000ad61ddedeca3">G</a>( n2p, n1p ) += -G_eq;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;   }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="struct_capacitor.html#a6595c228fd15a9de5dd74189632836c7">   63</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="struct_capacitor.html#a6595c228fd15a9de5dd74189632836c7">updateStoredState</a>( <span class="keyword">const</span> <a class="code" href="struct_matrix.html">Matrix&lt; T &gt;</a> &amp; solutionMatrix,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">size_t</span> currentSolutionIndex, T timestep,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                           <span class="keywordtype">size_t</span> sizeG_A ) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">if</span> ( <a class="code" href="struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5">trapezoidalRule</a> ) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;         <span class="keywordtype">size_t</span> n1p = <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> - 1;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;         <span class="keywordtype">size_t</span> n2p = <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> - 1;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;         T u0 = 0;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;         T u1 = 0;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;         <span class="keywordflow">if</span> ( <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> ) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            u0 = solutionMatrix( n1p , currentSolutionIndex - 1 );</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            u1 = solutionMatrix( n1p , currentSolutionIndex );</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;         }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;         <span class="keywordflow">if</span> ( <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> ) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            u0 -= solutionMatrix( n2p , currentSolutionIndex - 1 );</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            u1 -= solutionMatrix( n2p , currentSolutionIndex );</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;         }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;         T G_eq = 2 * <a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> / timestep;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;         <a class="code" href="struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c">lastCurrent</a> = G_eq * u1 - ( <a class="code" href="struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c">lastCurrent</a> + G_eq * u0 );</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;   }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="struct_capacitor.html#abd7fb512ed2ea436381d8e50cf991a0c">   86</a></span>&#160;   <span class="keywordtype">void</span> <a class="code" href="struct_capacitor.html#abd7fb512ed2ea436381d8e50cf991a0c">addDCAnalysisStampTo</a>( <a class="code" href="struct_stamp.html">Stamp&lt; T &gt;</a> &amp; stamp,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                              <span class="keyword">const</span> <a class="code" href="struct_matrix.html">Matrix&lt; T &gt;</a> &amp; solutionVector,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                              <span class="keywordtype">size_t</span> numCurrents )<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="comment">// open circuit. Maybe add large connection to ref if unstable</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">if</span> ( <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> &gt; 0 ) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;         stamp.<a class="code" href="struct_stamp.html#a8bd5ddd40ee2be74d000ad61ddedeca3">G</a>( <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> - 1, <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> - 1 ) += 1e-9;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">if</span> ( <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> &gt; 0 ) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;         stamp.<a class="code" href="struct_stamp.html#a8bd5ddd40ee2be74d000ad61ddedeca3">G</a>( <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> - 1, <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> - 1 ) += 1e-9;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;   }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;   <span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="struct_capacitor.html#ad58abd51f8ee47c8d73510da8de9129b">   99</a></span>&#160;   <a class="code" href="struct_capacitor.html#ad58abd51f8ee47c8d73510da8de9129b">addToElements</a>( <span class="keyword">const</span> std::string &amp; line, <a class="code" href="struct_circuit_elements.html">CircuitElements&lt; T &gt;</a> &amp; <a class="code" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                  <span class="keywordtype">size_t</span> &amp; numNodes, <span class="keywordtype">size_t</span> &amp; numCurrents, <span class="keywordtype">size_t</span> &amp; numDCCurrents ) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="comment">// std::regex capacitorRegex( R&quot;(^C(.*?)\s(\d+?)\s(\d+?)\s(.+?)\s?$)&quot; );</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      std::regex capacitorRegex = <a class="code" href="_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40">generateRegex</a>( <span class="stringliteral">&quot;C&quot;</span>, <span class="stringliteral">&quot;n n w&quot;</span> );</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <a class="code" href="struct_capacitor.html">Capacitor&lt; T &gt;</a> capacitor;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      std::smatch matches;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        T G_eq = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        T I_eq = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5">trapezoidalRule</a>) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            G_eq = 2 * <a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> / timestep;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            I_eq = <a class="code" href="struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c">lastCurrent</a> + G_eq * u0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            G_eq = <a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> / timestep;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            I_eq = <a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> * u0 / timestep;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a>) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            stamp.<a class="code" href="struct_stamp.html#aafc01281357208391b5dedb474d15124">G</a>(n1p, n1p) += G_eq;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            stamp.<a class="code" href="struct_stamp.html#a74b100e5144c7b089ade2bf380861957">s</a>(n1p, 0) += I_eq;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a>) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            stamp.<a class="code" href="struct_stamp.html#aafc01281357208391b5dedb474d15124">G</a>(n2p, n2p) += G_eq;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            stamp.<a class="code" href="struct_stamp.html#a74b100e5144c7b089ade2bf380861957">s</a>(n2p, 0) += -I_eq;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> &amp;&amp; <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a>) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            stamp.<a class="code" href="struct_stamp.html#aafc01281357208391b5dedb474d15124">G</a>(n1p, n2p) += -G_eq;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            stamp.<a class="code" href="struct_stamp.html#aafc01281357208391b5dedb474d15124">G</a>(n2p, n1p) += -G_eq;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="struct_capacitor.html#a6595c228fd15a9de5dd74189632836c7">   62</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_capacitor.html#a6595c228fd15a9de5dd74189632836c7">updateStoredState</a>(<span class="keyword">const</span> <a class="code" href="struct_matrix.html">Matrix&lt;T&gt;</a> &amp; solutionMatrix,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">size_t</span> currentSolutionIndex, T timestep,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                           <span class="keywordtype">size_t</span> sizeG_A) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5">trapezoidalRule</a>) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">size_t</span> n1p = <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> - 1;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordtype">size_t</span> n2p = <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> - 1;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            T u0 = 0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            T u1 = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a>) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                u0 = solutionMatrix(n1p, currentSolutionIndex - 1);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                u1 = solutionMatrix(n1p, currentSolutionIndex);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a>) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                u0 -= solutionMatrix(n2p, currentSolutionIndex - 1);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                u1 -= solutionMatrix(n2p, currentSolutionIndex);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            T G_eq = 2 * <a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> / timestep;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c">lastCurrent</a> = G_eq * u1 - (<a class="code" href="struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c">lastCurrent</a> + G_eq * u0);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="struct_capacitor.html#abd7fb512ed2ea436381d8e50cf991a0c">   85</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_capacitor.html#abd7fb512ed2ea436381d8e50cf991a0c">addDCAnalysisStampTo</a>(<a class="code" href="struct_stamp.html">Stamp&lt;T&gt;</a> &amp; stamp, <span class="keyword">const</span> <a class="code" href="struct_matrix.html">Matrix&lt;T&gt;</a> &amp; solutionVector,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                              <span class="keywordtype">size_t</span> numCurrents)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">// open circuit. Maybe add large connection to ref if unstable</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> &gt; 0) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            stamp.<a class="code" href="struct_stamp.html#aafc01281357208391b5dedb474d15124">G</a>(<a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> - 1, <a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> - 1) += 1e-9;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> &gt; 0) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            stamp.<a class="code" href="struct_stamp.html#aafc01281357208391b5dedb474d15124">G</a>(<a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> - 1, <a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> - 1) += 1e-9;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="struct_capacitor.html#ad58abd51f8ee47c8d73510da8de9129b">   97</a></span>&#160;    <a class="code" href="struct_capacitor.html#ad58abd51f8ee47c8d73510da8de9129b">addToElements</a>(<span class="keyword">const</span> std::string &amp; line, <a class="code" href="struct_circuit_elements.html">CircuitElements&lt;T&gt;</a> &amp; <a class="code" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                  <span class="keywordtype">size_t</span> &amp; numNodes, <span class="keywordtype">size_t</span> &amp; numCurrents, <span class="keywordtype">size_t</span> &amp; numDCCurrents) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="comment">// std::regex capacitorRegex( R&quot;(^C(.*?)\s(\d+?)\s(\d+?)\s(.+?)\s?$)&quot; );</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        std::regex capacitorRegex = <a class="code" href="_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40">generateRegex</a>(<span class="stringliteral">&quot;C&quot;</span>, <span class="stringliteral">&quot;n n w&quot;</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="struct_capacitor.html">Capacitor&lt;T&gt;</a> capacitor;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        std::smatch matches;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        std::regex_match(line, matches, capacitorRegex);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      std::regex_match( line, matches, capacitorRegex );</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      capacitor.<a class="code" href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">designator</a> = <span class="stringliteral">&quot;C&quot;</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      capacitor.<a class="code" href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">designator</a> += matches.str( 1 );</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      capacitor.<a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> = std::stoi( matches.str( 2 ) );</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      capacitor.<a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> = std::stoi( matches.str( 3 ) );</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      capacitor.<a class="code" href="struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5">trapezoidalRule</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      numNodes = std::max( numNodes, std::stoull( matches.str( 2 ) ) );</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      numNodes = std::max( numNodes, std::stoull( matches.str( 3 ) ) );</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">if</span> constexpr ( std::is_same_v&lt; T, double &gt; || std::is_same_v&lt; T, float &gt; ) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;         capacitor.<a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> = std::stod( matches.str( 4 ) );</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;         static_assert( <span class="stringliteral">&quot;Unsupported Type&quot;</span> );</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <a class="code" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>.dynamicElements.emplace_back(</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;          std::make_shared&lt; <a class="code" href="struct_capacitor.html">Capacitor&lt; T &gt;</a> &gt;( capacitor ) );</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <a class="code" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>.nodeComponentMap.insert(</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;          { { capacitor.<a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a>, <a class="code" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>.dynamicElements.back() },</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            { capacitor.<a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a>, <a class="code" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>.dynamicElements.back() } } );</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;   }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        capacitor.<a class="code" href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">designator</a> = <span class="stringliteral">&quot;C&quot;</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        capacitor.<a class="code" href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">designator</a> += matches.str(1);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        capacitor.<a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a> = std::stoi(matches.str(2));</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        capacitor.<a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a> = std::stoi(matches.str(3));</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        capacitor.<a class="code" href="struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5">trapezoidalRule</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        numNodes = std::max(numNodes, std::stoull(matches.str(2)));</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        numNodes = std::max(numNodes, std::stoull(matches.str(3)));</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> constexpr (std::is_same_v&lt;T, double&gt; || std::is_same_v&lt;T, float&gt;) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            capacitor.<a class="code" href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">value</a> = std::stod(matches.str(4));</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            static_assert(<span class="stringliteral">&quot;Unsupported Type&quot;</span>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>.dynamicElements.emplace_back(</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            std::make_shared&lt;<a class="code" href="struct_capacitor.html">Capacitor&lt;T&gt;</a> &gt;(capacitor));</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>.nodeComponentMap.insert(</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            {{capacitor.<a class="code" href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">n1</a>, <a class="code" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>.dynamicElements.back()},</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;             {capacitor.<a class="code" href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">n2</a>, <a class="code" href="_q_ppassive_8m.html#a712f8497424fce048b75fff1f16f2ebd">elements</a>.dynamicElements.back()}});</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_component_8hpp_html"><div class="ttname"><a href="_component_8hpp.html">Component.hpp</a></div></div>
 <div class="ttc" id="a_dynamic_matrix_8hpp_html"><div class="ttname"><a href="_dynamic_matrix_8hpp.html">DynamicMatrix.hpp</a></div></div>
 <div class="ttc" id="a_elements_regex_builder_8h_html_ae93bf0557ffd2f53700a2384a9284c40"><div class="ttname"><a href="_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40">generateRegex</a></div><div class="ttdeci">std::regex generateRegex(std::string indentifier, std::string simplifiedMatching, bool startAnchor=true, bool endAnchor=true)</div><div class="ttdoc">a helper function to aid in the construction of regexes for parsing netlist files</div><div class="ttdef"><b>Definition:</b> <a href="_elements_regex_builder_8cpp_source.html#l00022">ElementsRegexBuilder.cpp:22</a></div></div>
@@ -224,19 +222,19 @@ $(document).ready(function(){initNavTree('_capacitor_8hpp_source.html',''); init
 <div class="ttc" id="astruct_capacitor_html_a1628cb29d72550967c78e25baf29e990"><div class="ttname"><a href="struct_capacitor.html#a1628cb29d72550967c78e25baf29e990">Capacitor::value</a></div><div class="ttdeci">T value</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00013">Capacitor.hpp:13</a></div></div>
 <div class="ttc" id="astruct_capacitor_html_a2e1a65a7366bb90f661396ac64a7f9ae"><div class="ttname"><a href="struct_capacitor.html#a2e1a65a7366bb90f661396ac64a7f9ae">Capacitor::n2</a></div><div class="ttdeci">size_t n2</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00016">Capacitor.hpp:16</a></div></div>
 <div class="ttc" id="astruct_capacitor_html_a62f77c773f519d9a4780ff8a8c03449c"><div class="ttname"><a href="struct_capacitor.html#a62f77c773f519d9a4780ff8a8c03449c">Capacitor::lastCurrent</a></div><div class="ttdeci">T lastCurrent</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00017">Capacitor.hpp:17</a></div></div>
-<div class="ttc" id="astruct_capacitor_html_a6595c228fd15a9de5dd74189632836c7"><div class="ttname"><a href="struct_capacitor.html#a6595c228fd15a9de5dd74189632836c7">Capacitor::updateStoredState</a></div><div class="ttdeci">void updateStoredState(const Matrix&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep, size_t sizeG_A)</div><div class="ttdoc">Updates any stored state based on the current solution index.</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00063">Capacitor.hpp:63</a></div></div>
+<div class="ttc" id="astruct_capacitor_html_a6595c228fd15a9de5dd74189632836c7"><div class="ttname"><a href="struct_capacitor.html#a6595c228fd15a9de5dd74189632836c7">Capacitor::updateStoredState</a></div><div class="ttdeci">void updateStoredState(const Matrix&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep, size_t sizeG_A)</div><div class="ttdoc">Updates any stored state based on the current solution index.</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00062">Capacitor.hpp:62</a></div></div>
 <div class="ttc" id="astruct_capacitor_html_aa62fe1bb45757b2bcd873eeed47876d3"><div class="ttname"><a href="struct_capacitor.html#aa62fe1bb45757b2bcd873eeed47876d3">Capacitor::n1</a></div><div class="ttdeci">size_t n1</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00015">Capacitor.hpp:15</a></div></div>
 <div class="ttc" id="astruct_capacitor_html_aa69e1f03fda055ac881f49f2b818a8d8"><div class="ttname"><a href="struct_capacitor.html#aa69e1f03fda055ac881f49f2b818a8d8">Capacitor::addDynamicStampTo</a></div><div class="ttdeci">void addDynamicStampTo(Stamp&lt; T &gt; &amp;stamp, const Matrix&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep) const</div><div class="ttdoc">Adds this component's dynamic stamp to the target stamp.</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00020">Capacitor.hpp:20</a></div></div>
-<div class="ttc" id="astruct_capacitor_html_abd7fb512ed2ea436381d8e50cf991a0c"><div class="ttname"><a href="struct_capacitor.html#abd7fb512ed2ea436381d8e50cf991a0c">Capacitor::addDCAnalysisStampTo</a></div><div class="ttdeci">void addDCAnalysisStampTo(Stamp&lt; T &gt; &amp;stamp, const Matrix&lt; T &gt; &amp;solutionVector, size_t numCurrents) const</div><div class="ttdoc">adds this component's DC stamp to the target stamp.</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00086">Capacitor.hpp:86</a></div></div>
+<div class="ttc" id="astruct_capacitor_html_abd7fb512ed2ea436381d8e50cf991a0c"><div class="ttname"><a href="struct_capacitor.html#abd7fb512ed2ea436381d8e50cf991a0c">Capacitor::addDCAnalysisStampTo</a></div><div class="ttdeci">void addDCAnalysisStampTo(Stamp&lt; T &gt; &amp;stamp, const Matrix&lt; T &gt; &amp;solutionVector, size_t numCurrents) const</div><div class="ttdoc">adds this component's DC stamp to the target stamp.</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00085">Capacitor.hpp:85</a></div></div>
 <div class="ttc" id="astruct_capacitor_html_acf7e5c4134bd3359c9d4be2dcd8ad3e5"><div class="ttname"><a href="struct_capacitor.html#acf7e5c4134bd3359c9d4be2dcd8ad3e5">Capacitor::trapezoidalRule</a></div><div class="ttdeci">bool trapezoidalRule</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00019">Capacitor.hpp:19</a></div></div>
-<div class="ttc" id="astruct_capacitor_html_ad58abd51f8ee47c8d73510da8de9129b"><div class="ttname"><a href="struct_capacitor.html#ad58abd51f8ee47c8d73510da8de9129b">Capacitor::addToElements</a></div><div class="ttdeci">static void addToElements(const std::string &amp;line, CircuitElements&lt; T &gt; &amp;elements, size_t &amp;numNodes, size_t &amp;numCurrents, size_t &amp;numDCCurrents)</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00099">Capacitor.hpp:99</a></div></div>
+<div class="ttc" id="astruct_capacitor_html_ad58abd51f8ee47c8d73510da8de9129b"><div class="ttname"><a href="struct_capacitor.html#ad58abd51f8ee47c8d73510da8de9129b">Capacitor::addToElements</a></div><div class="ttdeci">static void addToElements(const std::string &amp;line, CircuitElements&lt; T &gt; &amp;elements, size_t &amp;numNodes, size_t &amp;numCurrents, size_t &amp;numDCCurrents)</div><div class="ttdef"><b>Definition:</b> <a href="_capacitor_8hpp_source.html#l00097">Capacitor.hpp:97</a></div></div>
 <div class="ttc" id="astruct_circuit_elements_html"><div class="ttname"><a href="struct_circuit_elements.html">CircuitElements</a></div><div class="ttdoc">a glorified container for the different types of components.</div><div class="ttdef"><b>Definition:</b> <a href="_circuit_elements_8hpp_source.html#l00046">CircuitElements.hpp:46</a></div></div>
-<div class="ttc" id="astruct_component_html"><div class="ttname"><a href="struct_component.html">Component</a></div><div class="ttdoc">A template base class to define the fundamental things a component should define.</div><div class="ttdef"><b>Definition:</b> <a href="_component_8hpp_source.html#l00107">Component.hpp:107</a></div></div>
-<div class="ttc" id="astruct_component_html_aed9ba9f3e2315cf384ef3e6eb45c8010"><div class="ttname"><a href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">Component::designator</a></div><div class="ttdeci">std::string designator</div><div class="ttdoc">The designator as in the netlist for e.g.</div><div class="ttdef"><b>Definition:</b> <a href="_component_8hpp_source.html#l00109">Component.hpp:109</a></div></div>
+<div class="ttc" id="astruct_component_html"><div class="ttname"><a href="struct_component.html">Component</a></div><div class="ttdoc">A template base class to define the fundamental things a component should define.</div><div class="ttdef"><b>Definition:</b> <a href="_component_8hpp_source.html#l00108">Component.hpp:108</a></div></div>
+<div class="ttc" id="astruct_component_html_aed9ba9f3e2315cf384ef3e6eb45c8010"><div class="ttname"><a href="struct_component.html#aed9ba9f3e2315cf384ef3e6eb45c8010">Component::designator</a></div><div class="ttdeci">std::string designator</div><div class="ttdoc">The designator as in the netlist for e.g.</div><div class="ttdef"><b>Definition:</b> <a href="_component_8hpp_source.html#l00110">Component.hpp:110</a></div></div>
 <div class="ttc" id="astruct_matrix_html"><div class="ttname"><a href="struct_matrix.html">Matrix</a></div><div class="ttdoc">A matrix class with support for LU-decomposition, and left division.</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_matrix_8hpp_source.html#l00055">DynamicMatrix.hpp:55</a></div></div>
 <div class="ttc" id="astruct_stamp_html"><div class="ttname"><a href="struct_stamp.html">Stamp</a></div><div class="ttdoc">A helper struct to store the preallocated stamps for MNA.</div><div class="ttdef"><b>Definition:</b> <a href="_component_8hpp_source.html#l00023">Component.hpp:23</a></div></div>
-<div class="ttc" id="astruct_stamp_html_a8bd5ddd40ee2be74d000ad61ddedeca3"><div class="ttname"><a href="struct_stamp.html#a8bd5ddd40ee2be74d000ad61ddedeca3">Stamp::G</a></div><div class="ttdeci">Matrix&lt; T &gt; G</div><div class="ttdef"><b>Definition:</b> <a href="_component_8hpp_source.html#l00027">Component.hpp:27</a></div></div>
-<div class="ttc" id="astruct_stamp_html_afefccf1267e325435b1d9c1a2c61f212"><div class="ttname"><a href="struct_stamp.html#afefccf1267e325435b1d9c1a2c61f212">Stamp::s</a></div><div class="ttdeci">Matrix&lt; T &gt; s</div><div class="ttdef"><b>Definition:</b> <a href="_component_8hpp_source.html#l00028">Component.hpp:28</a></div></div>
+<div class="ttc" id="astruct_stamp_html_a74b100e5144c7b089ade2bf380861957"><div class="ttname"><a href="struct_stamp.html#a74b100e5144c7b089ade2bf380861957">Stamp::s</a></div><div class="ttdeci">Matrix&lt; T &gt; s</div><div class="ttdef"><b>Definition:</b> <a href="_component_8hpp_source.html#l00028">Component.hpp:28</a></div></div>
+<div class="ttc" id="astruct_stamp_html_aafc01281357208391b5dedb474d15124"><div class="ttname"><a href="struct_stamp.html#aafc01281357208391b5dedb474d15124">Stamp::G</a></div><div class="ttdeci">Matrix&lt; T &gt; G</div><div class="ttdef"><b>Definition:</b> <a href="_component_8hpp_source.html#l00027">Component.hpp:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

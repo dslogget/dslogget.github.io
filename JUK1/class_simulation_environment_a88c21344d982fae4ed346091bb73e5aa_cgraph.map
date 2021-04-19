@@ -1,34 +1,31 @@
 <map id="SimulationEnvironment::SimulationEnvironment" name="SimulationEnvironment::SimulationEnvironment">
-<area shape="rect" id="node1" title="Setup the simulation environment from a netlist." alt="" coords="5,445,168,486"/>
-<area shape="rect" id="node2" href="$struct_b_j_t_n.html#a88c336c234ef1fd188d6d059c2efecd3" title=" " alt="" coords="255,325,406,352"/>
-<area shape="rect" id="node4" href="$struct_b_j_t_p.html#a453ab6e56288e7a25a4658a37ba69c85" title=" " alt="" coords="255,376,406,403"/>
-<area shape="rect" id="node5" href="$struct_capacitor.html#ad58abd51f8ee47c8d73510da8de9129b" title=" " alt="" coords="243,427,418,453"/>
-<area shape="rect" id="node6" href="$struct_current_source.html#a36fca156f3a2cd6b90ca958d54e2cd5b" title=" " alt="" coords="229,477,432,504"/>
-<area shape="rect" id="node7" href="$struct_diode.html#a17895a5367f7419159bea7770d132800" title=" " alt="" coords="254,528,407,555"/>
-<area shape="rect" id="node8" href="$struct_inductor.html#a33743240036261484817c11745969c72" title=" " alt="" coords="247,579,414,605"/>
-<area shape="rect" id="node9" href="$struct_n_l_capacitor.html#a8b05b960d81764a564e6385533ce834b" title=" " alt="" coords="235,5,426,32"/>
-<area shape="rect" id="node10" href="$struct_n_l_current_source.html#a2e2d07ecc129bb5a080c05b1d8c5ab4c" title=" " alt="" coords="221,56,440,83"/>
-<area shape="rect" id="node11" href="$struct_n_l_n_m_o_s.html#aed8502a37f09bfa5888de16487531ea4" title=" " alt="" coords="243,107,418,133"/>
-<area shape="rect" id="node12" href="$struct_resistor.html#a982eb8cabce26c876fc11ec0a4f7d50d" title=" " alt="" coords="247,157,415,184"/>
-<area shape="rect" id="node13" href="$struct_sinusoidal_voltage_source.html#a2ed546d4c51664f6b7f151bb44719c79" title=" " alt="" coords="247,209,414,250"/>
-<area shape="rect" id="node14" href="$struct_s_parameter_block.html#abab4b46f02af89238ee28c2f5bad5135" title=" " alt="" coords="219,629,442,656"/>
-<area shape="rect" id="node23" href="$struct_s_parameter_block_v_f.html#acf7d18776720a157ec3f7b1a290cda81" title=" " alt="" coords="256,681,405,722"/>
-<area shape="rect" id="node25" href="$struct_time_series_voltage_source.html#a9ef4635ed66d2af0916e95ede4b92dcd" title=" " alt="" coords="245,746,417,787"/>
-<area shape="rect" id="node27" href="$struct_voltage_source.html#aa61376691e26c381d9f75c0bd2263266" title=" " alt="" coords="228,275,433,301"/>
-<area shape="rect" id="node28" href="$class_simulation_environment.html#ab9bbb171c0ac85dccb8df316a62c9d06" title="Helper function to pull indices from graph netlist directive." alt="" coords="253,811,408,853"/>
-<area shape="rect" id="node29" href="$class_simulation_environment.html#af0ed5c4af36e750f803642b22be8c3e7" title="a function to determine and set the DC operating point" alt="" coords="253,877,408,918"/>
-<area shape="rect" id="node32" href="$struct_circuit_elements.html#aaf7e7f97838aef1c49973cafa0b560af" title="Updates the size of all stamps." alt="" coords="216,943,445,969"/>
-<area shape="rect" id="node3" href="$_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40" title="a helper function to aid in the construction of regexes for parsing netlist files" alt="" coords="566,376,675,403"/>
-<area shape="rect" id="node15" href="$struct_s_parameter_block.html#a91a50c8dd7a5f9d58892e5e36b77d752" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="493,629,748,656"/>
-<area shape="rect" id="node16" href="$interch_8m.html#ae4e69912f5a2f923a187c235f950a7d2" title=" " alt="" coords="985,585,1027,612"/>
-<area shape="rect" id="node17" href="$_force_causal_8hpp.html#a1e25332eab5d78520fe2142b32724a27" title=" " alt="" coords="796,661,887,688"/>
-<area shape="rect" id="node18" href="$namespace_force_causal.html#adc77641ea6b87c6bfdae84b12dee33e9" title=" " alt="" coords="1287,661,1398,688"/>
-<area shape="rect" id="node19" href="$namespace_force_causal.html#a33497b490cbf0779950b663c8f88ac73" title=" " alt="" coords="935,687,1077,713"/>
-<area shape="rect" id="node21" href="$namespace_force_causal.html#a19b3d69e4d05f839c4c6edec91ff7db5" title=" " alt="" coords="1287,737,1399,764"/>
-<area shape="rect" id="node22" href="$dft_8hpp.html#ad89d79493db5dbc3c9b1b1f701b51d4f" title=" " alt="" coords="987,737,1025,764"/>
-<area shape="rect" id="node20" href="$namespace_force_causal.html#ad2828d6cc4de61cb8a40d053aac0c763" title=" " alt="" coords="1125,687,1239,713"/>
-<area shape="rect" id="node24" href="$struct_s_parameter_block_v_f.html#a6c919df4dd9d320f5e2a558ba417e12d" title=" " alt="" coords="546,681,695,722"/>
-<area shape="rect" id="node26" href="$struct_time_series_voltage_source.html#a3e2c5bd5ad30ecacf4532212499f8e70" title=" " alt="" coords="535,746,707,787"/>
-<area shape="rect" id="node30" href="$struct_circuit_elements.html#a09dd7c40d61a8cfb4691f7b1955006d9" title="Generates the complete DC stamp." alt="" coords="535,843,707,885"/>
-<area shape="rect" id="node31" href="$struct_circuit_elements.html#a457f815721305405cac5a18b1cd293ff" title="Updates the components based on their DC value. Applies to dynamic and non&#45;linear components." alt="" coords="512,909,729,950"/>
+<area shape="rect" id="node1" title="Setup the simulation environment from a netlist." alt="" coords="5,378,168,419"/>
+<area shape="rect" id="node2" href="$struct_b_j_t_n.html#a88c336c234ef1fd188d6d059c2efecd3" title=" " alt="" coords="255,208,406,235"/>
+<area shape="rect" id="node4" href="$struct_b_j_t_p.html#a453ab6e56288e7a25a4658a37ba69c85" title=" " alt="" coords="255,259,406,285"/>
+<area shape="rect" id="node5" href="$struct_capacitor.html#ad58abd51f8ee47c8d73510da8de9129b" title=" " alt="" coords="243,309,418,336"/>
+<area shape="rect" id="node6" href="$struct_current_source.html#a36fca156f3a2cd6b90ca958d54e2cd5b" title=" " alt="" coords="229,360,432,387"/>
+<area shape="rect" id="node7" href="$struct_diode.html#a17895a5367f7419159bea7770d132800" title=" " alt="" coords="254,411,407,437"/>
+<area shape="rect" id="node8" href="$struct_inductor.html#a33743240036261484817c11745969c72" title=" " alt="" coords="247,461,414,488"/>
+<area shape="rect" id="node9" href="$struct_n_l_capacitor.html#a8b05b960d81764a564e6385533ce834b" title=" " alt="" coords="235,512,426,539"/>
+<area shape="rect" id="node10" href="$struct_n_l_current_source.html#a2e2d07ecc129bb5a080c05b1d8c5ab4c" title=" " alt="" coords="221,5,440,32"/>
+<area shape="rect" id="node11" href="$struct_n_l_n_m_o_s.html#aed8502a37f09bfa5888de16487531ea4" title=" " alt="" coords="243,56,418,83"/>
+<area shape="rect" id="node12" href="$struct_resistor.html#a982eb8cabce26c876fc11ec0a4f7d50d" title=" " alt="" coords="247,107,415,133"/>
+<area shape="rect" id="node13" href="$struct_s_parameter_block.html#abab4b46f02af89238ee28c2f5bad5135" title=" " alt="" coords="219,563,442,589"/>
+<area shape="rect" id="node22" href="$struct_s_parameter_block_v_f.html#acf7d18776720a157ec3f7b1a290cda81" title=" " alt="" coords="256,614,405,655"/>
+<area shape="rect" id="node24" href="$struct_voltage_source.html#aa61376691e26c381d9f75c0bd2263266" title=" " alt="" coords="228,157,433,184"/>
+<area shape="rect" id="node25" href="$class_simulation_environment.html#ab9bbb171c0ac85dccb8df316a62c9d06" title="Helper function to pull indices from graph netlist directive." alt="" coords="253,679,408,721"/>
+<area shape="rect" id="node26" href="$class_simulation_environment.html#af0ed5c4af36e750f803642b22be8c3e7" title="a function to determine and set the DC operating point" alt="" coords="253,745,408,786"/>
+<area shape="rect" id="node29" href="$struct_circuit_elements.html#aaf7e7f97838aef1c49973cafa0b560af" title="Updates the size of all stamps." alt="" coords="216,811,445,837"/>
+<area shape="rect" id="node3" href="$_elements_regex_builder_8h.html#ae93bf0557ffd2f53700a2384a9284c40" title="a helper function to aid in the construction of regexes for parsing netlist files" alt="" coords="566,309,675,336"/>
+<area shape="rect" id="node14" href="$struct_s_parameter_block.html#a91a50c8dd7a5f9d58892e5e36b77d752" title="reads in the s&#45;parameter data from a touchstone file. Currently it ignores the units of frequency,..." alt="" coords="493,563,748,589"/>
+<area shape="rect" id="node15" href="$interch_8m.html#ae4e69912f5a2f923a187c235f950a7d2" title=" " alt="" coords="985,519,1027,545"/>
+<area shape="rect" id="node16" href="$_force_causal_8hpp.html#a7ba0dd2680e44e9aaadd7b30f42ffcad" title=" " alt="" coords="796,595,887,621"/>
+<area shape="rect" id="node17" href="$namespace_force_causal.html#a126fc19b149949a9dc8582273ce3c822" title=" " alt="" coords="1287,595,1398,621"/>
+<area shape="rect" id="node18" href="$namespace_force_causal.html#a33497b490cbf0779950b663c8f88ac73" title=" " alt="" coords="935,620,1077,647"/>
+<area shape="rect" id="node20" href="$namespace_force_causal.html#a19b3d69e4d05f839c4c6edec91ff7db5" title=" " alt="" coords="1287,671,1399,697"/>
+<area shape="rect" id="node21" href="$dft_8hpp.html#ab7083baa421fdf930fd29005ae14898f" title=" " alt="" coords="987,671,1025,697"/>
+<area shape="rect" id="node19" href="$namespace_force_causal.html#ad2828d6cc4de61cb8a40d053aac0c763" title=" " alt="" coords="1125,620,1239,647"/>
+<area shape="rect" id="node23" href="$struct_s_parameter_block_v_f.html#a6c919df4dd9d320f5e2a558ba417e12d" title=" " alt="" coords="546,614,695,655"/>
+<area shape="rect" id="node27" href="$struct_circuit_elements.html#aecf0bfe0a6350d12ecd5ffd9d232433e" title="Generates the complete DC stamp." alt="" coords="535,778,707,819"/>
+<area shape="rect" id="node28" href="$struct_circuit_elements.html#a457f815721305405cac5a18b1cd293ff" title="Updates the components based on their DC value. Applies to dynamic and non&#45;linear components." alt="" coords="512,713,729,754"/>
 </map>

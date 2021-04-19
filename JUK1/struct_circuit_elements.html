@@ -112,21 +112,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf7e7f97838aef1c49973cafa0b560af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#aaf7e7f97838aef1c49973cafa0b560af">setNewStampSize</a> (size_t numNodes, size_t numCurrents, size_t numDCCurrents=0)</td></tr>
 <tr class="memdesc:aaf7e7f97838aef1c49973cafa0b560af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the size of all stamps.  <a href="struct_circuit_elements.html#aaf7e7f97838aef1c49973cafa0b560af">More...</a><br /></td></tr>
 <tr class="separator:aaf7e7f97838aef1c49973cafa0b560af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03d1004bedf06fe776451ca815fcfd7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a03d1004bedf06fe776451ca815fcfd7d">generateStaticStamp</a> ()</td></tr>
-<tr class="memdesc:a03d1004bedf06fe776451ca815fcfd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces a clear of the static stamp, and generates a new one.  <a href="struct_circuit_elements.html#a03d1004bedf06fe776451ca815fcfd7d">More...</a><br /></td></tr>
-<tr class="separator:a03d1004bedf06fe776451ca815fcfd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f37a58fab9bfe8bd708784b83adfe44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a0f37a58fab9bfe8bd708784b83adfe44">generateDynamicStamp</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep)</td></tr>
-<tr class="memdesc:a0f37a58fab9bfe8bd708784b83adfe44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the static stamp, then adds dynamic components to it.  <a href="struct_circuit_elements.html#a0f37a58fab9bfe8bd708784b83adfe44">More...</a><br /></td></tr>
-<tr class="separator:a0f37a58fab9bfe8bd708784b83adfe44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7dcbdc07fa81da0dd140dc5c69950ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#ac7dcbdc07fa81da0dd140dc5c69950ba">generateNonLinearStamp</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep)</td></tr>
-<tr class="memdesc:ac7dcbdc07fa81da0dd140dc5c69950ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the dynamic stamp, then adds dynamic components to it.  <a href="struct_circuit_elements.html#ac7dcbdc07fa81da0dd140dc5c69950ba">More...</a><br /></td></tr>
-<tr class="separator:ac7dcbdc07fa81da0dd140dc5c69950ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a829deefbfc5ef6d35f9ffe419de0eec4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a829deefbfc5ef6d35f9ffe419de0eec4">generateCompleteStamp</a> (<a class="el" href="_circuit_elements_8hpp.html#a4ccae5668f9cfb392f29e562913a7904">SolutionStage</a> stage, const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep)</td></tr>
-<tr class="memdesc:a829deefbfc5ef6d35f9ffe419de0eec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the complete stamp up to a certain point.  <a href="struct_circuit_elements.html#a829deefbfc5ef6d35f9ffe419de0eec4">More...</a><br /></td></tr>
-<tr class="separator:a829deefbfc5ef6d35f9ffe419de0eec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09dd7c40d61a8cfb4691f7b1955006d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a09dd7c40d61a8cfb4691f7b1955006d9">generateDCStamp</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionVector, size_t numCurrents)</td></tr>
-<tr class="memdesc:a09dd7c40d61a8cfb4691f7b1955006d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the complete DC stamp.  <a href="struct_circuit_elements.html#a09dd7c40d61a8cfb4691f7b1955006d9">More...</a><br /></td></tr>
-<tr class="separator:a09dd7c40d61a8cfb4691f7b1955006d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e21f387fb000383064c4681b3482a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a04e21f387fb000383064c4681b3482a3">generateStaticStamp</a> ()</td></tr>
+<tr class="memdesc:a04e21f387fb000383064c4681b3482a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces a clear of the static stamp, and generates a new one.  <a href="struct_circuit_elements.html#a04e21f387fb000383064c4681b3482a3">More...</a><br /></td></tr>
+<tr class="separator:a04e21f387fb000383064c4681b3482a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38f0240e2404325f26435bd6a2fb7ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#ac38f0240e2404325f26435bd6a2fb7ce">generateDynamicStamp</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep)</td></tr>
+<tr class="memdesc:ac38f0240e2404325f26435bd6a2fb7ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the static stamp, then adds dynamic components to it.  <a href="struct_circuit_elements.html#ac38f0240e2404325f26435bd6a2fb7ce">More...</a><br /></td></tr>
+<tr class="separator:ac38f0240e2404325f26435bd6a2fb7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9640eb48ce26d8650598fe017e48cf1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a9640eb48ce26d8650598fe017e48cf1f">generateNonLinearStamp</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep)</td></tr>
+<tr class="memdesc:a9640eb48ce26d8650598fe017e48cf1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the dynamic stamp, then adds dynamic components to it.  <a href="struct_circuit_elements.html#a9640eb48ce26d8650598fe017e48cf1f">More...</a><br /></td></tr>
+<tr class="separator:a9640eb48ce26d8650598fe017e48cf1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a223c6fd4688444f70f33545b47cde1ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a223c6fd4688444f70f33545b47cde1ca">generateCompleteStamp</a> (<a class="el" href="_circuit_elements_8hpp.html#a4ccae5668f9cfb392f29e562913a7904">SolutionStage</a> stage, const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep)</td></tr>
+<tr class="memdesc:a223c6fd4688444f70f33545b47cde1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the complete stamp up to a certain point.  <a href="struct_circuit_elements.html#a223c6fd4688444f70f33545b47cde1ca">More...</a><br /></td></tr>
+<tr class="separator:a223c6fd4688444f70f33545b47cde1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf0bfe0a6350d12ecd5ffd9d232433e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#aecf0bfe0a6350d12ecd5ffd9d232433e">generateDCStamp</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionVector, size_t numCurrents)</td></tr>
+<tr class="memdesc:aecf0bfe0a6350d12ecd5ffd9d232433e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the complete DC stamp.  <a href="struct_circuit_elements.html#aecf0bfe0a6350d12ecd5ffd9d232433e">More...</a><br /></td></tr>
+<tr class="separator:aecf0bfe0a6350d12ecd5ffd9d232433e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2c41540156db4d154858cb897759082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#af2c41540156db4d154858cb897759082">updateTimeStep</a> (const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;solutionMatrix, const size_t currentSolutionIndex, T timestep)</td></tr>
 <tr class="memdesc:af2c41540156db4d154858cb897759082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the components at the end of each time step. Applies to dynamic and non-linear components.  <a href="struct_circuit_elements.html#af2c41540156db4d154858cb897759082">More...</a><br /></td></tr>
 <tr class="separator:af2c41540156db4d154858cb897759082"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,27 +136,27 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ace09c09c80226a4640759edb560895dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#ace09c09c80226a4640759edb560895dd">staticStamp</a></td></tr>
-<tr class="memdesc:ace09c09c80226a4640759edb560895dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preallocated stamp. Used for caching between loop iterations. Static stamps will only be generated once as a result.  <a href="struct_circuit_elements.html#ace09c09c80226a4640759edb560895dd">More...</a><br /></td></tr>
-<tr class="separator:ace09c09c80226a4640759edb560895dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51f2877dcdb74a7797c89be1e494e14a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a51f2877dcdb74a7797c89be1e494e14a">dynamicStamp</a></td></tr>
-<tr class="memdesc:a51f2877dcdb74a7797c89be1e494e14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preallocated stamp. Used for caching between loop iterations. Dynamic stamps need to be updated on every timestep.  <a href="struct_circuit_elements.html#a51f2877dcdb74a7797c89be1e494e14a">More...</a><br /></td></tr>
-<tr class="separator:a51f2877dcdb74a7797c89be1e494e14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c797e553ac3130dd5122e9c1d2c1902"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a5c797e553ac3130dd5122e9c1d2c1902">nonLinearStamp</a></td></tr>
-<tr class="memdesc:a5c797e553ac3130dd5122e9c1d2c1902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preallocated stamp. Used for caching between loop iterations. Non-Linear stamps must be updated on every newton-raphson iteration.  <a href="struct_circuit_elements.html#a5c797e553ac3130dd5122e9c1d2c1902">More...</a><br /></td></tr>
-<tr class="separator:a5c797e553ac3130dd5122e9c1d2c1902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadb2b23899b98856804e061092253746"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#aadb2b23899b98856804e061092253746">dcStamp</a></td></tr>
-<tr class="memdesc:aadb2b23899b98856804e061092253746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preallocated stamp. Used for caching between loop iterations. DC stamps must be updated on every newton-raphson iteration.  <a href="struct_circuit_elements.html#aadb2b23899b98856804e061092253746">More...</a><br /></td></tr>
-<tr class="separator:aadb2b23899b98856804e061092253746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a375c1f55b0dd8c9d8a03dbcadab929ab"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a375c1f55b0dd8c9d8a03dbcadab929ab">staticElements</a></td></tr>
-<tr class="memdesc:a375c1f55b0dd8c9d8a03dbcadab929ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container to store the static components.  <a href="struct_circuit_elements.html#a375c1f55b0dd8c9d8a03dbcadab929ab">More...</a><br /></td></tr>
-<tr class="separator:a375c1f55b0dd8c9d8a03dbcadab929ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ebf95dc1d08270aff1ecc1530e0b328"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a9ebf95dc1d08270aff1ecc1530e0b328">dynamicElements</a></td></tr>
-<tr class="memdesc:a9ebf95dc1d08270aff1ecc1530e0b328"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container to store the dynamic components.  <a href="struct_circuit_elements.html#a9ebf95dc1d08270aff1ecc1530e0b328">More...</a><br /></td></tr>
-<tr class="separator:a9ebf95dc1d08270aff1ecc1530e0b328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3ef3a20caa1b2a48ebab0b2ee21b4f6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#ac3ef3a20caa1b2a48ebab0b2ee21b4f6">nonLinearElements</a></td></tr>
-<tr class="memdesc:ac3ef3a20caa1b2a48ebab0b2ee21b4f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container to store the Non-Linear components.  <a href="struct_circuit_elements.html#ac3ef3a20caa1b2a48ebab0b2ee21b4f6">More...</a><br /></td></tr>
-<tr class="separator:ac3ef3a20caa1b2a48ebab0b2ee21b4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70af768679bebb1f626039e5748fa413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a70af768679bebb1f626039e5748fa413">staticStamp</a></td></tr>
+<tr class="memdesc:a70af768679bebb1f626039e5748fa413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preallocated stamp. Used for caching between loop iterations. Static stamps will only be generated once as a result.  <a href="struct_circuit_elements.html#a70af768679bebb1f626039e5748fa413">More...</a><br /></td></tr>
+<tr class="separator:a70af768679bebb1f626039e5748fa413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab998789ff468b1c091769bd41afe7370"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#ab998789ff468b1c091769bd41afe7370">dynamicStamp</a></td></tr>
+<tr class="memdesc:ab998789ff468b1c091769bd41afe7370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preallocated stamp. Used for caching between loop iterations. Dynamic stamps need to be updated on every timestep.  <a href="struct_circuit_elements.html#ab998789ff468b1c091769bd41afe7370">More...</a><br /></td></tr>
+<tr class="separator:ab998789ff468b1c091769bd41afe7370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade733f5670021a7bf1b4c4f573c1a306"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#ade733f5670021a7bf1b4c4f573c1a306">nonLinearStamp</a></td></tr>
+<tr class="memdesc:ade733f5670021a7bf1b4c4f573c1a306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preallocated stamp. Used for caching between loop iterations. Non-Linear stamps must be updated on every newton-raphson iteration.  <a href="struct_circuit_elements.html#ade733f5670021a7bf1b4c4f573c1a306">More...</a><br /></td></tr>
+<tr class="separator:ade733f5670021a7bf1b4c4f573c1a306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a7a54d0ba902f6f14cd07905f19f2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a62a7a54d0ba902f6f14cd07905f19f2a">dcStamp</a></td></tr>
+<tr class="memdesc:a62a7a54d0ba902f6f14cd07905f19f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preallocated stamp. Used for caching between loop iterations. DC stamps must be updated on every newton-raphson iteration.  <a href="struct_circuit_elements.html#a62a7a54d0ba902f6f14cd07905f19f2a">More...</a><br /></td></tr>
+<tr class="separator:a62a7a54d0ba902f6f14cd07905f19f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7d6e34aa3b99f28a5c6f68ee8a0fd6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a6e7d6e34aa3b99f28a5c6f68ee8a0fd6">staticElements</a></td></tr>
+<tr class="memdesc:a6e7d6e34aa3b99f28a5c6f68ee8a0fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container to store the static components.  <a href="struct_circuit_elements.html#a6e7d6e34aa3b99f28a5c6f68ee8a0fd6">More...</a><br /></td></tr>
+<tr class="separator:a6e7d6e34aa3b99f28a5c6f68ee8a0fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da1d48919b1da842109131d71118627"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a4da1d48919b1da842109131d71118627">dynamicElements</a></td></tr>
+<tr class="memdesc:a4da1d48919b1da842109131d71118627"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container to store the dynamic components.  <a href="struct_circuit_elements.html#a4da1d48919b1da842109131d71118627">More...</a><br /></td></tr>
+<tr class="separator:a4da1d48919b1da842109131d71118627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1812e3656a73f89a6ed4fff75e074f4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#aa1812e3656a73f89a6ed4fff75e074f4">nonLinearElements</a></td></tr>
+<tr class="memdesc:aa1812e3656a73f89a6ed4fff75e074f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A container to store the Non-Linear components.  <a href="struct_circuit_elements.html#aa1812e3656a73f89a6ed4fff75e074f4">More...</a><br /></td></tr>
+<tr class="separator:aa1812e3656a73f89a6ed4fff75e074f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71c9882467b68a6586e8ce145280494f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a71c9882467b68a6586e8ce145280494f">staticStampIsFresh</a> = false</td></tr>
 <tr class="memdesc:a71c9882467b68a6586e8ce145280494f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A variable used to track if the cached stamp is current.  <a href="struct_circuit_elements.html#a71c9882467b68a6586e8ce145280494f">More...</a><br /></td></tr>
 <tr class="separator:a71c9882467b68a6586e8ce145280494f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,9 +166,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad9581ac89a4aa8ae94dacdd95d81ff30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#ad9581ac89a4aa8ae94dacdd95d81ff30">nonLinearStampIsFresh</a> = false</td></tr>
 <tr class="memdesc:ad9581ac89a4aa8ae94dacdd95d81ff30"><td class="mdescLeft">&#160;</td><td class="mdescRight">A variable used to track if the cached stamp is current.  <a href="struct_circuit_elements.html#ad9581ac89a4aa8ae94dacdd95d81ff30">More...</a><br /></td></tr>
 <tr class="separator:ad9581ac89a4aa8ae94dacdd95d81ff30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a380fad38d0b10d5ab789587c58655ccf"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; size_t, std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#a380fad38d0b10d5ab789587c58655ccf">nodeComponentMap</a></td></tr>
-<tr class="memdesc:a380fad38d0b10d5ab789587c58655ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map to pair nodes with the components connected to them.  <a href="struct_circuit_elements.html#a380fad38d0b10d5ab789587c58655ccf">More...</a><br /></td></tr>
-<tr class="separator:a380fad38d0b10d5ab789587c58655ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1948a70c84d4fdf656eb03f2d1fe73d"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; size_t, std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_circuit_elements.html#ab1948a70c84d4fdf656eb03f2d1fe73d">nodeComponentMap</a></td></tr>
+<tr class="memdesc:ab1948a70c84d4fdf656eb03f2d1fe73d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map to pair nodes with the components connected to them.  <a href="struct_circuit_elements.html#ab1948a70c84d4fdf656eb03f2d1fe73d">More...</a><br /></td></tr>
+<tr class="separator:ab1948a70c84d4fdf656eb03f2d1fe73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -241,8 +241,8 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a829deefbfc5ef6d35f9ffe419de0eec4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a829deefbfc5ef6d35f9ffe419de0eec4">&#9670;&nbsp;</a></span>generateCompleteStamp()</h2>
+<a id="a223c6fd4688444f70f33545b47cde1ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a223c6fd4688444f70f33545b47cde1ca">&#9670;&nbsp;</a></span>generateCompleteStamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +253,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&amp; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::generateCompleteStamp </td>
+          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt;T&gt;&amp; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::generateCompleteStamp </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_circuit_elements_8hpp.html#a4ccae5668f9cfb392f29e562913a7904">SolutionStage</a>&#160;</td>
           <td class="paramname"><em>stage</em>, </td>
@@ -304,19 +304,19 @@ template&lt;typename T &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_circuit_elements_a829deefbfc5ef6d35f9ffe419de0eec4_cgraph.png" border="0" usemap="#astruct_circuit_elements_a829deefbfc5ef6d35f9ffe419de0eec4_cgraph" alt=""/></div>
-<map name="astruct_circuit_elements_a829deefbfc5ef6d35f9ffe419de0eec4_cgraph" id="astruct_circuit_elements_a829deefbfc5ef6d35f9ffe419de0eec4_cgraph">
+<div class="center"><img src="struct_circuit_elements_a223c6fd4688444f70f33545b47cde1ca_cgraph.png" border="0" usemap="#astruct_circuit_elements_a223c6fd4688444f70f33545b47cde1ca_cgraph" alt=""/></div>
+<map name="astruct_circuit_elements_a223c6fd4688444f70f33545b47cde1ca_cgraph" id="astruct_circuit_elements_a223c6fd4688444f70f33545b47cde1ca_cgraph">
 <area shape="rect" title="Generates the complete stamp up to a certain point." alt="" coords="5,25,177,66"/>
-<area shape="rect" href="struct_circuit_elements.html#a0f37a58fab9bfe8bd708784b83adfe44" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="445,25,617,66"/>
-<area shape="rect" href="struct_circuit_elements.html#a03d1004bedf06fe776451ca815fcfd7d" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="665,54,837,96"/>
-<area shape="rect" href="struct_circuit_elements.html#ac7dcbdc07fa81da0dd140dc5c69950ba" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="225,25,397,66"/>
+<area shape="rect" href="struct_circuit_elements.html#ac38f0240e2404325f26435bd6a2fb7ce" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="445,25,617,66"/>
+<area shape="rect" href="struct_circuit_elements.html#a04e21f387fb000383064c4681b3482a3" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="665,54,837,96"/>
+<area shape="rect" href="struct_circuit_elements.html#a9640eb48ce26d8650598fe017e48cf1f" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="225,25,397,66"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a09dd7c40d61a8cfb4691f7b1955006d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09dd7c40d61a8cfb4691f7b1955006d9">&#9670;&nbsp;</a></span>generateDCStamp()</h2>
+<a id="aecf0bfe0a6350d12ecd5ffd9d232433e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf0bfe0a6350d12ecd5ffd9d232433e">&#9670;&nbsp;</a></span>generateDCStamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +327,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&amp; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::generateDCStamp </td>
+          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt;T&gt;&amp; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::generateDCStamp </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>solutionVector</em>, </td>
@@ -366,8 +366,8 @@ template&lt;typename T &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_circuit_elements_a09dd7c40d61a8cfb4691f7b1955006d9_icgraph.png" border="0" usemap="#astruct_circuit_elements_a09dd7c40d61a8cfb4691f7b1955006d9_icgraph" alt=""/></div>
-<map name="astruct_circuit_elements_a09dd7c40d61a8cfb4691f7b1955006d9_icgraph" id="astruct_circuit_elements_a09dd7c40d61a8cfb4691f7b1955006d9_icgraph">
+<div class="center"><img src="struct_circuit_elements_aecf0bfe0a6350d12ecd5ffd9d232433e_icgraph.png" border="0" usemap="#astruct_circuit_elements_aecf0bfe0a6350d12ecd5ffd9d232433e_icgraph" alt=""/></div>
+<map name="astruct_circuit_elements_aecf0bfe0a6350d12ecd5ffd9d232433e_icgraph" id="astruct_circuit_elements_aecf0bfe0a6350d12ecd5ffd9d232433e_icgraph">
 <area shape="rect" title="Generates the complete DC stamp." alt="" coords="419,5,591,47"/>
 <area shape="rect" href="class_simulation_environment.html#af0ed5c4af36e750f803642b22be8c3e7" title="a function to determine and set the DC operating point" alt="" coords="216,5,371,47"/>
 <area shape="rect" href="class_simulation_environment.html#a88c21344d982fae4ed346091bb73e5aa" title="Setup the simulation environment from a netlist." alt="" coords="5,5,168,47"/>
@@ -376,8 +376,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a0f37a58fab9bfe8bd708784b83adfe44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f37a58fab9bfe8bd708784b83adfe44">&#9670;&nbsp;</a></span>generateDynamicStamp()</h2>
+<a id="ac38f0240e2404325f26435bd6a2fb7ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38f0240e2404325f26435bd6a2fb7ce">&#9670;&nbsp;</a></span>generateDynamicStamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,7 +388,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&amp; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::generateDynamicStamp </td>
+          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt;T&gt;&amp; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::generateDynamicStamp </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>solutionMatrix</em>, </td>
@@ -433,20 +433,20 @@ template&lt;typename T &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_circuit_elements_a0f37a58fab9bfe8bd708784b83adfe44_cgraph.png" border="0" usemap="#astruct_circuit_elements_a0f37a58fab9bfe8bd708784b83adfe44_cgraph" alt=""/></div>
-<map name="astruct_circuit_elements_a0f37a58fab9bfe8bd708784b83adfe44_cgraph" id="astruct_circuit_elements_a0f37a58fab9bfe8bd708784b83adfe44_cgraph">
+<div class="center"><img src="struct_circuit_elements_ac38f0240e2404325f26435bd6a2fb7ce_cgraph.png" border="0" usemap="#astruct_circuit_elements_ac38f0240e2404325f26435bd6a2fb7ce_cgraph" alt=""/></div>
+<map name="astruct_circuit_elements_ac38f0240e2404325f26435bd6a2fb7ce_cgraph" id="astruct_circuit_elements_ac38f0240e2404325f26435bd6a2fb7ce_cgraph">
 <area shape="rect" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="5,5,177,47"/>
-<area shape="rect" href="struct_circuit_elements.html#a03d1004bedf06fe776451ca815fcfd7d" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="225,5,397,47"/>
+<area shape="rect" href="struct_circuit_elements.html#a04e21f387fb000383064c4681b3482a3" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="225,5,397,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_circuit_elements_a0f37a58fab9bfe8bd708784b83adfe44_icgraph.png" border="0" usemap="#astruct_circuit_elements_a0f37a58fab9bfe8bd708784b83adfe44_icgraph" alt=""/></div>
-<map name="astruct_circuit_elements_a0f37a58fab9bfe8bd708784b83adfe44_icgraph" id="astruct_circuit_elements_a0f37a58fab9bfe8bd708784b83adfe44_icgraph">
+<div class="center"><img src="struct_circuit_elements_ac38f0240e2404325f26435bd6a2fb7ce_icgraph.png" border="0" usemap="#astruct_circuit_elements_ac38f0240e2404325f26435bd6a2fb7ce_icgraph" alt=""/></div>
+<map name="astruct_circuit_elements_ac38f0240e2404325f26435bd6a2fb7ce_icgraph" id="astruct_circuit_elements_ac38f0240e2404325f26435bd6a2fb7ce_icgraph">
 <area shape="rect" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="544,35,716,76"/>
-<area shape="rect" href="struct_circuit_elements.html#a829deefbfc5ef6d35f9ffe419de0eec4" title="Generates the complete stamp up to a certain point." alt="" coords="104,5,276,47"/>
-<area shape="rect" href="struct_circuit_elements.html#ac7dcbdc07fa81da0dd140dc5c69950ba" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="324,64,496,105"/>
+<area shape="rect" href="struct_circuit_elements.html#a223c6fd4688444f70f33545b47cde1ca" title="Generates the complete stamp up to a certain point." alt="" coords="104,5,276,47"/>
+<area shape="rect" href="struct_circuit_elements.html#a9640eb48ce26d8650598fe017e48cf1f" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="324,64,496,105"/>
 <area shape="rect" href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2" title="Where a lot of the magic starts. This is what runs the simulation." alt="" coords="113,71,267,112"/>
 <area shape="rect" href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main function to launch the circuit simulator" alt="" coords="5,78,56,105"/>
 </map>
@@ -454,8 +454,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ac7dcbdc07fa81da0dd140dc5c69950ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7dcbdc07fa81da0dd140dc5c69950ba">&#9670;&nbsp;</a></span>generateNonLinearStamp()</h2>
+<a id="a9640eb48ce26d8650598fe017e48cf1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9640eb48ce26d8650598fe017e48cf1f">&#9670;&nbsp;</a></span>generateNonLinearStamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,7 +466,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&amp; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::generateNonLinearStamp </td>
+          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt;T&gt;&amp; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::generateNonLinearStamp </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_matrix.html">Matrix</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>solutionMatrix</em>, </td>
@@ -511,20 +511,20 @@ template&lt;typename T &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_circuit_elements_ac7dcbdc07fa81da0dd140dc5c69950ba_cgraph.png" border="0" usemap="#astruct_circuit_elements_ac7dcbdc07fa81da0dd140dc5c69950ba_cgraph" alt=""/></div>
-<map name="astruct_circuit_elements_ac7dcbdc07fa81da0dd140dc5c69950ba_cgraph" id="astruct_circuit_elements_ac7dcbdc07fa81da0dd140dc5c69950ba_cgraph">
+<div class="center"><img src="struct_circuit_elements_a9640eb48ce26d8650598fe017e48cf1f_cgraph.png" border="0" usemap="#astruct_circuit_elements_a9640eb48ce26d8650598fe017e48cf1f_cgraph" alt=""/></div>
+<map name="astruct_circuit_elements_a9640eb48ce26d8650598fe017e48cf1f_cgraph" id="astruct_circuit_elements_a9640eb48ce26d8650598fe017e48cf1f_cgraph">
 <area shape="rect" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="5,5,177,47"/>
-<area shape="rect" href="struct_circuit_elements.html#a0f37a58fab9bfe8bd708784b83adfe44" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="225,5,397,47"/>
-<area shape="rect" href="struct_circuit_elements.html#a03d1004bedf06fe776451ca815fcfd7d" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="445,5,617,47"/>
+<area shape="rect" href="struct_circuit_elements.html#ac38f0240e2404325f26435bd6a2fb7ce" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="225,5,397,47"/>
+<area shape="rect" href="struct_circuit_elements.html#a04e21f387fb000383064c4681b3482a3" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="445,5,617,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_circuit_elements_ac7dcbdc07fa81da0dd140dc5c69950ba_icgraph.png" border="0" usemap="#astruct_circuit_elements_ac7dcbdc07fa81da0dd140dc5c69950ba_icgraph" alt=""/></div>
-<map name="astruct_circuit_elements_ac7dcbdc07fa81da0dd140dc5c69950ba_icgraph" id="astruct_circuit_elements_ac7dcbdc07fa81da0dd140dc5c69950ba_icgraph">
+<div class="center"><img src="struct_circuit_elements_a9640eb48ce26d8650598fe017e48cf1f_icgraph.png" border="0" usemap="#astruct_circuit_elements_a9640eb48ce26d8650598fe017e48cf1f_icgraph" alt=""/></div>
+<map name="astruct_circuit_elements_a9640eb48ce26d8650598fe017e48cf1f_icgraph" id="astruct_circuit_elements_a9640eb48ce26d8650598fe017e48cf1f_icgraph">
 <area shape="rect" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="324,39,496,80"/>
-<area shape="rect" href="struct_circuit_elements.html#a829deefbfc5ef6d35f9ffe419de0eec4" title="Generates the complete stamp up to a certain point." alt="" coords="104,5,276,47"/>
+<area shape="rect" href="struct_circuit_elements.html#a223c6fd4688444f70f33545b47cde1ca" title="Generates the complete stamp up to a certain point." alt="" coords="104,5,276,47"/>
 <area shape="rect" href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2" title="Where a lot of the magic starts. This is what runs the simulation." alt="" coords="113,71,267,112"/>
 <area shape="rect" href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main function to launch the circuit simulator" alt="" coords="5,78,56,105"/>
 </map>
@@ -532,8 +532,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a03d1004bedf06fe776451ca815fcfd7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03d1004bedf06fe776451ca815fcfd7d">&#9670;&nbsp;</a></span>generateStaticStamp()</h2>
+<a id="a04e21f387fb000383064c4681b3482a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04e21f387fb000383064c4681b3482a3">&#9670;&nbsp;</a></span>generateStaticStamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -544,7 +544,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt;&amp; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::generateStaticStamp </td>
+          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt;T&gt;&amp; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::generateStaticStamp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -560,16 +560,16 @@ template&lt;typename T &gt; </div>
 <p>Forces a clear of the static stamp, and generates a new one. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the cached stamp. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_circuit_elements_8hpp_source.html#l00113">113</a> of file <a class="el" href="_circuit_elements_8hpp_source.html">CircuitElements.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_circuit_elements_8hpp_source.html#l00114">114</a> of file <a class="el" href="_circuit_elements_8hpp_source.html">CircuitElements.hpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="struct_circuit_elements_a03d1004bedf06fe776451ca815fcfd7d_icgraph.png" border="0" usemap="#astruct_circuit_elements_a03d1004bedf06fe776451ca815fcfd7d_icgraph" alt=""/></div>
-<map name="astruct_circuit_elements_a03d1004bedf06fe776451ca815fcfd7d_icgraph" id="astruct_circuit_elements_a03d1004bedf06fe776451ca815fcfd7d_icgraph">
+<div class="center"><img src="struct_circuit_elements_a04e21f387fb000383064c4681b3482a3_icgraph.png" border="0" usemap="#astruct_circuit_elements_a04e21f387fb000383064c4681b3482a3_icgraph" alt=""/></div>
+<map name="astruct_circuit_elements_a04e21f387fb000383064c4681b3482a3_icgraph" id="astruct_circuit_elements_a04e21f387fb000383064c4681b3482a3_icgraph">
 <area shape="rect" title="Forces a clear of the static stamp, and generates a new one." alt="" coords="764,5,936,47"/>
-<area shape="rect" href="struct_circuit_elements.html#a829deefbfc5ef6d35f9ffe419de0eec4" title="Generates the complete stamp up to a certain point." alt="" coords="104,23,276,64"/>
-<area shape="rect" href="struct_circuit_elements.html#a0f37a58fab9bfe8bd708784b83adfe44" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="544,35,716,76"/>
-<area shape="rect" href="struct_circuit_elements.html#ac7dcbdc07fa81da0dd140dc5c69950ba" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="324,85,496,127"/>
+<area shape="rect" href="struct_circuit_elements.html#a223c6fd4688444f70f33545b47cde1ca" title="Generates the complete stamp up to a certain point." alt="" coords="104,23,276,64"/>
+<area shape="rect" href="struct_circuit_elements.html#ac38f0240e2404325f26435bd6a2fb7ce" title="Obtains the static stamp, then adds dynamic components to it." alt="" coords="544,35,716,76"/>
+<area shape="rect" href="struct_circuit_elements.html#a9640eb48ce26d8650598fe017e48cf1f" title="Obtains the dynamic stamp, then adds dynamic components to it." alt="" coords="324,85,496,127"/>
 <area shape="rect" href="class_simulation_environment.html#a1b133fa2ad9af152621860e79ea66bf2" title="Where a lot of the magic starts. This is what runs the simulation." alt="" coords="113,88,267,129"/>
 <area shape="rect" href="_circuit_simulator_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main function to launch the circuit simulator" alt="" coords="5,95,56,122"/>
 </map>
@@ -629,7 +629,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_circuit_elements_8hpp_source.html#l00100">100</a> of file <a class="el" href="_circuit_elements_8hpp_source.html">CircuitElements.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_circuit_elements_8hpp_source.html#l00101">101</a> of file <a class="el" href="_circuit_elements_8hpp_source.html">CircuitElements.hpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -768,8 +768,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aadb2b23899b98856804e061092253746"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadb2b23899b98856804e061092253746">&#9670;&nbsp;</a></span>dcStamp</h2>
+<a id="a62a7a54d0ba902f6f14cd07905f19f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a7a54d0ba902f6f14cd07905f19f2a">&#9670;&nbsp;</a></span>dcStamp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -777,7 +777,7 @@ Here is the caller graph for this function:</div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::dcStamp</td>
+          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt;T&gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::dcStamp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -788,8 +788,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a9ebf95dc1d08270aff1ecc1530e0b328"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ebf95dc1d08270aff1ecc1530e0b328">&#9670;&nbsp;</a></span>dynamicElements</h2>
+<a id="a4da1d48919b1da842109131d71118627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da1d48919b1da842109131d71118627">&#9670;&nbsp;</a></span>dynamicElements</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -797,7 +797,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::dynamicElements</td>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="struct_component.html">Component</a>&lt;T&gt; &gt; &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::dynamicElements</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -808,8 +808,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a51f2877dcdb74a7797c89be1e494e14a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51f2877dcdb74a7797c89be1e494e14a">&#9670;&nbsp;</a></span>dynamicStamp</h2>
+<a id="ab998789ff468b1c091769bd41afe7370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab998789ff468b1c091769bd41afe7370">&#9670;&nbsp;</a></span>dynamicStamp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -817,7 +817,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::dynamicStamp</td>
+          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt;T&gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::dynamicStamp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -848,8 +848,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a380fad38d0b10d5ab789587c58655ccf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a380fad38d0b10d5ab789587c58655ccf">&#9670;&nbsp;</a></span>nodeComponentMap</h2>
+<a id="ab1948a70c84d4fdf656eb03f2d1fe73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1948a70c84d4fdf656eb03f2d1fe73d">&#9670;&nbsp;</a></span>nodeComponentMap</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -857,7 +857,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::multimap&lt; size_t, std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::nodeComponentMap</td>
+          <td class="memname">std::multimap&lt;size_t, std::shared_ptr&lt;<a class="el" href="struct_component.html">Component</a>&lt;T&gt; &gt; &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::nodeComponentMap</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -868,8 +868,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac3ef3a20caa1b2a48ebab0b2ee21b4f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3ef3a20caa1b2a48ebab0b2ee21b4f6">&#9670;&nbsp;</a></span>nonLinearElements</h2>
+<a id="aa1812e3656a73f89a6ed4fff75e074f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1812e3656a73f89a6ed4fff75e074f4">&#9670;&nbsp;</a></span>nonLinearElements</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -877,7 +877,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::nonLinearElements</td>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="struct_component.html">Component</a>&lt;T&gt; &gt; &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::nonLinearElements</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -888,8 +888,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a5c797e553ac3130dd5122e9c1d2c1902"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c797e553ac3130dd5122e9c1d2c1902">&#9670;&nbsp;</a></span>nonLinearStamp</h2>
+<a id="ade733f5670021a7bf1b4c4f573c1a306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade733f5670021a7bf1b4c4f573c1a306">&#9670;&nbsp;</a></span>nonLinearStamp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -897,7 +897,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::nonLinearStamp</td>
+          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt;T&gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::nonLinearStamp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -928,8 +928,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a375c1f55b0dd8c9d8a03dbcadab929ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a375c1f55b0dd8c9d8a03dbcadab929ab">&#9670;&nbsp;</a></span>staticElements</h2>
+<a id="a6e7d6e34aa3b99f28a5c6f68ee8a0fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7d6e34aa3b99f28a5c6f68ee8a0fd6">&#9670;&nbsp;</a></span>staticElements</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -937,7 +937,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="struct_component.html">Component</a>&lt; T &gt; &gt; &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::staticElements</td>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="struct_component.html">Component</a>&lt;T&gt; &gt; &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::staticElements</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -948,8 +948,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ace09c09c80226a4640759edb560895dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace09c09c80226a4640759edb560895dd">&#9670;&nbsp;</a></span>staticStamp</h2>
+<a id="a70af768679bebb1f626039e5748fa413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70af768679bebb1f626039e5748fa413">&#9670;&nbsp;</a></span>staticStamp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -957,7 +957,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt; T &gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::staticStamp</td>
+          <td class="memname"><a class="el" href="struct_stamp.html">Stamp</a>&lt;T&gt; <a class="el" href="struct_circuit_elements.html">CircuitElements</a>&lt; T &gt;::staticStamp</td>
         </tr>
       </table>
 </div><div class="memdoc">

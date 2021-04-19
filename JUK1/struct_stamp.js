@@ -7,9 +7,9 @@ var struct_stamp =
     [ "addNonLinearStamp", "struct_stamp.html#ac923d8f7e5f96351e025a19f238644df", null ],
     [ "addStaticStamp", "struct_stamp.html#acd3afe8a78b7a2498849efa04ab089de", null ],
     [ "clear", "struct_stamp.html#a66c152f92c0b0b0497ae5a41609f7601", null ],
-    [ "solve", "struct_stamp.html#a27298a7e47ee5e3d561058b275530f74", null ],
-    [ "G", "struct_stamp.html#a8bd5ddd40ee2be74d000ad61ddedeca3", null ],
-    [ "s", "struct_stamp.html#afefccf1267e325435b1d9c1a2c61f212", null ],
+    [ "solve", "struct_stamp.html#a91bcbe465c92d0287c9efd210950a5a1", null ],
+    [ "G", "struct_stamp.html#aafc01281357208391b5dedb474d15124", null ],
+    [ "s", "struct_stamp.html#a74b100e5144c7b089ade2bf380861957", null ],
     [ "sizeG_A", "struct_stamp.html#aabc5719d9d1a3d96ace6506793d08df3", null ],
     [ "sizeG_D", "struct_stamp.html#ab0fc713f936c798e0d03a63e92b1a204", null ]
 ];
