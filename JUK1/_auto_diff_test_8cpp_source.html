@@ -97,12 +97,12 @@ $(document).ready(function(){initNavTree('_auto_diff_test_8cpp_source.html','');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;      constexpr AD::DiffVar&lt; double, 2 &gt; <a class="code" href="get_residues_8m.html#aa67ca74f1a2f805ccd4f8460589ec897">x</a>( 1, 1, 0 );</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      constexpr AD::DiffVar&lt; double, 2 &gt; y( 2, 0, 1 );</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      constexpr <span class="keyword">auto</span> <a class="code" href="vectfit3_8m.html#a3c80bda0d42b16986a0eda3bbe56e85d">f</a> = <a class="code" href="get_residues_8m.html#aa67ca74f1a2f805ccd4f8460589ec897">x</a>*y;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      constexpr <span class="keyword">auto</span> f = <a class="code" href="get_residues_8m.html#aa67ca74f1a2f805ccd4f8460589ec897">x</a>*y;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      <span class="keyword">auto</span> <a class="code" href="rot_8m.html#a081c431de89805bcb17574fd2a6ca274">sin</a> = <a class="code" href="rot_8m.html#a081c431de89805bcb17574fd2a6ca274">AD::sin</a>( <a class="code" href="get_residues_8m.html#aa67ca74f1a2f805ccd4f8460589ec897">x</a> );</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <span class="keyword">auto</span> sin2 = <a class="code" href="rot_8m.html#a081c431de89805bcb17574fd2a6ca274">AD::sin</a>( 2*<a class="code" href="get_residues_8m.html#aa67ca74f1a2f805ccd4f8460589ec897">x</a> );</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <span class="keyword">auto</span> tanh = AD::tanh( 1 + 2*<a class="code" href="get_residues_8m.html#aa67ca74f1a2f805ccd4f8460589ec897">x</a> );</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;f\n&quot;</span> &lt;&lt; <a class="code" href="vectfit3_8m.html#a3c80bda0d42b16986a0eda3bbe56e85d">f</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;f\n&quot;</span> &lt;&lt; f &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;sin\n&quot;</span> &lt;&lt; <a class="code" href="rot_8m.html#a081c431de89805bcb17574fd2a6ca274">sin</a> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;sin2\n&quot;</span> &lt;&lt; sin2 &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;tanh2\n&quot;</span> &lt;&lt; tanh &lt;&lt; std::endl;</div>
@@ -301,9 +301,9 @@ $(document).ready(function(){initNavTree('_auto_diff_test_8cpp_source.html','');
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;   <span class="keyword">auto</span> Veff = 0.5 * ( Vgst + std::pow( std::pow( Vgst, 2 ) + delta*delta, 0.5 ) );</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;   <span class="keyword">auto</span> power = lambda / ( 1 + mu * std::pow( V_ds, 2 ) + xi * Veff );</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;   <span class="keyword">auto</span> area = alpha * V_ds * ( 1 + zeta * Veff );</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;   <span class="keyword">auto</span> f1 = std::tanh( area );</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;   <span class="keyword">auto</span> <a class="code" href="_freq_8m.html#ab88c56f446c31b123c58e2ea62481a1c">f1</a> = std::tanh( area );</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;   <span class="keyword">auto</span> Ids_lim = beta * std::pow( Veff, power );</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;   <span class="keyword">auto</span> Idrain = Ids_lim * f1;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;   <span class="keyword">auto</span> Idrain = Ids_lim * <a class="code" href="_freq_8m.html#ab88c56f446c31b123c58e2ea62481a1c">f1</a>;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;   <a class="code" href="namespace_auto_differentiation.html#a5dacdeea406066ff20ff7f5f21e4c862">toRet</a>.var = Idrain;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;   <span class="keyword">auto</span> dVeff_dVgs = 0.5*( 1 + Vgst * std::pow( Vgst * Vgst + delta * delta, -0.5 ) );</div>
@@ -338,9 +338,9 @@ $(document).ready(function(){initNavTree('_auto_diff_test_8cpp_source.html','');
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;   <span class="keyword">auto</span> Veff = 0.5 * ( Vgst + AD::sqrt( AD::pow( Vgst, 2 ) + delta*delta ) );</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;   <span class="keyword">auto</span> power = lambda / ( 1 + mu * AD::pow( V_ds, 2 ) + xi * Veff );</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;   <span class="keyword">auto</span> area = alpha * V_ds * ( 1 + zeta * Veff );</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;   <span class="keyword">auto</span> f1 = AD::tanh( area );</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;   <span class="keyword">auto</span> <a class="code" href="_freq_8m.html#ab88c56f446c31b123c58e2ea62481a1c">f1</a> = AD::tanh( area );</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;   <span class="keyword">auto</span> Ids_lim = beta * AD::pow( Veff, power );</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;   <a class="code" href="namespace_auto_differentiation.html#a5dacdeea406066ff20ff7f5f21e4c862">toRet</a> = Ids_lim * f1;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;   <a class="code" href="namespace_auto_differentiation.html#a5dacdeea406066ff20ff7f5f21e4c862">toRet</a> = Ids_lim * <a class="code" href="_freq_8m.html#ab88c56f446c31b123c58e2ea62481a1c">f1</a>;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
@@ -389,8 +389,8 @@ $(document).ready(function(){initNavTree('_auto_diff_test_8cpp_source.html','');
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;         assert( <a class="code" href="interch_8m.html#ae4e69912f5a2f923a187c235f950a7d2">std::abs</a>( <a class="code" href="find_complex_rational_approximation_8m.html#a0332d90ff07648a038ae9c2a957081d9">res</a>.diff2 - autoDiffResult[ 2 ] ) &lt; 1e-12 );</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      }</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;   }</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;   std::cout &lt;&lt; std::setw( 15 ) &lt;&lt; controlAccumulate &lt;&lt; <span class="stringliteral">&quot; us | &quot;</span>;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;   std::cout &lt;&lt; std::setw( 15 ) &lt;&lt; autoDiffAccumulate &lt;&lt; <span class="stringliteral">&quot; us&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;   std::cout &lt;&lt; std::setw( 15 ) &lt;&lt; autoDiffAccumulate &lt;&lt; <span class="stringliteral">&quot; us | &quot;</span>;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;   std::cout &lt;&lt; std::setw( 15 ) &lt;&lt; controlAccumulate &lt;&lt; <span class="stringliteral">&quot; us&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
@@ -413,6 +413,7 @@ $(document).ready(function(){initNavTree('_auto_diff_test_8cpp_source.html','');
 <div class="ttc" id="a_auto_diff_test_8cpp_html_aebe1c0307dcb32414473f139c3d58539"><div class="ttname"><a href="_auto_diff_test_8cpp.html#aebe1c0307dcb32414473f139c3d58539">testBJTModel</a></div><div class="ttdeci">void testBJTModel()</div><div class="ttdef"><b>Definition:</b> <a href="_auto_diff_test_8cpp_source.html#l00112">AutoDiffTest.cpp:112</a></div></div>
 <div class="ttc" id="a_auto_diff_test_8cpp_html_aef2c7de27c717fd3cc360bbab2fe1545"><div class="ttname"><a href="_auto_diff_test_8cpp.html#aef2c7de27c717fd3cc360bbab2fe1545">transistorTestControl</a></div><div class="ttdeci">void transistorTestControl(T V_gs_in, T V_ds_in, TransistorTestResult&lt; T &gt; &amp;toRet)</div><div class="ttdef"><b>Definition:</b> <a href="_auto_diff_test_8cpp_source.html#l00198">AutoDiffTest.cpp:198</a></div></div>
 <div class="ttc" id="a_auto_differentiation_8hpp_html"><div class="ttname"><a href="_auto_differentiation_8hpp.html">AutoDifferentiation.hpp</a></div></div>
+<div class="ttc" id="a_freq_8m_html_ab88c56f446c31b123c58e2ea62481a1c"><div class="ttname"><a href="_freq_8m.html#ab88c56f446c31b123c58e2ea62481a1c">f1</a></div><div class="ttdeci">f1</div><div class="ttdef"><b>Definition:</b> <a href="_freq_8m_source.html#l00013">Freq.m:13</a></div></div>
 <div class="ttc" id="afind_complex_rational_approximation_8m_html_a0332d90ff07648a038ae9c2a957081d9"><div class="ttname"><a href="find_complex_rational_approximation_8m.html#a0332d90ff07648a038ae9c2a957081d9">res</a></div><div class="ttdeci">Extract these output variables res</div><div class="ttdef"><b>Definition:</b> <a href="find_complex_rational_approximation_8m_source.html#l00064">findComplexRationalApproximation.m:64</a></div></div>
 <div class="ttc" id="agenerate_p_r_r_file_8m_html_a6f6ccfcf58b31cb6412107d9d5281426"><div class="ttname"><a href="generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a></div><div class="ttdeci">for i</div><div class="ttdef"><b>Definition:</b> <a href="generate_p_r_r_file_8m_source.html#l00019">generatePRRFile.m:19</a></div></div>
 <div class="ttc" id="aget_residues_8m_html_aa67ca74f1a2f805ccd4f8460589ec897"><div class="ttname"><a href="get_residues_8m.html#aa67ca74f1a2f805ccd4f8460589ec897">x</a></div><div class="ttdeci">Obtain iteration resiudes for model x</div><div class="ttdef"><b>Definition:</b> <a href="get_residues_8m_source.html#l00050">getResidues.m:50</a></div></div>
@@ -431,7 +432,6 @@ $(document).ready(function(){initNavTree('_auto_diff_test_8cpp_source.html','');
 <div class="ttc" id="astruct_transistor_test_result_html_a5ec37aec3e75c12892a43c6ec55b41a2"><div class="ttname"><a href="struct_transistor_test_result.html#a5ec37aec3e75c12892a43c6ec55b41a2">TransistorTestResult::var</a></div><div class="ttdeci">T var</div><div class="ttdef"><b>Definition:</b> <a href="_auto_diff_test_8cpp_source.html#l00192">AutoDiffTest.cpp:192</a></div></div>
 <div class="ttc" id="astruct_transistor_test_result_html_a94b3f2e4ecaf2104f233d9a043d7ff3e"><div class="ttname"><a href="struct_transistor_test_result.html#a94b3f2e4ecaf2104f233d9a043d7ff3e">TransistorTestResult::diff1</a></div><div class="ttdeci">T diff1</div><div class="ttdef"><b>Definition:</b> <a href="_auto_diff_test_8cpp_source.html#l00193">AutoDiffTest.cpp:193</a></div></div>
 <div class="ttc" id="astruct_transistor_test_result_html_abb221f316323bd9b6ff147b9953f450d"><div class="ttname"><a href="struct_transistor_test_result.html#abb221f316323bd9b6ff147b9953f450d">TransistorTestResult::diff2</a></div><div class="ttdeci">T diff2</div><div class="ttdef"><b>Definition:</b> <a href="_auto_diff_test_8cpp_source.html#l00194">AutoDiffTest.cpp:194</a></div></div>
-<div class="ttc" id="avectfit3_8m_html_a3c80bda0d42b16986a0eda3bbe56e85d"><div class="ttname"><a href="vectfit3_8m.html#a3c80bda0d42b16986a0eda3bbe56e85d">f</a></div><div class="ttdeci">Create magnitude plot for fitting of f(s) def.logx</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

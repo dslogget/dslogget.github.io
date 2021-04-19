@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('fft_8cpp_source.html',''); initResizab
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">double</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="fft_8cpp.html#abaffbcf63ab5bb7b38d1c686c75b1f7e">   11</a></span>&#160;<a class="code" href="fft_8cpp.html#abaffbcf63ab5bb7b38d1c686c75b1f7e">myFunctionToSample</a>( <span class="keywordtype">double</span> t ) {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   constexpr <span class="keywordtype">double</span> freqSine = 1;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <span class="keywordflow">return</span> <a class="code" href="rot_8m.html#a081c431de89805bcb17574fd2a6ca274">std::sin</a>( 2 * std::numbers::pi * freqSine * t );</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   <span class="keywordflow">return</span> <a class="code" href="rot_8m.html#a081c431de89805bcb17574fd2a6ca274">std::sin</a>( 2 * <a class="code" href="_freq_8m.html#a16d5d24f5b09a1991bd4e5f57bf11237">std::numbers::pi</a> * freqSine * t );</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
@@ -105,13 +105,13 @@ $(document).ready(function(){initNavTree('fft_8cpp_source.html',''); initResizab
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="fft_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   18</a></span>&#160;<a class="code" href="fft_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;   <span class="comment">// generate data</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;   constexpr <span class="keywordtype">double</span> T = 2;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   constexpr <span class="keywordtype">double</span> f_s = 8;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   constexpr <span class="keywordtype">size_t</span> numPoints = T * f_s;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;   constexpr <span class="keywordtype">double</span> <a class="code" href="_freq_8m.html#a3574d2a6ed312d8d02306dd98b807286">f_s</a> = 8;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   constexpr <span class="keywordtype">size_t</span> numPoints = T * <a class="code" href="_freq_8m.html#a3574d2a6ed312d8d02306dd98b807286">f_s</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   std::vector&lt; double &gt; inputData; <span class="comment">// = { 0, 1, 0, -1, 0, 1, 0, -1 };</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;   <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> <a class="code" href="generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> = 0; <a class="code" href="generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> &lt; numPoints; <a class="code" href="generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a>++ ) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      inputData.push_back( <a class="code" href="fft_8cpp.html#abaffbcf63ab5bb7b38d1c686c75b1f7e">myFunctionToSample</a>( <span class="keyword">static_cast&lt;</span> <span class="keywordtype">double</span> <span class="keyword">&gt;</span>( <a class="code" href="generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> ) / f_s ) );</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      inputData.push_back( <a class="code" href="fft_8cpp.html#abaffbcf63ab5bb7b38d1c686c75b1f7e">myFunctionToSample</a>( <span class="keyword">static_cast&lt;</span> <span class="keywordtype">double</span> <span class="keyword">&gt;</span>( <a class="code" href="generate_p_r_r_file_8m.html#a6f6ccfcf58b31cb6412107d9d5281426">i</a> ) / <a class="code" href="_freq_8m.html#a3574d2a6ed312d8d02306dd98b807286">f_s</a> ) );</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;   <span class="comment">// print data as csv</span></div>
@@ -157,6 +157,8 @@ $(document).ready(function(){initNavTree('fft_8cpp_source.html',''); initResizab
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;   std::cout &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;   <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="ttc" id="a_freq_8m_html_a16d5d24f5b09a1991bd4e5f57bf11237"><div class="ttname"><a href="_freq_8m.html#a16d5d24f5b09a1991bd4e5f57bf11237">pi</a></div><div class="ttdeci">pi</div><div class="ttdef"><b>Definition:</b> <a href="_freq_8m_source.html#l00024">Freq.m:24</a></div></div>
+<div class="ttc" id="a_freq_8m_html_a3574d2a6ed312d8d02306dd98b807286"><div class="ttname"><a href="_freq_8m.html#a3574d2a6ed312d8d02306dd98b807286">f_s</a></div><div class="ttdeci">f_s</div><div class="ttdef"><b>Definition:</b> <a href="_freq_8m_source.html#l00011">Freq.m:11</a></div></div>
 <div class="ttc" id="adft_8hpp_html"><div class="ttname"><a href="dft_8hpp.html">dft.hpp</a></div></div>
 <div class="ttc" id="adft_8hpp_html_a0da3a93d96e7bc63e6327f305e6eb098"><div class="ttname"><a href="dft_8hpp.html#a0da3a93d96e7bc63e6327f305e6eb098">fft</a></div><div class="ttdeci">std::vector&lt; std::complex&lt; T &gt; &gt; fft(const std::vector&lt; T &gt; &amp;inputData)</div><div class="ttdef"><b>Definition:</b> <a href="dft_8hpp_source.html#l00055">dft.hpp:55</a></div></div>
 <div class="ttc" id="adft_8hpp_html_ab1b62914a62937a6c44ad08a42111237"><div class="ttname"><a href="dft_8hpp.html#ab1b62914a62937a6c44ad08a42111237">dft</a></div><div class="ttdeci">std::vector&lt; std::complex&lt; T &gt; &gt; dft(const std::vector&lt; T &gt; &amp;inputData)</div><div class="ttdef"><b>Definition:</b> <a href="dft_8hpp_source.html#l00025">dft.hpp:25</a></div></div>

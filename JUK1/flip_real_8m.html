@@ -94,11 +94,11 @@ $(document).ready(function(){initNavTree('flip_real_8m.html',''); initResizable(
 Variables</h2></td></tr>
 <tr class="memitem:ab05f1e61e5e2800250c2e767344396aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flip_real_8m.html#ab05f1e61e5e2800250c2e767344396aa">function</a> [<a class="el" href="flip_real_8m.html#a026b2053335370bf411c822e983352b1">stable_p</a>]</td></tr>
 <tr class="separator:ab05f1e61e5e2800250c2e767344396aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2079d751e8c26c51011463ad3a2d6fa1"><td class="memItemLeft" align="right" valign="top">we <a class="el" href="get_residues_8m.html#ad09d5e2b38260605147c2f55bdacc7db">make</a> it <a class="el" href="vectfit3_8m.html#a3a292ee37dd5b3d3e29181014ccabc01">stable</a> by flipping it back into the LHP Create negative mask if real part positive&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flip_real_8m.html#a2079d751e8c26c51011463ad3a2d6fa1">mask</a> = -1*sign(real(p))</td></tr>
+<tr class="memitem:a2079d751e8c26c51011463ad3a2d6fa1"><td class="memItemLeft" align="right" valign="top">we <a class="el" href="get_residues_8m.html#ad09d5e2b38260605147c2f55bdacc7db">make</a> it stable by flipping it back into the LHP Create negative mask if real part positive&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flip_real_8m.html#a2079d751e8c26c51011463ad3a2d6fa1">mask</a> = -1*sign(real(p))</td></tr>
 <tr class="separator:a2079d751e8c26c51011463ad3a2d6fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad19dc277f4b99140fefe8098b7f52776"><td class="memItemLeft" align="right" valign="top">Flip all positive real parts&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flip_real_8m.html#ad19dc277f4b99140fefe8098b7f52776">zR</a> = mask.*real(p)</td></tr>
 <tr class="separator:ad19dc277f4b99140fefe8098b7f52776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a026b2053335370bf411c822e983352b1"><td class="memItemLeft" align="right" valign="top">Create new <a class="el" href="vectfit3_8m.html#a3a292ee37dd5b3d3e29181014ccabc01">stable</a> complex <a class="el" href="find_complex_rational_approximation_8m.html#a941bc79a8e80f2d30662d054fb5648f7">poles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flip_real_8m.html#a026b2053335370bf411c822e983352b1">stable_p</a> = <a class="el" href="flip_real_8m.html#ad19dc277f4b99140fefe8098b7f52776">zR</a> + 1<a class="el" href="rot_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>*imag(p)</td></tr>
+<tr class="memitem:a026b2053335370bf411c822e983352b1"><td class="memItemLeft" align="right" valign="top">Create new stable complex <a class="el" href="find_complex_rational_approximation_8m.html#a941bc79a8e80f2d30662d054fb5648f7">poles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flip_real_8m.html#a026b2053335370bf411c822e983352b1">stable_p</a> = <a class="el" href="flip_real_8m.html#ad19dc277f4b99140fefe8098b7f52776">zR</a> + 1<a class="el" href="rot_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>*imag(p)</td></tr>
 <tr class="separator:a026b2053335370bf411c822e983352b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -115,10 +115,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= flipReal(p)</div>
 <div class="line">%FLIPREAL Flips real part of complex number <span class="keywordflow">if</span> it is positive</div>
-<div class="line">%  This <span class="keyword">function</span> is <span class="keywordflow">for</span> use with vector <a class="code" href="vectfit3_8m.html#a5d35b2657f4cd1c457b35c41a6d0075e">fitting</a>. If <a class="code" href="generate_p_r_r_file_8m.html#a45d9f8dad1bcc7195d94b27e4ab44377">a</a> pole becomes unstable</div>
+<div class="line">%  This <span class="keyword">function</span> is <span class="keywordflow">for</span> use with vector fitting. If <a class="code" href="generate_p_r_r_file_8m.html#a45d9f8dad1bcc7195d94b27e4ab44377">a</a> pole becomes unstable</div>
 <div class="line">%  (moves into the RHP)</div>
 <div class="ttc" id="agenerate_p_r_r_file_8m_html_a45d9f8dad1bcc7195d94b27e4ab44377"><div class="ttname"><a href="generate_p_r_r_file_8m.html#a45d9f8dad1bcc7195d94b27e4ab44377">a</a></div><div class="ttdeci">Find a complex rational model for freq domain data for a</div><div class="ttdef"><b>Definition:</b> <a href="generate_p_r_r_file_8m_source.html#l00013">generatePRRFile.m:13</a></div></div>
-<div class="ttc" id="avectfit3_8m_html_a5d35b2657f4cd1c457b35c41a6d0075e"><div class="ttname"><a href="vectfit3_8m.html#a5d35b2657f4cd1c457b35c41a6d0075e">fitting</a></div><div class="ttdeci">Include only D in fitting(not E) def.skip_pole=0</div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="flip_real_8m_source.html#l00001">1</a> of file <a class="el" href="flip_real_8m_source.html">flipReal.m</a>.</p>
 
@@ -131,7 +130,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">we <a class="el" href="get_residues_8m.html#ad09d5e2b38260605147c2f55bdacc7db">make</a> it <a class="el" href="vectfit3_8m.html#a3a292ee37dd5b3d3e29181014ccabc01">stable</a> by flipping it back into the LHP Create negative mask if real part positive mask = -1*sign(real(p))</td>
+          <td class="memname">we <a class="el" href="get_residues_8m.html#ad09d5e2b38260605147c2f55bdacc7db">make</a> it stable by flipping it back into the LHP Create negative mask if real part positive mask = -1*sign(real(p))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -147,7 +146,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Create new <a class="el" href="vectfit3_8m.html#a3a292ee37dd5b3d3e29181014ccabc01">stable</a> complex <a class="el" href="find_complex_rational_approximation_8m.html#a941bc79a8e80f2d30662d054fb5648f7">poles</a> stable_p = <a class="el" href="flip_real_8m.html#ad19dc277f4b99140fefe8098b7f52776">zR</a> + 1<a class="el" href="rot_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>*imag(p)</td>
+          <td class="memname">Create new stable complex <a class="el" href="find_complex_rational_approximation_8m.html#a941bc79a8e80f2d30662d054fb5648f7">poles</a> stable_p = <a class="el" href="flip_real_8m.html#ad19dc277f4b99140fefe8098b7f52776">zR</a> + 1<a class="el" href="rot_8m.html#ac86694252f8dfdb19aaeadc4b7c342c6">j</a>*imag(p)</td>
         </tr>
       </table>
 </div><div class="memdoc">

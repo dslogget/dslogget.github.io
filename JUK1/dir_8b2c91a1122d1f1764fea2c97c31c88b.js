@@ -9,6 +9,5 @@ var dir_8b2c91a1122d1f1764fea2c97c31c88b =
     [ "interch.m", "interch_8m.html", "interch_8m" ],
     [ "QPpassive.m", "_q_ppassive_8m.html", "_q_ppassive_8m" ],
     [ "rot.m", "rot_8m.html", "rot_8m" ],
-    [ "SolutionDisp.m", "_solution_disp_8m.html", "_solution_disp_8m" ],
-    [ "vectfit3.m", "vectfit3_8m.html", "vectfit3_8m" ]
+    [ "SolutionDisp.m", "_solution_disp_8m.html", "_solution_disp_8m" ]
 ];
